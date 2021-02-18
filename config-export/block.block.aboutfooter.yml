@@ -1,0 +1,31 @@
+uuid: e6fbdcd2-4e1a-4a59-ae05-dc851d0776c7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:56181db7-a452-44b8-bca5-8cf9de50ed1c'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: aboutfooter
+theme: conferenceplus
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:56181db7-a452-44b8-bca5-8cf9de50ed1c'
+settings:
+  id: 'block_content:56181db7-a452-44b8-bca5-8cf9de50ed1c'
+  label: 'About (footer)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/60
+    negate: true
+    context_mapping: {  }

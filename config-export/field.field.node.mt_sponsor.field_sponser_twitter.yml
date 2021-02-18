@@ -1,0 +1,19 @@
+uuid: 79ffcae6-dbd9-4741-9033-e58bffade729
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponser_twitter
+    - node.type.mt_sponsor
+id: node.mt_sponsor.field_sponser_twitter
+field_name: field_sponser_twitter
+entity_type: node
+bundle: mt_sponsor
+label: 'Sponsors Twitter'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: 85975c69-efbd-40c2-8f55-854fe508eef3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_status
+    - node.type.tradeshow
+id: node.tradeshow.field_status
+field_name: field_status
+entity_type: node
+bundle: tradeshow
+label: Status
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

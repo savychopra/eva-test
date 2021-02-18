@@ -1,0 +1,28 @@
+uuid: 5d2481c4-938d-4605-95b5-0075e89e97e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_program_entry.field_mt_prg_category
+    - field.field.node.mt_program_entry.field_mt_prg_end_date
+    - field.field.node.mt_program_entry.field_mt_prg_event
+    - field.field.node.mt_program_entry.field_mt_prg_start_date
+    - node.type.mt_program_entry
+  module:
+    - user
+id: node.mt_program_entry.teaser
+targetEntityType: node
+bundle: mt_program_entry
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_mt_prg_category: true
+  field_mt_prg_end_date: true
+  field_mt_prg_event: true
+  field_mt_prg_start_date: true

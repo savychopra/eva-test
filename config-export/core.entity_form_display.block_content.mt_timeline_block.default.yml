@@ -1,0 +1,45 @@
+uuid: ea94e29c-8e2b-42ef-9a8c-59934fcb1f86
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_timeline_block
+    - field.field.block_content.mt_timeline_block.field_mt_tml_timeline_item
+    - field.field.block_content.mt_timeline_block.field_mt_tml_timeline_viewmore
+  module:
+    - link
+    - paragraphs
+id: block_content.mt_timeline_block.default
+targetEntityType: block_content
+bundle: mt_timeline_block
+mode: default
+content:
+  field_mt_tml_timeline_item:
+    type: entity_reference_paragraphs
+    weight: 27
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_mt_tml_timeline_viewmore:
+    weight: 28
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

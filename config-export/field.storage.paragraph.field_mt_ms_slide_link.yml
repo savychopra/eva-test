@@ -1,0 +1,19 @@
+uuid: 08a6120b-4162-4793-b771-4b4d3f2b00c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_mt_ms_slide_link
+field_name: field_mt_ms_slide_link
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

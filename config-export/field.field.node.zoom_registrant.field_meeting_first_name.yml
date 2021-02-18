@@ -1,0 +1,21 @@
+uuid: b3d3812d-0b1d-47ba-af3e-3e7a354a4793
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting_first_name
+    - node.type.zoom_registrant
+_core:
+  default_config_hash: wXWhY9tkPLyZQ8btwsZoyToernKA_e7VjLHOR1t-YuE
+id: node.zoom_registrant.field_meeting_first_name
+field_name: field_meeting_first_name
+entity_type: node
+bundle: zoom_registrant
+label: 'First Name'
+description: 'User’s first name.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

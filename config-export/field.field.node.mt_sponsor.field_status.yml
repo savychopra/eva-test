@@ -1,0 +1,23 @@
+uuid: 5cefb7cf-3e3c-4571-870f-e3f96891dfe0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_status
+    - node.type.mt_sponsor
+id: node.mt_sponsor.field_status
+field_name: field_status
+entity_type: node
+bundle: mt_sponsor
+label: Status
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

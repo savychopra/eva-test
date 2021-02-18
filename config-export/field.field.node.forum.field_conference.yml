@@ -1,0 +1,28 @@
+uuid: eb9a27e0-ef2b-4f06-9882-83696051a72d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_conference
+    - node.type.forum
+    - node.type.mt_event
+id: node.forum.field_conference
+field_name: field_conference
+entity_type: node
+bundle: forum
+label: Conference
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      mt_event: mt_event
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

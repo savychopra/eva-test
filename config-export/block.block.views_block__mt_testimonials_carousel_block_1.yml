@@ -1,0 +1,30 @@
+uuid: 8ad54f83-876a-4b9a-9d39-e1ba2b41491b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_testimonials_carousel
+  module:
+    - system
+    - views
+  theme:
+    - conferenceplus
+id: views_block__mt_testimonials_carousel_block_1
+theme: conferenceplus
+region: highlighted_top
+weight: 0
+provider: null
+plugin: 'views_block:mt_testimonials_carousel-block_1'
+settings:
+  id: 'views_block:mt_testimonials_carousel-block_1'
+  label: 'What People Say'
+  provider: views
+  label_display: visible
+  views_label: 'What People Say'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/blocks\r\n/about-us"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,14 @@
+uuid: 6204ff21-22e2-49ae-946e-03cf69984683
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ticket
+id: taxonomy_vocabulary_ticket
+entity_type_id: taxonomy_vocabulary
+entity_id: ticket
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

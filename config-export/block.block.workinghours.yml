@@ -1,0 +1,31 @@
+uuid: 1e822d9d-d1fb-4d4e-9c41-667ec450ffa3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4f4b24e9-dc8d-4886-80d4-f88a6951c2e1'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: workinghours
+theme: conferenceplus
+region: sidebar_second
+weight: -54
+provider: null
+plugin: 'block_content:4f4b24e9-dc8d-4886-80d4-f88a6951c2e1'
+settings:
+  id: 'block_content:4f4b24e9-dc8d-4886-80d4-f88a6951c2e1'
+  label: 'Registration Hours'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact
+    negate: false
+    context_mapping: {  }

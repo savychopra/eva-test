@@ -1,0 +1,24 @@
+uuid: 67b362fb-d8bb-481a-a917-2306096dcdc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_media_tabs_block
+    - field.field.block_content.mt_media_tabs_block.field_mt_media_tab
+  module:
+    - entity_reference_revisions
+id: block_content.mt_media_tabs_block.default
+targetEntityType: block_content
+bundle: mt_media_tabs_block
+mode: default
+content:
+  field_mt_media_tab:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

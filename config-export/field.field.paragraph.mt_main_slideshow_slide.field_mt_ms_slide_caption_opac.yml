@@ -1,0 +1,25 @@
+uuid: 4f459cf5-c75a-47d2-bc62-5a8f4fe4f626
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_ms_slide_caption_opac
+    - paragraphs.paragraphs_type.mt_main_slideshow_slide
+id: paragraph.mt_main_slideshow_slide.field_mt_ms_slide_caption_opac
+field_name: field_mt_ms_slide_caption_opac
+entity_type: paragraph
+bundle: mt_main_slideshow_slide
+label: 'Slide Caption Background Opacity'
+description: 'Set the % opacity for the background of the caption.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 90
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100
+  prefix: ''
+  suffix: ''
+field_type: integer

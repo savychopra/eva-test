@@ -1,0 +1,21 @@
+uuid: 55f3e61b-8394-40b1-935f-4cebe62635b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zoom_data
+    - node.type.zoom_registrant
+_core:
+  default_config_hash: dgMbYSwOs17QUo-N2CoLoHd3MD5aBFt1K9p5B0vyOJA
+id: node.zoom_registrant.field_zoom_data
+field_name: field_zoom_data
+entity_type: node
+bundle: zoom_registrant
+label: 'Zoom Data'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

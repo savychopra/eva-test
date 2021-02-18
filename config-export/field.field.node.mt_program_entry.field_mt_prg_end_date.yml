@@ -1,0 +1,21 @@
+uuid: 7b424705-b0e2-4b30-a35a-5a6e695c339e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prg_end_date
+    - node.type.mt_program_entry
+  module:
+    - datetime
+id: node.mt_program_entry.field_mt_prg_end_date
+field_name: field_mt_prg_end_date
+entity_type: node
+bundle: mt_program_entry
+label: 'End Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

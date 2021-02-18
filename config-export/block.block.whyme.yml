@@ -1,0 +1,31 @@
+uuid: 45978682-cf35-4968-9c9c-44d2c11d0e70
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_fltt_block:e063c791-93fb-43c0-a379-811a3a29ccc8'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: whyme
+theme: conferenceplus
+region: featured_top
+weight: -56
+provider: null
+plugin: 'block_content:e063c791-93fb-43c0-a379-811a3a29ccc8'
+settings:
+  id: 'block_content:e063c791-93fb-43c0-a379-811a3a29ccc8'
+  label: 'Why Us?'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }

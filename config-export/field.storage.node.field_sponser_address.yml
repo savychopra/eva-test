@@ -1,0 +1,19 @@
+uuid: abbf3fe8-0e5b-4751-9c47-d0edc506e221
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_sponser_address
+field_name: field_sponser_address
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

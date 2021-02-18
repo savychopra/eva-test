@@ -1,0 +1,21 @@
+uuid: 34bd5c58-90e6-4040-8d02-21ea81ee3d40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user_industry
+    - node.type.zoom_registrant
+_core:
+  default_config_hash: cBu0JHLouPuYWOzvVducdWSN3YyQ2iZ2_VbGAptl2iY
+id: node.zoom_registrant.field_user_industry
+field_name: field_user_industry
+entity_type: node
+bundle: zoom_registrant
+label: Industry
+description: 'User''s industry.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,64 @@
+uuid: 8da06888-c4cd-4bae-b68b-e727c8097702
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_presentation.field_mt_prs_affiliations
+    - field.field.node.mt_presentation.field_mt_prs_authors
+    - field.field.node.mt_presentation.field_mt_prs_body
+    - field.field.node.mt_presentation.field_mt_prs_category
+    - field.field.node.mt_presentation.field_mt_prs_date
+    - field.field.node.mt_presentation.field_mt_prs_files
+    - field.field.node.mt_presentation.field_mt_prs_image
+    - field.field.node.mt_presentation.field_mt_prs_location
+    - field.field.node.mt_presentation.field_mt_prs_session
+    - field.field.node.mt_presentation.field_mt_prs_speaker
+    - field.field.node.mt_presentation.field_mt_prs_sponsor
+    - field.field.node.mt_presentation.field_mt_prs_topics
+    - field.field.node.mt_presentation.field_mt_prs_video
+    - image.style.large
+    - node.type.mt_presentation
+  module:
+    - image
+    - text
+    - user
+id: node.mt_presentation.teaser
+targetEntityType: node
+bundle: mt_presentation
+mode: teaser
+content:
+  field_mt_prs_body:
+    type: text_summary_or_trimmed
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: 250
+    third_party_settings: {  }
+  field_mt_prs_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: large
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_mt_prs_affiliations: true
+  field_mt_prs_authors: true
+  field_mt_prs_category: true
+  field_mt_prs_date: true
+  field_mt_prs_files: true
+  field_mt_prs_location: true
+  field_mt_prs_session: true
+  field_mt_prs_speaker: true
+  field_mt_prs_sponsor: true
+  field_mt_prs_topics: true
+  field_mt_prs_video: true

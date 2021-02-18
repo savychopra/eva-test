@@ -1,0 +1,23 @@
+uuid: 39c1f90c-b22f-4d3e-98fd-2e6beff28835
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_highlight_link
+    - paragraphs.paragraphs_type.mt_highlight
+  module:
+    - link
+id: paragraph.mt_highlight.field_mt_highlight_link
+field_name: field_mt_highlight_link
+entity_type: paragraph
+bundle: mt_highlight
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

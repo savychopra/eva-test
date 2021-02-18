@@ -1,0 +1,31 @@
+uuid: 59c5de11-9b4c-4dd4-aeb1-aa1320cba44f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d3c5868b-e0ca-43fd-9e80-828ad308eea5'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: aboutme
+theme: conferenceplus
+region: content_top
+weight: -66
+provider: null
+plugin: 'block_content:d3c5868b-e0ca-43fd-9e80-828ad308eea5'
+settings:
+  id: 'block_content:d3c5868b-e0ca-43fd-9e80-828ad308eea5'
+  label: 'About me'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }

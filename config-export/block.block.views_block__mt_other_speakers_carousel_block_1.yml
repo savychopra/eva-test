@@ -1,0 +1,39 @@
+uuid: 7e808777-e818-46c8-8b5a-6dfd8777aee6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_other_speakers_carousel
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - conferenceplus
+id: views_block__mt_other_speakers_carousel_block_1
+theme: conferenceplus
+region: featured
+weight: 0
+provider: null
+plugin: 'views_block:mt_other_speakers_carousel-block_1'
+settings:
+  id: 'views_block:mt_other_speakers_carousel-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      mt_speaker: mt_speaker
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '/speaker/*'
+    negate: true
+    context_mapping: {  }

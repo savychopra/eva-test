@@ -1,0 +1,48 @@
+uuid: 5f5aae53-9318-4c34-bdb9-789d5631101f
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.alternative
+id: contact_message.alternative.default
+targetEntityType: contact_message
+bundle: alternative
+mode: default
+content:
+  copy:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  mail:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  message:
+    type: string_textarea
+    weight: 4
+    settings:
+      rows: 12
+      placeholder: Message
+    third_party_settings: {  }
+    region: content
+  name:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  preview:
+    weight: 40
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: 3
+    settings:
+      size: 60
+      placeholder: Subject
+    third_party_settings: {  }
+    region: content
+hidden: {  }

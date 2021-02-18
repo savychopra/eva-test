@@ -1,0 +1,30 @@
+uuid: 184c47f2-6b01-45d6-b835-b2910a04ebee
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_pricing_tables
+  module:
+    - system
+    - views
+  theme:
+    - conferenceplus
+id: conferenceplus_views_block__mt_pricing_tables_block_1
+theme: conferenceplus
+region: footer_top_first
+weight: -65
+provider: null
+plugin: 'views_block:mt_pricing_tables-block_1'
+settings:
+  id: 'views_block:mt_pricing_tables-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }

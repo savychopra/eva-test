@@ -1,0 +1,28 @@
+uuid: f972d916-dd72-4e84-b055-b9c2a53a2cdb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content
+label: Content
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  81b861d6-cb54-4ec0-8887-f98949936c74:
+    id: node_type
+    bundles:
+      forum: forum
+      keynotes: keynotes
+      mt_event: mt_event
+      mt_speaker: mt_speaker
+      mt_sponsor: mt_sponsor
+      poster: poster
+      tradeshow: tradeshow
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 81b861d6-cb54-4ec0-8887-f98949936c74
+selection_logic: and
+weight: -5
+relationships: {  }

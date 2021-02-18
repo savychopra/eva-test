@@ -1,0 +1,114 @@
+uuid: bbd780a7-569d-447e-b724-0f0937970483
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mt_speaker.field_assigned_to
+    - field.field.node.mt_speaker.field_designation
+    - field.field.node.mt_speaker.field_metatags
+    - field.field.node.mt_speaker.field_mt_spk_affiliations
+    - field.field.node.mt_speaker.field_mt_spk_body
+    - field.field.node.mt_speaker.field_mt_spk_facebook_account
+    - field.field.node.mt_speaker.field_mt_spk_linkedin_account
+    - field.field.node.mt_speaker.field_mt_spk_speaker_photo
+    - field.field.node.mt_speaker.field_mt_spk_subtitle
+    - field.field.node.mt_speaker.field_mt_spk_twitter_account
+    - field.field.node.mt_speaker.field_mt_spk_youtube_account
+    - image.style.mt_member_photo
+    - node.type.mt_speaker
+  module:
+    - image
+    - metatag
+    - text
+    - user
+id: node.mt_speaker.default
+targetEntityType: node
+bundle: mt_speaker
+mode: default
+content:
+  field_designation:
+    weight: 9
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_metatags:
+    weight: 10
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_mt_spk_affiliations:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mt_spk_body:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_spk_facebook_account:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_spk_linkedin_account:
+    weight: 7
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_spk_speaker_photo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: mt_member_photo
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_spk_subtitle:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_spk_twitter_account:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_spk_youtube_account:
+    weight: 8
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_assigned_to: true

@@ -1,0 +1,31 @@
+uuid: ce597708-c746-4729-a8dc-03b02d8b8020
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_if_block:86c8a961-7cb4-48cb-958f-950bcb782f32'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: uniquefeatures
+theme: conferenceplus
+region: featured_top
+weight: -58
+provider: null
+plugin: 'block_content:86c8a961-7cb4-48cb-958f-950bcb782f32'
+settings:
+  id: 'block_content:86c8a961-7cb4-48cb-958f-950bcb782f32'
+  label: 'Topics & Fields'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "\r\n/node/16\r\n/node/17\r\n/node/40\r\n/node/53\r\n/node/54\r\n/node/55\r\n/node/59\r\n/node/63\r\n/node/82\r\n/blocks\r\n/alternative-footer\r\n/mega-menu"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,27 @@
+uuid: 84f9688c-9f92-4c02-97cc-1b9a9cb1555c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_mt_main_slideshow_layout
+field_name: field_mt_main_slideshow_layout
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: fullwidth
+      label: 'Full Width'
+    -
+      value: fullscreen
+      label: 'Full Screen'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

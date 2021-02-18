@@ -1,0 +1,60 @@
+uuid: a227dbcf-75d1-4235-87c0-68db32110152
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mt_album.field_mt_alb_body
+    - field.field.node.mt_album.field_mt_alb_image
+    - field.field.node.mt_album.field_mt_alb_tags
+    - field.field.node.mt_album.field_mt_alb_video
+    - image.style.large
+    - node.type.mt_album
+  module:
+    - image
+    - text
+    - user
+    - video_embed_field
+id: node.mt_album.default
+targetEntityType: node
+bundle: mt_album
+mode: default
+content:
+  field_mt_alb_body:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_alb_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_alb_tags:
+    weight: 4
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mt_alb_video:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: large
+      link_image_to: provider
+    third_party_settings: {  }
+    type: video_embed_field_thumbnail
+    region: content
+  links:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

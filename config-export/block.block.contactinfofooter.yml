@@ -1,0 +1,31 @@
+uuid: 8e14267d-4c47-47fd-900a-7ac2186d236b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a5cb88c7-1d51-405a-b911-2ea49042a47f'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: contactinfofooter
+theme: conferenceplus
+region: footer_second
+weight: -66
+provider: null
+plugin: 'block_content:a5cb88c7-1d51-405a-b911-2ea49042a47f'
+settings:
+  id: 'block_content:a5cb88c7-1d51-405a-b911-2ea49042a47f'
+  label: 'Contact the Association'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/60
+    negate: true
+    context_mapping: {  }

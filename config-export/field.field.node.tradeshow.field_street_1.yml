@@ -1,0 +1,19 @@
+uuid: 35834dba-3a85-4d82-9d88-79b779d3193f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_street_1
+    - node.type.tradeshow
+id: node.tradeshow.field_street_1
+field_name: field_street_1
+entity_type: node
+bundle: tradeshow
+label: Street-1
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

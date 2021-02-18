@@ -1,0 +1,8 @@
+uuid: 80aecd93-36bb-4584-b5cf-2af4530735df
+langcode: en
+status: true
+dependencies: {  }
+name: Affiliations
+vid: mt_affiliations
+description: ''
+weight: 0

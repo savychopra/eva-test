@@ -1,0 +1,21 @@
+uuid: 0b5346bb-9a44-47e1-9020-659a018be251
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ceu_details
+    - node.type.mt_event
+  module:
+    - text
+id: node.mt_event.field_ceu_details
+field_name: field_ceu_details
+entity_type: node
+bundle: mt_event
+label: 'CEU Details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,19 @@
+uuid: eb748cd0-35b7-4a20-b805-fcc167046963
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponser_facebook
+    - node.type.mt_sponsor
+id: node.mt_sponsor.field_sponser_facebook
+field_name: field_sponser_facebook
+entity_type: node
+bundle: mt_sponsor
+label: 'Sponsors Facebook'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

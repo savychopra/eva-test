@@ -1,0 +1,128 @@
+uuid: 8f489796-f547-45ff-8672-f73f68415ff1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_main_slideshow_block
+    - field.field.block_content.mt_main_slideshow_block.field_mt_main_slideshow_layout
+    - field.field.block_content.mt_main_slideshow_block.field_mt_main_slideshow_slide
+    - field.field.block_content.mt_main_slideshow_block.field_mt_ms_background_opacity
+    - field.field.block_content.mt_main_slideshow_block.field_mt_ms_bullets_position
+    - field.field.block_content.mt_main_slideshow_block.field_mt_ms_effect
+    - field.field.block_content.mt_main_slideshow_block.field_mt_ms_effect_duration
+    - field.field.block_content.mt_main_slideshow_block.field_mt_ms_ignore_header_height
+    - field.field.block_content.mt_main_slideshow_block.field_mt_ms_initial_height
+    - field.field.block_content.mt_main_slideshow_block.field_mt_ms_navigation_style
+    - field.field.block_content.mt_main_slideshow_block.field_mt_ms_touch_swipe_nav
+  module:
+    - field_group
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_mt_ms_settings:
+      children:
+        - field_mt_ms_effect
+        - field_mt_ms_effect_duration
+        - field_mt_main_slideshow_layout
+        - field_mt_ms_ignore_header_height
+        - field_mt_ms_initial_height
+        - field_mt_ms_navigation_style
+        - field_mt_ms_bullets_position
+        - field_mt_ms_touch_swipe_nav
+        - field_mt_ms_background_opacity
+      parent_name: ''
+      weight: 8
+      format_type: details
+      format_settings:
+        label: 'Main Slideshow Settings'
+        open: true
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Main Slideshow Settings'
+      region: content
+id: block_content.mt_main_slideshow_block.default
+targetEntityType: block_content
+bundle: mt_main_slideshow_block
+mode: default
+content:
+  field_mt_main_slideshow_layout:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mt_main_slideshow_slide:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_mt_ms_background_opacity:
+    weight: 12
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_mt_ms_bullets_position:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mt_ms_effect:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mt_ms_effect_duration:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_mt_ms_ignore_header_height:
+    weight: 6
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_mt_ms_initial_height:
+    weight: 7
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_mt_ms_navigation_style:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mt_ms_touch_swipe_nav:
+    weight: 11
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,23 @@
+uuid: 7076e972-0211-432f-bcd6-a2311faf3e4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_twitter_feed
+    - node.type.page
+  module:
+    - twitter_embed
+id: node.page.field_twitter_feed
+field_name: field_twitter_feed
+entity_type: node
+bundle: page
+label: 'Twitter feed'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '@aplusifyllc'
+default_value_callback: ''
+settings: {  }
+field_type: twitter_embed_field

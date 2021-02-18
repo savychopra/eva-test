@@ -1,0 +1,19 @@
+uuid: 3cd7e5a3-2352-4a0e-a062-7de357f23ba9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_city
+    - node.type.tradeshow
+id: node.tradeshow.field_city
+field_name: field_city
+entity_type: node
+bundle: tradeshow
+label: City
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

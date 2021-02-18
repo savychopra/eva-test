@@ -1,0 +1,14 @@
+uuid: 1ccc6f98-8604-4a69-ab6b-b859122afb80
+langcode: en
+status: true
+dependencies: {  }
+id: attendees
+label: Attendees
+weight: 5
+is_admin: null
+permissions:
+  - 'RAC update attendees'
+  - RAC_view_attendees
+  - 'rabbit hole bypass node'
+  - 'rabbit hole bypass taxonomy_term'
+  - 'rabbit hole bypass user'

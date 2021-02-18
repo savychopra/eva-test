@@ -1,0 +1,23 @@
+uuid: 827b0fc2-6f28-40d2-b68f-04b9f1c457dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting_expiry
+    - node.type.zoom_meeting
+  module:
+    - datetime
+_core:
+  default_config_hash: zbCPaaCX0ltCg28fJhd4jfIOUllgnokt0GZ5jLDE-AU
+id: node.zoom_meeting.field_meeting_expiry
+field_name: field_meeting_expiry
+entity_type: node
+bundle: zoom_meeting
+label: Expiry
+description: 'Date and time when this record is no longer necessary. Leave blank for permanent.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

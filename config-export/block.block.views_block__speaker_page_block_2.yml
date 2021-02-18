@@ -1,0 +1,30 @@
+uuid: 9a4d44e2-0170-4c69-8599-6b25c689798c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.speaker_page
+  module:
+    - system
+    - views
+  theme:
+    - conferenceplus
+id: views_block__speaker_page_block_2
+theme: conferenceplus
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:speaker_page-block_2'
+settings:
+  id: 'views_block:speaker_page-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /speakers
+    negate: false
+    context_mapping: {  }

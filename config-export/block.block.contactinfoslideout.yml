@@ -1,0 +1,31 @@
+uuid: 19fbd9e1-d81e-4714-a1e2-fb520093f7d7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:289e95e0-6f1d-40f8-961a-fe8a21410288'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: contactinfoslideout
+theme: conferenceplus
+region: slideout
+weight: -63
+provider: null
+plugin: 'block_content:289e95e0-6f1d-40f8-961a-fe8a21410288'
+settings:
+  id: 'block_content:289e95e0-6f1d-40f8-961a-fe8a21410288'
+  label: 'Contact Info (Slideout)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/17
+    negate: false
+    context_mapping: {  }

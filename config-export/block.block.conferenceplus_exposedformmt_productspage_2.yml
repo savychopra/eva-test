@@ -1,0 +1,29 @@
+uuid: ccf0d776-467c-4abf-abc7-7ff23e0f608d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_products
+  module:
+    - system
+    - views
+  theme:
+    - conferenceplus
+id: conferenceplus_exposedformmt_productspage_2
+theme: conferenceplus
+region: sidebar_first
+weight: -53
+provider: null
+plugin: 'views_exposed_filter_block:mt_products-page_2'
+settings:
+  id: 'views_exposed_filter_block:mt_products-page_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /merchandise-3-col
+    negate: false
+    context_mapping: {  }

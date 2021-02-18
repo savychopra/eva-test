@@ -1,0 +1,15 @@
+uuid: 257341b9-e611-4ee3-babc-e4b760e2e73d
+langcode: en
+status: true
+dependencies: {  }
+name: mt_product_image
+label: 'Product Image (750x750)'
+effects:
+  0226ade6-69e2-4274-8e93-889d1dcf4401:
+    uuid: 0226ade6-69e2-4274-8e93-889d1dcf4401
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 750
+      height: 750
+      anchor: center-center

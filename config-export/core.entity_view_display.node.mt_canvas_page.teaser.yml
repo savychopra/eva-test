@@ -1,0 +1,30 @@
+uuid: 6d5ee254-fdeb-4033-8687-244722a305c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_canvas_page.field_mt_cnv_body
+    - node.type.mt_canvas_page
+  module:
+    - text
+    - user
+id: node.mt_canvas_page.teaser
+targetEntityType: node
+bundle: mt_canvas_page
+mode: teaser
+content:
+  field_mt_cnv_body:
+    type: text_summary_or_trimmed
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

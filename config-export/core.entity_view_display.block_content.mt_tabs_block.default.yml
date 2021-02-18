@@ -1,0 +1,22 @@
+uuid: 98949051-6c07-442c-84ac-38b0eefae150
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_tabs_block
+    - field.field.block_content.mt_tabs_block.field_mt_block_reference
+id: block_content.mt_tabs_block.default
+targetEntityType: block_content
+bundle: mt_tabs_block
+mode: default
+content:
+  field_mt_block_reference:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: bd2a0803-73ef-494f-8c39-3a4af2ff61b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+_core:
+  default_config_hash: k3HB4AMvtoe9T1RYshAStb-m02X01VLsxoRGaiz-jZs
+id: node.field_meeting_user
+field_name: field_meeting_user
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

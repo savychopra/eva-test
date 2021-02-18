@@ -1,0 +1,19 @@
+uuid: b186b011-3386-453b-b481-b2be1c3bd678
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_fltt_title
+    - paragraphs.paragraphs_type.mt_featured_linked_text_tile
+id: paragraph.mt_featured_linked_text_tile.field_mt_fltt_title
+field_name: field_mt_fltt_title
+entity_type: paragraph
+bundle: mt_featured_linked_text_tile
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,7 @@
+uuid: 24ad0c0b-6cc6-4e8b-bc1c-289da941938a
+langcode: en
+status: true
+dependencies: {  }
+name: mt_slideshow_fullscreen
+label: 'Slideshow Full Screen'
+effects: {  }

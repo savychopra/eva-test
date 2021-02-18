@@ -1,0 +1,14 @@
+uuid: 00080ae8-f4d3-4815-9688-2f49591aa353
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sponsor_user_type
+id: taxonomy_vocabulary_sponsor_user_type
+entity_type_id: taxonomy_vocabulary
+entity_id: sponsor_user_type
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

@@ -1,0 +1,19 @@
+uuid: fe94388f-8916-414f-8c24-363021492f00
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_mt_highlight_link
+field_name: field_mt_highlight_link
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

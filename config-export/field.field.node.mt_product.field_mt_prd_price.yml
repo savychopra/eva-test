@@ -1,0 +1,19 @@
+uuid: 723f0719-8d77-42da-b1e9-7466933da6a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prd_price
+    - node.type.mt_product
+id: node.mt_product.field_mt_prd_price
+field_name: field_mt_prd_price
+entity_type: node
+bundle: mt_product
+label: Price
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

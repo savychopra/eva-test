@@ -1,0 +1,14 @@
+uuid: 3ed458d4-9eb8-4bcf-9b0c-bc1dd069640e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.cache_clear
+  module:
+    - user
+id: user_remove_role_action.cache_clear
+label: 'Remove the Cache clear role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: cache_clear

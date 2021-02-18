@@ -1,0 +1,31 @@
+uuid: 8ec5b9aa-b553-49bf-822b-e33bb48e211d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user
+    - node.type.tradeshow
+id: node.tradeshow.field_user
+field_name: field_user
+entity_type: node
+bundle: tradeshow
+label: 'Exhibitor contact Person'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: role
+      role:
+        administrator: administrator
+        eva_user: eva_user
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

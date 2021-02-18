@@ -1,0 +1,15 @@
+debug_requests: 1
+consumer_key: 91259be1-8b59-4a49-bac3-f8de2982a54c
+consumer_secret: 0CchU2CBn6H7ixCYF07JLBi7
+site_url: 'http://virtualconference.evareg.com'
+sync_content_type: mt_event
+group_webinars: null
+published: null
+webinar_key: null
+webinar_title: null
+webinar_url: null
+webinar_description: null
+experience_type: null
+recurrence_type: null
+webinar_date: null
+secret_key: c62363b6-8883-4c47-bbcc-f205ea4f4113

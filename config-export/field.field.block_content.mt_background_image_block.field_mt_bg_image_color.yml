@@ -1,0 +1,23 @@
+uuid: bc3df0d5-dd6b-4c97-b05b-6f6476b39928
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_background_image_block
+    - field.storage.block_content.field_mt_bg_image_color
+  module:
+    - options
+id: block_content.mt_background_image_block.field_mt_bg_image_color
+field_name: field_mt_bg_image_color
+entity_type: block_content
+bundle: mt_background_image_block
+label: 'Background Image Overlay Color'
+description: 'From the drop-down menu, select the color you prefer.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 'region--light-typography region--black-background'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,16 @@
+uuid: 075ac500-0b2a-4349-a1a6-68b8ef5b3fce
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.faq
+_core:
+  default_config_hash: fBTFlO4Vn5K4CouPtN_DVLcAnW4n6zQNo_XfD-CjhdM
+id: node_type_faq
+entity_type_id: node_type
+entity_id: faq
+action: page_redirect
+allow_override: 0
+redirect: /faqs
+redirect_code: 301
+redirect_fallback_action: access_denied

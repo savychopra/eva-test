@@ -1,0 +1,34 @@
+uuid: 4da315a2-89b9-48ce-a469-5f1ccc114c9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_dropdowns_block
+    - field.field.block_content.mt_dropdowns_block.field_mt_dropdown
+  module:
+    - paragraphs
+id: block_content.mt_dropdowns_block.default
+targetEntityType: block_content
+bundle: mt_dropdowns_block
+mode: default
+content:
+  field_mt_dropdown:
+    type: entity_reference_paragraphs
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

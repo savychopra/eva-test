@@ -1,0 +1,25 @@
+uuid: f919370f-158b-4d67-a9a3-1d5c07958590
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_related_presentations_2
+  module:
+    - views
+  theme:
+    - conferenceplus
+id: views_block__mt_related_presentations_2_block_1
+theme: conferenceplus
+region: hidden_blocks_collection
+weight: -62
+provider: null
+plugin: 'views_block:mt_related_presentations_2-block_1'
+settings:
+  id: 'views_block:mt_related_presentations_2-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

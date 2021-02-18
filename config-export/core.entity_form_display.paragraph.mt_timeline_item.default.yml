@@ -1,0 +1,43 @@
+uuid: 8e4ae787-0a8a-48de-a52a-6b2b8ff35ea3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_timeline_item.field_mt_tml_timeline_date
+    - field.field.paragraph.mt_timeline_item.field_mt_tml_timeline_link
+    - field.field.paragraph.mt_timeline_item.field_mt_tml_timeline_title
+    - paragraphs.paragraphs_type.mt_timeline_item
+  module:
+    - datetime
+    - link
+id: paragraph.mt_timeline_item.default
+targetEntityType: paragraph
+bundle: mt_timeline_item
+mode: default
+content:
+  field_mt_tml_timeline_date:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_mt_tml_timeline_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_mt_tml_timeline_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

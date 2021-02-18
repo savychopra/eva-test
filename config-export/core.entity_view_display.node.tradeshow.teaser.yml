@@ -1,0 +1,72 @@
+uuid: 925a8f91-7a77-448b-a5aa-1f9e72fb14ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tradeshow.body
+    - field.field.node.tradeshow.field_assigned_to
+    - field.field.node.tradeshow.field_booth_image
+    - field.field.node.tradeshow.field_city
+    - field.field.node.tradeshow.field_country
+    - field.field.node.tradeshow.field_keynotes_video
+    - field.field.node.tradeshow.field_metatags
+    - field.field.node.tradeshow.field_mt_tmm_linkedin_account
+    - field.field.node.tradeshow.field_phone
+    - field.field.node.tradeshow.field_sponser_category
+    - field.field.node.tradeshow.field_sponser_email
+    - field.field.node.tradeshow.field_sponser_facebook
+    - field.field.node.tradeshow.field_sponser_twitter
+    - field.field.node.tradeshow.field_sponsor_category_type
+    - field.field.node.tradeshow.field_state
+    - field.field.node.tradeshow.field_status
+    - field.field.node.tradeshow.field_street_1
+    - field.field.node.tradeshow.field_street_2
+    - field.field.node.tradeshow.field_upload_
+    - field.field.node.tradeshow.field_user
+    - field.field.node.tradeshow.field_website
+    - field.field.node.tradeshow.field_zip
+    - node.type.tradeshow
+  module:
+    - text
+    - user
+id: node.tradeshow.teaser
+targetEntityType: node
+bundle: tradeshow
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_assigned_to: true
+  field_booth_image: true
+  field_city: true
+  field_country: true
+  field_keynotes_video: true
+  field_metatags: true
+  field_mt_tmm_linkedin_account: true
+  field_phone: true
+  field_sponser_category: true
+  field_sponser_email: true
+  field_sponser_facebook: true
+  field_sponser_twitter: true
+  field_sponsor_category_type: true
+  field_state: true
+  field_status: true
+  field_street_1: true
+  field_street_2: true
+  field_upload_: true
+  field_user: true
+  field_website: true
+  field_zip: true

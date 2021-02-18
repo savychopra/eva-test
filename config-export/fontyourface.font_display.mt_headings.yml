@@ -1,0 +1,10 @@
+uuid: 613e21fb-42c6-4714-a5b9-aee9a09b245a
+langcode: en
+status: true
+dependencies: {  }
+id: mt_headings
+label: Headings
+font_url: 'http://www.google.com/webfonts/family?family=Nunito&subset=latin#700'
+fallback: 'Helvetica Neue, Arial, sans-serif'
+selectors: ".hff-fyf h1,\r\n.hff-fyf h2,\r\n.hff-fyf h3,\r\n.hff-fyf h4,\r\n.hff-fyf h5,\r\n.hff-fyf h6,\r\n.hff-fyf .tp-caption__title,\r\n.hff-fyf .tp-caption__subtitle,\r\n.hff-fyf .field--name-field-mt-highlight-title,\r\n.hff-fyf .nav-tab__title,\r\n.hff-fyf .views-field-field-mt-price"
+theme: topplus

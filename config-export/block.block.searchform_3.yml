@@ -1,0 +1,27 @@
+uuid: 275c0f18-d478-4a9c-afc5-b3c2acc4b188
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+    - system
+  theme:
+    - conferenceplus
+id: searchform_3
+theme: conferenceplus
+region: header_top_first
+weight: -59
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/40\r\n/node/53\r\n/node/63\r\n*"
+    negate: true
+    context_mapping: {  }

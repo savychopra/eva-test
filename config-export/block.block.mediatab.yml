@@ -1,0 +1,31 @@
+uuid: e9dcb22d-2737-4612-90f0-7cc2e4707b30
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_media_tabs_block:735a20a1-935e-461e-8ddf-5a4fdc521f23'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: mediatab
+theme: conferenceplus
+region: content_top
+weight: -65
+provider: null
+plugin: 'block_content:735a20a1-935e-461e-8ddf-5a4fdc521f23'
+settings:
+  id: 'block_content:735a20a1-935e-461e-8ddf-5a4fdc521f23'
+  label: 'Media Tab'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }

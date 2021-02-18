@@ -1,0 +1,21 @@
+uuid: 8abc1eaa-d3a1-4acb-b5e0-db8123148eab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_track
+    - node.type.mt_event
+  module:
+    - options
+id: node.mt_event.field_session_track
+field_name: field_session_track
+entity_type: node
+bundle: mt_event
+label: 'Session track'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

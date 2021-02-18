@@ -1,0 +1,21 @@
+uuid: 2727f19a-5f06-4bdc-84de-a03588fa9653
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_fli_shape
+    - paragraphs.paragraphs_type.mt_fancy_linked_image
+  module:
+    - options
+id: paragraph.mt_fancy_linked_image.field_mt_fli_shape
+field_name: field_mt_fli_shape
+entity_type: paragraph
+bundle: mt_fancy_linked_image
+label: Shape
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

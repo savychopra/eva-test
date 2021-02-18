@@ -1,0 +1,31 @@
+uuid: a7a028b7-625b-4f84-99ee-037bce14ee9f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4afd36a9-3c0d-4d0e-b120-cd814ff11504'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: headertopctabuttons
+theme: conferenceplus
+region: header_top_highlighted_first
+weight: 0
+provider: null
+plugin: 'block_content:4afd36a9-3c0d-4d0e-b120-cd814ff11504'
+settings:
+  id: 'block_content:4afd36a9-3c0d-4d0e-b120-cd814ff11504'
+  label: 'Header Top CtA buttons'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/63\r\n/node/53\r\n/node/40\r\n/node/17"
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,54 @@
+uuid: d26fa8bc-555a-4c12-b614-2ee51df1e025
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_additional_feature.field_mt_adf_body
+    - field.field.paragraph.mt_additional_feature.field_mt_adf_fa_icon
+    - field.field.paragraph.mt_additional_feature.field_mt_adf_image
+    - field.field.paragraph.mt_additional_feature.field_mt_adf_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.mt_additional_feature
+  module:
+    - fontawesome
+    - image
+    - text
+id: paragraph.mt_additional_feature.default
+targetEntityType: paragraph
+bundle: mt_additional_feature
+mode: default
+content:
+  field_mt_adf_body:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_mt_adf_fa_icon:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: fontawesome_icon_widget
+    region: content
+  field_mt_adf_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_mt_adf_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

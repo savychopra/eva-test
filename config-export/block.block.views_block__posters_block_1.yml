@@ -1,0 +1,30 @@
+uuid: 7937e31d-7346-4d94-81f7-4b0ba7ea5051
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.posters
+  module:
+    - system
+    - views
+  theme:
+    - conferenceplus
+id: views_block__posters_block_1
+theme: conferenceplus
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:posters-block_1'
+settings:
+  id: 'views_block:posters-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /posters
+    negate: false
+    context_mapping: {  }

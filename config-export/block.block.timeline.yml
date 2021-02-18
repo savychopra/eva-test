@@ -1,0 +1,31 @@
+uuid: 5cb79725-1721-47cc-92a2-5e24596b9ab8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_timeline_block:d9b4a11a-f5d2-4a65-a0ae-daea2c7f0b0a'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: timeline
+theme: conferenceplus
+region: content
+weight: -54
+provider: null
+plugin: 'block_content:d9b4a11a-f5d2-4a65-a0ae-daea2c7f0b0a'
+settings:
+  id: 'block_content:d9b4a11a-f5d2-4a65-a0ae-daea2c7f0b0a'
+  label: 'Important Dates and Events'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "\r\n/node/16\r\n/node/17\r\n/node/40\r\n/node/53\r\n/node/54\r\n/node/55\r\n/node/59\r\n/node/63\r\n/node/82\r\n/blocks\r\n/alternative-footer\r\n/mega-menu"
+    negate: false
+    context_mapping: {  }

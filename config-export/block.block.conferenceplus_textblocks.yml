@@ -1,0 +1,31 @@
+uuid: edf9f999-1021-4b99-9b16-790a40493b4c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:78f50698-8922-4e4c-ade4-531c59340958'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: conferenceplus_textblocks
+theme: conferenceplus
+region: content_top
+weight: -65
+provider: null
+plugin: 'block_content:78f50698-8922-4e4c-ade4-531c59340958'
+settings:
+  id: 'block_content:78f50698-8922-4e4c-ade4-531c59340958'
+  label: 'Text blocks'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }

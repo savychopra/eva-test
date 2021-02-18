@@ -1,0 +1,31 @@
+uuid: 1dbc52e8-b36c-46fe-b4a5-51a61c2477cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_fancy_linked_image.field_mt_fli_button_fa_icon
+    - field.field.paragraph.mt_fancy_linked_image.field_mt_fli_image
+    - field.field.paragraph.mt_fancy_linked_image.field_mt_fli_link
+    - field.field.paragraph.mt_fancy_linked_image.field_mt_fli_shape
+    - field.field.paragraph.mt_fancy_linked_image.field_mt_fli_title
+    - paragraphs.paragraphs_type.mt_fancy_linked_image
+id: paragraph.mt_fancy_linked_image.default
+targetEntityType: paragraph
+bundle: mt_fancy_linked_image
+mode: default
+content:
+  field_mt_fli_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  created: true
+  field_mt_fli_button_fa_icon: true
+  field_mt_fli_image: true
+  field_mt_fli_link: true
+  field_mt_fli_shape: true
+  uid: true

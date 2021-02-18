@@ -1,0 +1,22 @@
+uuid: 19b8eee9-a89d-4ded-84bc-bd0a2a593d54
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - conferenceplus
+_core:
+  default_config_hash: cD-1Zml8FeQT53O7roSR-kYl5Wm5SBzpwmw_zwLGjkE
+id: conferenceplus_messages
+theme: conferenceplus
+region: system_messages
+weight: -66
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

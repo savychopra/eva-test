@@ -1,0 +1,24 @@
+uuid: 47cbec45-aff5-4825-a53e-6095acd2c301
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_albums_carousel
+  module:
+    - views
+  theme:
+    - conferenceplus
+id: views_block__mt_albums_carousel_block_1
+theme: conferenceplus
+region: hidden_blocks_collection
+weight: 0
+provider: null
+plugin: 'views_block:mt_albums_carousel-block_1'
+settings:
+  id: 'views_block:mt_albums_carousel-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: 23216993-e812-4af4-b76f-19b6a6b97743
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_mt_spk_youtube_account
+field_name: field_mt_spk_youtube_account
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

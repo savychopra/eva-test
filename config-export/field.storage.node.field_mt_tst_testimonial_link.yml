@@ -1,0 +1,19 @@
+uuid: cffa24e8-0fa8-42b3-9776-dc4c9295af1e
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_mt_tst_testimonial_link
+field_name: field_mt_tst_testimonial_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

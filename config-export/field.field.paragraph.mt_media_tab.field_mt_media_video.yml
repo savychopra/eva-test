@@ -1,0 +1,25 @@
+uuid: df52ca38-e2c4-4642-bfdf-7913b7beb37a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_media_video
+    - paragraphs.paragraphs_type.mt_media_tab
+  module:
+    - video_embed_field
+id: paragraph.mt_media_tab.field_mt_media_video
+field_name: field_mt_media_video
+entity_type: paragraph
+bundle: mt_media_tab
+label: 'Media Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    youtube_playlist: '0'
+field_type: video_embed_field

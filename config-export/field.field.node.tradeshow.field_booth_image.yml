@@ -1,0 +1,38 @@
+uuid: 47becd37-8654-45ee-9250-334b43856751
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_booth_image
+    - node.type.tradeshow
+  module:
+    - image
+id: node.tradeshow.field_booth_image
+field_name: field_booth_image
+entity_type: node
+bundle: tradeshow
+label: 'Booth Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

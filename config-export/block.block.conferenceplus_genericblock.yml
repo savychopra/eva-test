@@ -1,0 +1,31 @@
+uuid: 245666af-c45e-4c0e-9f1e-f3f351a05410
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fae21d9e-1b0b-418f-b1a1-e4f297688838'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: conferenceplus_genericblock
+theme: conferenceplus
+region: sidebar_first
+weight: -55
+provider: null
+plugin: 'block_content:fae21d9e-1b0b-418f-b1a1-e4f297688838'
+settings:
+  id: 'block_content:fae21d9e-1b0b-418f-b1a1-e4f297688838'
+  label: 'Generic Block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/5
+    negate: false
+    context_mapping: {  }

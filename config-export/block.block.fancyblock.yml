@@ -1,0 +1,31 @@
+uuid: b76de573-35bc-4a48-9394-c7f2643c835f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1f5fa21d-094d-4e89-abf6-07aa1e532066'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: fancyblock
+theme: conferenceplus
+region: featured_top
+weight: -57
+provider: null
+plugin: 'block_content:1f5fa21d-094d-4e89-abf6-07aa1e532066'
+settings:
+  id: 'block_content:1f5fa21d-094d-4e89-abf6-07aa1e532066'
+  label: 'Fancy block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }

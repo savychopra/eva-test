@@ -1,0 +1,73 @@
+uuid: d8fdcf29-f7e0-4ff1-87c2-6626554d08cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_background_image_block
+    - field.field.block_content.mt_background_image_block.field_mt_background_image
+    - field.field.block_content.mt_background_image_block.field_mt_bg_image_color
+    - field.field.block_content.mt_background_image_block.field_mt_bg_image_layout_mode
+    - field.field.block_content.mt_background_image_block.field_mt_bg_image_opacity
+    - field.field.block_content.mt_background_image_block.field_mt_bg_image_positioning
+    - field.field.block_content.mt_background_image_block.field_mt_block_reference
+    - image.style.thumbnail
+  module:
+    - image
+id: block_content.mt_background_image_block.default
+targetEntityType: block_content
+bundle: mt_background_image_block
+mode: default
+content:
+  field_mt_background_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_mt_bg_image_color:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mt_bg_image_layout_mode:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mt_bg_image_opacity:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_mt_bg_image_positioning:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_mt_block_reference:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

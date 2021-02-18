@@ -1,0 +1,26 @@
+uuid: 4cc1d721-627f-4614-9a52-1b009c4ed075
+langcode: en
+status: true
+dependencies:
+  module:
+    - quicktabs
+    - system
+  theme:
+    - conferenceplus
+id: quicktabsscheduleataglance
+theme: conferenceplus
+region: content
+weight: -47
+provider: null
+plugin: 'quicktabs_block:schedule_at_a_glance'
+settings:
+  id: 'quicktabs_block:schedule_at_a_glance'
+  label: 'QuickTabs - Schedule at a glance'
+  provider: quicktabs
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /schedule-at-a-glance
+    negate: false
+    context_mapping: {  }

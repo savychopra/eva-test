@@ -1,0 +1,31 @@
+uuid: a4874823-c657-4b5f-9152-af00321eecd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user
+    - node.type.mt_sponsor
+id: node.mt_sponsor.field_user
+field_name: field_user
+entity_type: node
+bundle: mt_sponsor
+label: 'Exhibitor contact Person'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: role
+      role:
+        administrator: administrator
+        eva_user: eva_user
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: true
+field_type: entity_reference

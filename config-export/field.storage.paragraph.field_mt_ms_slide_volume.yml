@@ -1,0 +1,20 @@
+uuid: a6eadfdb-8d35-40b1-b64a-e0ed97d4cf01
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_mt_ms_slide_volume
+field_name: field_mt_ms_slide_volume
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

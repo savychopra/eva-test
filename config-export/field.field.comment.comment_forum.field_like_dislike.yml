@@ -1,0 +1,25 @@
+uuid: 2d73677c-53db-43d0-b468-61e113c5bc14
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_forum
+    - field.storage.comment.field_like_dislike
+  module:
+    - like_dislike
+id: comment.comment_forum.field_like_dislike
+field_name: field_like_dislike
+entity_type: comment
+bundle: comment_forum
+label: Like_dislike
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    likes: '0'
+    dislikes: '0'
+    clicked_by: null
+default_value_callback: ''
+settings: {  }
+field_type: like_dislike

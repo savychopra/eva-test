@@ -1,0 +1,15 @@
+uuid: 353ae0ce-eb4e-4d21-9625-f845dd7ff0d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.add_to_schedule_events
+  module:
+    - flag
+id: flag_action.add_to_schedule_events_flag
+label: 'Add to Schedule'
+type: node
+plugin: 'flag_action:add_to_schedule_events_flag'
+configuration:
+  flag_id: add_to_schedule_events
+  flag_action: flag

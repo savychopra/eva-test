@@ -1,0 +1,14 @@
+uuid: 0f3e7c71-c825-40ef-854b-a27478a56208
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.attendees
+  module:
+    - user
+id: user_add_role_action.attendees
+label: 'Add the Attendees role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: attendees

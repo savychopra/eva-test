@@ -1,0 +1,31 @@
+uuid: 69c542e9-888c-4797-bdbe-7a04ed5adc2e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:14d16969-6207-4173-82a4-bbc2e6eef6a2'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: iconssubfooter
+theme: conferenceplus
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:14d16969-6207-4173-82a4-bbc2e6eef6a2'
+settings:
+  id: 'block_content:14d16969-6207-4173-82a4-bbc2e6eef6a2'
+  label: 'Icons (subfooter)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }

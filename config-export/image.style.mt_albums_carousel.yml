@@ -1,0 +1,15 @@
+uuid: c7f63738-8e70-4b2d-87e0-449906ddde64
+langcode: en
+status: true
+dependencies: {  }
+name: mt_albums_carousel
+label: 'Event Gallery (750x750)'
+effects:
+  72cb7759-15f2-46dc-bce2-f72a12e53952:
+    uuid: 72cb7759-15f2-46dc-bce2-f72a12e53952
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 750
+      height: 750
+      anchor: center-center

@@ -1,0 +1,10 @@
+uuid: 2477394c-d822-40c7-a92a-5ed635bfff9b
+langcode: en
+status: true
+dependencies: {  }
+id: mt_paragraph
+label: Paragraph
+font_url: 'http://www.google.com/webfonts/family?family=Nunito&subset=latin#regular'
+fallback: 'Helvetica Neue, Arial, sans-serif'
+selectors: body.pff-fyf
+theme: topplus

@@ -1,0 +1,52 @@
+uuid: 9f9acc6e-12f7-4fe7-aaaf-e38cea563693
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.mt_video_grid_item
+    - field.field.node.mt_service.field_mt_srv_banner_image
+    - field.field.node.mt_service.field_mt_srv_body
+    - field.field.node.mt_service.field_mt_srv_buy_link
+    - field.field.node.mt_service.field_mt_srv_highlight
+    - field.field.node.mt_service.field_mt_srv_image
+    - field.field.node.mt_service.field_mt_srv_price
+    - field.field.node.mt_service.field_mt_srv_service_tags
+    - field.field.node.mt_service.field_mt_srv_subheader_body
+    - field.field.node.mt_service.field_mt_srv_video
+    - image.style.large
+    - node.type.mt_service
+  module:
+    - text
+    - user
+    - video_embed_field
+id: node.mt_service.mt_video_grid_item
+targetEntityType: node
+bundle: mt_service
+mode: mt_video_grid_item
+content:
+  field_mt_srv_body:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 100
+    third_party_settings: {  }
+    type: text_summary_or_trimmed
+    region: content
+  field_mt_srv_video:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      link_image_to: content
+    third_party_settings: {  }
+    type: video_embed_field_thumbnail
+    region: content
+hidden:
+  field_mt_srv_banner_image: true
+  field_mt_srv_buy_link: true
+  field_mt_srv_highlight: true
+  field_mt_srv_image: true
+  field_mt_srv_price: true
+  field_mt_srv_service_tags: true
+  field_mt_srv_subheader_body: true
+  links: true

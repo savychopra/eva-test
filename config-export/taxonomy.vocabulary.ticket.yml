@@ -1,0 +1,8 @@
+uuid: fb036794-ec1f-4385-ae24-8a2a3dfdab93
+langcode: en
+status: true
+dependencies: {  }
+name: Ticket
+vid: ticket
+description: ''
+weight: 0

@@ -1,0 +1,20 @@
+uuid: 3812ab0b-108c-44c0-92c3-d62ed70aed61
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_mt_ms_initial_height
+field_name: field_mt_ms_initial_height
+entity_type: block_content
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

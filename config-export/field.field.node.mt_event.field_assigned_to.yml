@@ -1,0 +1,31 @@
+uuid: 957b27f6-b8c8-4c42-8d8b-a5d1949ffc72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_assigned_to
+    - node.type.mt_event
+id: node.mt_event.field_assigned_to
+field_name: field_assigned_to
+entity_type: node
+bundle: mt_event
+label: 'Assigned to'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: role
+      role:
+        administrator: administrator
+        eva_user: eva_user
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

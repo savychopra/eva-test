@@ -1,0 +1,30 @@
+uuid: 1adba593-91fc-4156-875a-84e26a8bcba9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.mt-footer-menu-three
+  module:
+    - system
+  theme:
+    - conferenceplus
+id: usefullinks_2
+theme: conferenceplus
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:mt-footer-menu-three'
+settings:
+  id: 'system_menu_block:mt-footer-menu-three'
+  label: 'Useful Links'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/60
+    negate: false
+    context_mapping: {  }

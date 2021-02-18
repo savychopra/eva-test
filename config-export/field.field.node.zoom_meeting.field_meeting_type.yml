@@ -1,0 +1,25 @@
+uuid: ce2682bc-b43d-4470-8f81-b7a7386d4ed0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting_type
+    - node.type.zoom_meeting
+_core:
+  default_config_hash: 11E-fzsFh3Nfz5goskKFrzejBaIK5vy5mbDikqcxJ_k
+id: node.zoom_meeting.field_meeting_type
+field_name: field_meeting_type
+entity_type: node
+bundle: zoom_meeting
+label: 'Meeting Type'
+description: 'The Zoom meeting type. (1 instant, 2 normal scheduled, 3 recurring no fixed time, 8 recurring fixed time.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 9
+  prefix: ''
+  suffix: ''
+field_type: integer

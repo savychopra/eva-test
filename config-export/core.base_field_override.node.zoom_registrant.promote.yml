@@ -1,0 +1,24 @@
+uuid: 1efae309-fc3d-4b18-8011-1f373bddfd8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.zoom_registrant
+_core:
+  default_config_hash: VC-PQEm3QW-SpF68N5_ULQaihfij-8Coi473z14V5OM
+id: node.zoom_registrant.promote
+field_name: promote
+entity_type: node
+bundle: zoom_registrant
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

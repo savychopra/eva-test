@@ -1,0 +1,239 @@
+uuid: 813a86f2-e86b-4f2b-8f04-24cdbbfc8cbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mt_product.field_mt_prd_additional_features
+    - field.field.node.mt_product.field_mt_prd_availability
+    - field.field.node.mt_product.field_mt_prd_banner_carousel
+    - field.field.node.mt_product.field_mt_prd_body
+    - field.field.node.mt_product.field_mt_prd_buy_link
+    - field.field.node.mt_product.field_mt_prd_categories
+    - field.field.node.mt_product.field_mt_prd_content_tabs
+    - field.field.node.mt_product.field_mt_prd_highlight
+    - field.field.node.mt_product.field_mt_prd_image
+    - field.field.node.mt_product.field_mt_prd_landscape_image
+    - field.field.node.mt_product.field_mt_prd_most_popular
+    - field.field.node.mt_product.field_mt_prd_price
+    - field.field.node.mt_product.field_mt_prd_pricing_table_item
+    - field.field.node.mt_product.field_mt_prd_product_code
+    - field.field.node.mt_product.field_mt_prd_subheader_body
+    - field.field.node.mt_product.field_mt_prd_tags
+    - field.field.node.mt_product.field_mt_prd_video
+    - image.style.thumbnail
+    - node.type.mt_product
+  module:
+    - image
+    - link
+    - paragraphs
+    - path
+    - text
+    - video_embed_field
+id: node.mt_product.default
+targetEntityType: node
+bundle: mt_product
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_mt_prd_additional_features:
+    type: entity_reference_paragraphs
+    weight: 7
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_mt_prd_availability:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mt_prd_banner_carousel:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_mt_prd_body:
+    weight: 6
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_mt_prd_buy_link:
+    weight: 14
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_mt_prd_categories:
+    weight: 11
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_mt_prd_content_tabs:
+    type: entity_reference_paragraphs
+    weight: 15
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_mt_prd_highlight:
+    type: entity_reference_paragraphs
+    weight: 5
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_mt_prd_image:
+    weight: 4
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_mt_prd_landscape_image:
+    weight: 18
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_mt_prd_most_popular:
+    weight: 17
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_mt_prd_price:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_prd_pricing_table_item:
+    weight: 16
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_prd_product_code:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_prd_subheader_body:
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_mt_prd_tags:
+    weight: 12
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_mt_prd_video:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
+    region: content
+  path:
+    type: path
+    weight: 23
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 21
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 24
+    third_party_settings: {  }
+    region: content
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 22
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 19
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    region: content
+hidden: {  }

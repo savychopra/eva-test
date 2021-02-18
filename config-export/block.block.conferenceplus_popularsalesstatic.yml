@@ -1,0 +1,25 @@
+uuid: 91d5cd18-b645-4931-a189-da31fa3fc74e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1ff2a34d-0b1e-4d66-963b-78c08bf57aaa'
+  module:
+    - block_content
+  theme:
+    - conferenceplus
+id: conferenceplus_popularsalesstatic
+theme: conferenceplus
+region: hidden_blocks_collection
+weight: -62
+provider: null
+plugin: 'block_content:1ff2a34d-0b1e-4d66-963b-78c08bf57aaa'
+settings:
+  id: 'block_content:1ff2a34d-0b1e-4d66-963b-78c08bf57aaa'
+  label: 'Popular Sales (Static)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

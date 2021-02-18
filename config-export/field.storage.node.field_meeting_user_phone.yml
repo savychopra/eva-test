@@ -1,0 +1,21 @@
+uuid: 170e2ba0-0379-417e-a444-e2e3032074a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - telephone
+_core:
+  default_config_hash: UUqqzygDuZ-_zfjxEjGEnkElMgcLt3BSzlkUu_Pr58M
+id: node.field_meeting_user_phone
+field_name: field_meeting_user_phone
+entity_type: node
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

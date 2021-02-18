@@ -1,0 +1,19 @@
+uuid: 6bb17e9a-0602-4e16-b498-edbbb06e4015
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.sponsor_tradeshow_file_upload
+id: paragraph.sponsor_tradeshow_file_upload.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: sponsor_tradeshow_file_upload
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

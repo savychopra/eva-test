@@ -1,0 +1,21 @@
+uuid: 27600d21-8adf-4e90-903e-a9a67da53087
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone
+    - node.type.mt_sponsor
+  module:
+    - telephone
+id: node.mt_sponsor.field_phone
+field_name: field_phone
+entity_type: node
+bundle: mt_sponsor
+label: Phone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

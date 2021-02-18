@@ -1,0 +1,21 @@
+uuid: ccb5b206-faec-4c28-beab-be6c9ac87b3d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 38DY88-n16JzUQCiy0BAnzH_MV1dvgnKerKsKDZGnmw
+id: node.field_zoom_data
+field_name: field_zoom_data
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

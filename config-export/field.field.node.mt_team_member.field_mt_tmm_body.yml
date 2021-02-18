@@ -1,0 +1,23 @@
+uuid: 9ae356df-db03-4d39-a138-a2f0b569b950
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_tmm_body
+    - node.type.mt_team_member
+  module:
+    - text
+id: node.mt_team_member.field_mt_tmm_body
+field_name: field_mt_tmm_body
+entity_type: node
+bundle: mt_team_member
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

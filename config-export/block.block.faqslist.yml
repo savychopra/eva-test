@@ -1,0 +1,26 @@
+uuid: ea0921e9-f48c-4e59-962d-eae31a0648d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - varbase_faqs
+  theme:
+    - conferenceplus
+id: faqslist
+theme: conferenceplus
+region: content
+weight: 0
+provider: null
+plugin: faqs_list
+settings:
+  id: faqs_list
+  label: 'FAQs List'
+  provider: varbase_faqs
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /resources
+    negate: false
+    context_mapping: {  }

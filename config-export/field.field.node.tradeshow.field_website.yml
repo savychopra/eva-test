@@ -1,0 +1,19 @@
+uuid: a18ddf6a-39e3-4664-87e6-3c60e84d51c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_website
+    - node.type.tradeshow
+id: node.tradeshow.field_website
+field_name: field_website
+entity_type: node
+bundle: tradeshow
+label: 'Website '
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

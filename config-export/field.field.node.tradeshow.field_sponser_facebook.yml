@@ -1,0 +1,19 @@
+uuid: 19ac50b2-9e73-40e0-ba96-4e0a309011a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponser_facebook
+    - node.type.tradeshow
+id: node.tradeshow.field_sponser_facebook
+field_name: field_sponser_facebook
+entity_type: node
+bundle: tradeshow
+label: Facebook
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: af56190b-ddd8-4886-b51d-2fb00478fcc4
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - conferenceplus
+id: searchform_4
+theme: conferenceplus
+region: hidden_blocks_collection
+weight: -48
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

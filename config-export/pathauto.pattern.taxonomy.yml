@@ -1,0 +1,39 @@
+uuid: da6f9e8a-8f3e-4a33-9a16-eaa4e7808c48
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: taxonomy
+label: Taxonomy
+type: 'canonical_entities:taxonomy_term'
+pattern: '/[term:parent]/[term:name]'
+selection_criteria:
+  ba3af76d-aa4c-440e-94cf-424028c06fc7:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      font_classification: font_classification
+      font_designer: font_designer
+      font_foundry: font_foundry
+      font_tags: font_tags
+      languages_supported: languages_supported
+      mt_affiliations: mt_affiliations
+      mt_album_categories: mt_album_categories
+      mt_collections: mt_collections
+      mt_event_categories: mt_event_categories
+      mt_presentation_categories: mt_presentation_categories
+      mt_program_entry_categories: mt_program_entry_categories
+      mt_service_tags: mt_service_tags
+      mt_session: mt_session
+      mt_topics: mt_topics
+      sponsers_category: sponsers_category
+      tags: tags
+      user_category: user_category
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: ba3af76d-aa4c-440e-94cf-424028c06fc7
+selection_logic: and
+weight: -5
+relationships: {  }

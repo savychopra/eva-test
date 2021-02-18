@@ -1,0 +1,34 @@
+uuid: 970c2840-8051-4de8-b2a7-9024e38e17ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_media_tab.field_mt_media_body
+    - field.field.paragraph.mt_media_tab.field_mt_media_button
+    - field.field.paragraph.mt_media_tab.field_mt_media_image
+    - field.field.paragraph.mt_media_tab.field_mt_media_tab_title
+    - field.field.paragraph.mt_media_tab.field_mt_media_title
+    - field.field.paragraph.mt_media_tab.field_mt_media_video
+    - paragraphs.paragraphs_type.mt_media_tab
+  module:
+    - text
+id: paragraph.mt_media_tab.default
+targetEntityType: paragraph
+bundle: mt_media_tab
+mode: default
+content:
+  field_mt_media_body:
+    type: text_default
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_mt_media_button: true
+  field_mt_media_image: true
+  field_mt_media_tab_title: true
+  field_mt_media_title: true
+  field_mt_media_video: true
+  uid: true

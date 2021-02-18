@@ -1,0 +1,23 @@
+uuid: 2fa081a9-bad1-445e-9266-fa3cd3b7291c
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - field_permissions
+    - like_dislike
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: comment.field_like_dislike
+field_name: field_like_dislike
+entity_type: comment
+type: like_dislike
+settings: {  }
+module: like_dislike
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

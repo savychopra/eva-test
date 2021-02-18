@@ -1,0 +1,31 @@
+uuid: c0036d15-91a7-4700-bc8a-053eae359499
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_background_image_block:304c9d2f-87b7-4220-aa9a-cc1522ea0dd7'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: calltoaction2
+theme: conferenceplus
+region: content_top_highlighted
+weight: 0
+provider: null
+plugin: 'block_content:304c9d2f-87b7-4220-aa9a-cc1522ea0dd7'
+settings:
+  id: 'block_content:304c9d2f-87b7-4220-aa9a-cc1522ea0dd7'
+  label: 'Call to action 2'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }

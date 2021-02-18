@@ -1,0 +1,21 @@
+uuid: 4aa7ac7b-5cca-49e3-b6b6-6b07e64af50e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user_type
+    - node.type.mt_sponsor
+  module:
+    - options
+id: node.mt_sponsor.field_user_type
+field_name: field_user_type
+entity_type: node
+bundle: mt_sponsor
+label: 'User Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

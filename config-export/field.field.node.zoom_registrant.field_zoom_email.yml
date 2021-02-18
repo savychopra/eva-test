@@ -1,0 +1,21 @@
+uuid: 92e3b185-acf0-48f1-ab35-6aa2ac78d075
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zoom_email
+    - node.type.zoom_registrant
+_core:
+  default_config_hash: 4e8fwbeD_Zhs80wJy4SLt_LdvaY2ur8w88uuMUOi0Rk
+id: node.zoom_registrant.field_zoom_email
+field_name: field_zoom_email
+entity_type: node
+bundle: zoom_registrant
+label: Email
+description: 'A valid email address.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,30 @@
+uuid: fcbcf865-bdde-499c-a704-51026a70e919
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_sponsors_carousel
+  module:
+    - system
+    - views
+  theme:
+    - conferenceplus
+id: views_block__mt_sponsors_carousel_block_1
+theme: conferenceplus
+region: highlighted
+weight: -65
+provider: null
+plugin: 'views_block:mt_sponsors_carousel-block_1'
+settings:
+  id: 'views_block:mt_sponsors_carousel-block_1'
+  label: 'Our Sponsors'
+  provider: views
+  label_display: visible
+  views_label: 'Our Sponsors'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/node/16\r\n/node/17\r\n/node/40\r\n/node/53\r\n/node/54\r\n/node/55\r\n/node/59\r\n/node/63\r\n/node/82\r\n/node/94\r\n/blocks\r\n/alternative-footer\r\n/mega-menu"
+    negate: false
+    context_mapping: {  }

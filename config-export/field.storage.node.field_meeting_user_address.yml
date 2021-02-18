@@ -1,0 +1,21 @@
+uuid: 403af158-a5e0-44b9-bba4-160a6099cdf5
+langcode: en
+status: true
+dependencies:
+  module:
+    - address
+    - node
+_core:
+  default_config_hash: nlI7F_EP9lnJ9jOnEQFEP63jvLe9ybjc66J9UpPhLTo
+id: node.field_meeting_user_address
+field_name: field_meeting_user_address
+entity_type: node
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

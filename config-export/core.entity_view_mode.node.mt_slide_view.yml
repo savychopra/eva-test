@@ -1,0 +1,10 @@
+uuid: e37271ae-777c-4c26-9a0c-13044d7c9d46
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.mt_slide_view
+label: 'Slide View'
+targetEntityType: node
+cache: true

@@ -1,0 +1,23 @@
+uuid: c93449a4-013c-494d-9fe4-14299f602bc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_spn_body
+    - node.type.mt_sponsor
+  module:
+    - text
+id: node.mt_sponsor.field_mt_spn_body
+field_name: field_mt_spn_body
+entity_type: node
+bundle: mt_sponsor
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,23 @@
+uuid: c390feb5-cae9-4743-a89f-82757cfe5b20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_if_link
+    - paragraphs.paragraphs_type.mt_icon_features
+  module:
+    - link
+id: paragraph.mt_icon_features.field_mt_if_link
+field_name: field_mt_if_link
+entity_type: paragraph
+bundle: mt_icon_features
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

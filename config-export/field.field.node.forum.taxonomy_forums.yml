@@ -1,0 +1,30 @@
+uuid: 2e003c47-7ac9-4375-8a70-3acf862e33e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_forums
+    - node.type.forum
+    - taxonomy.vocabulary.forums
+_core:
+  default_config_hash: n0THs2iyQuOn2Iz8VTb6TgdPrniPS352uPVlCADxnn4
+id: node.forum.taxonomy_forums
+field_name: taxonomy_forums
+entity_type: node
+bundle: forum
+label: Community
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      forums: forums
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

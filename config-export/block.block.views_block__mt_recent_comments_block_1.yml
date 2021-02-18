@@ -1,0 +1,30 @@
+uuid: afdb7db5-0679-497e-99fd-272991ca6324
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_recent_comments
+  module:
+    - system
+    - views
+  theme:
+    - conferenceplus
+id: views_block__mt_recent_comments_block_1
+theme: conferenceplus
+region: footer_fourth
+weight: -66
+provider: null
+plugin: 'views_block:mt_recent_comments-block_1'
+settings:
+  id: 'views_block:mt_recent_comments-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '*'
+    negate: true
+    context_mapping: {  }

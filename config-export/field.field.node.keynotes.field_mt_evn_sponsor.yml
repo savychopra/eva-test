@@ -1,0 +1,28 @@
+uuid: aeed57c3-e320-4f61-8b82-405f97c10f5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_evn_sponsor
+    - node.type.keynotes
+    - node.type.mt_sponsor
+id: node.keynotes.field_mt_evn_sponsor
+field_name: field_mt_evn_sponsor
+entity_type: node
+bundle: keynotes
+label: Sponsor
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      mt_sponsor: mt_sponsor
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

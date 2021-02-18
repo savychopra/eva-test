@@ -1,0 +1,111 @@
+uuid: 9a0facd1-d159-4bf7-81f8-049599ac6020
+langcode: en
+status: true
+dependencies: {  }
+id: sessions_by_track
+label: 'Sessions by track'
+renderer: quick_tabs
+options:
+  quick_tabs:
+    class: ''
+    style: ''
+    ajax: false
+  accordion_tabs:
+    jquery_ui:
+      collapsible: false
+      heightStyle: auto
+hide_empty_tabs: false
+default_tab: 9999
+configuration_data:
+  -
+    title: All
+    weight: 0
+    type: view_content
+    content:
+      block_content:
+        options:
+          bid: 'entity_view:node'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: sessions_by_track
+          display: block_10
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: schedule_at_a_glance
+  -
+    title: Leadership
+    weight: 0
+    type: view_content
+    content:
+      block_content:
+        options:
+          bid: 'entity_view:node'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: sessions_by_track
+          display: block_7
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: schedule_at_a_glance
+  -
+    title: Advocacy
+    weight: 0
+    type: view_content
+    content:
+      block_content:
+        options:
+          bid: 'entity_view:node'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: sessions_by_track
+          display: block_9
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: schedule_at_a_glance
+  -
+    title: 'Online Safety'
+    weight: 0
+    type: view_content
+    content:
+      block_content:
+        options:
+          bid: 'entity_view:node'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: sessions_by_track
+          display: block_8
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: schedule_at_a_glance

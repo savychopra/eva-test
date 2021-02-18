@@ -1,0 +1,23 @@
+uuid: b08460a8-0fef-431f-a1d9-0c5373a3bcbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.keynotes
+  module:
+    - text
+id: node.keynotes.body
+field_name: body
+entity_type: node
+bundle: keynotes
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,30 @@
+uuid: 39f0a9a7-a677-45cb-9d15-47c576b4048f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_speakers_carousel
+  module:
+    - system
+    - views
+  theme:
+    - conferenceplus
+id: views_block__mt_speakers_carousel_block_1
+theme: conferenceplus
+region: featured
+weight: 0
+provider: null
+plugin: 'views_block:mt_speakers_carousel-block_1'
+settings:
+  id: 'views_block:mt_speakers_carousel-block_1'
+  label: Speakers
+  provider: views
+  label_display: visible
+  views_label: Speakers
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/node/16\r\n/node/17\r\n/node/40\r\n/node/53\r\n/node/54\r\n/node/55\r\n/node/59\r\n/node/63\r\n/node/82\r\n/blocks\r\n/alternative-footer\r\n/mega-menu"
+    negate: false
+    context_mapping: {  }

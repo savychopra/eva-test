@@ -1,0 +1,19 @@
+uuid: 82b9a147-6edb-4f09-a9d8-81e265c1149a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_tmm_youtube_account
+    - node.type.mt_team_member
+id: node.mt_team_member.field_mt_tmm_youtube_account
+field_name: field_mt_tmm_youtube_account
+entity_type: node
+bundle: mt_team_member
+label: YouTube
+description: 'Enter the URL of your YouTube profile, e.g.: https://youtube.com/your-account'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

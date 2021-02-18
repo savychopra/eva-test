@@ -1,0 +1,31 @@
+uuid: 3a24a11c-4802-4158-9511-e3ea5ba4bf33
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b467900a-1ff8-40ea-a8b0-2de331243735'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: conferenceplus_announcement
+theme: conferenceplus
+region: header_top_highlighted_first
+weight: -61
+provider: null
+plugin: 'block_content:b467900a-1ff8-40ea-a8b0-2de331243735'
+settings:
+  id: 'block_content:b467900a-1ff8-40ea-a8b0-2de331243735'
+  label: Announcement
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/40
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,21 @@
+uuid: 22ced546-c647-4b9b-88ce-a4c472fbd354
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.mt_speaker
+  module:
+    - metatag
+id: node.mt_speaker.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: mt_speaker
+label: Metatags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

@@ -1,0 +1,73 @@
+uuid: 1360e8e9-8f8a-4610-9c5f-8caed225b7cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_upload_
+    - node.type.tradeshow
+    - paragraphs.paragraphs_type.sponsor_tradeshow_file_upload
+  module:
+    - entity_reference_revisions
+id: node.tradeshow.field_upload_
+field_name: field_upload_
+entity_type: node
+bundle: tradeshow
+label: 'Upload Brouchers'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      sponsor_tradeshow_file_upload: sponsor_tradeshow_file_upload
+    target_bundles_drag_drop:
+      mt_additional_feature:
+        weight: 16
+        enabled: false
+      mt_collapse:
+        weight: 17
+        enabled: false
+      mt_dropdown:
+        weight: 18
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 19
+        enabled: false
+      mt_fancy_tab:
+        weight: 20
+        enabled: false
+      mt_featured_linked_text_tile:
+        weight: 21
+        enabled: false
+      mt_highlight:
+        weight: 22
+        enabled: false
+      mt_icon_features:
+        weight: 23
+        enabled: false
+      mt_main_slideshow_slide:
+        weight: 24
+        enabled: false
+      mt_map_location:
+        weight: 25
+        enabled: false
+      mt_media_tab:
+        weight: 26
+        enabled: false
+      mt_tab:
+        weight: 27
+        enabled: false
+      mt_timeline_item:
+        weight: 28
+        enabled: false
+      mt_video_gallery_slide:
+        weight: 29
+        enabled: false
+      sponsor_tradeshow_file_upload:
+        enabled: true
+        weight: 30
+field_type: entity_reference_revisions

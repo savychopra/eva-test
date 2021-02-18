@@ -1,0 +1,28 @@
+uuid: fbbcd41d-b9bf-4412-a8ae-e96139aa1ba3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_fancy_tab.field_mt_fancy_block_reference
+    - field.field.paragraph.mt_fancy_tab.field_mt_fancy_subtitle
+    - field.field.paragraph.mt_fancy_tab.field_mt_fancy_title
+    - paragraphs.paragraphs_type.mt_fancy_tab
+id: paragraph.mt_fancy_tab.default
+targetEntityType: paragraph
+bundle: mt_fancy_tab
+mode: default
+content:
+  field_mt_fancy_block_reference:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  created: true
+  field_mt_fancy_subtitle: true
+  field_mt_fancy_title: true
+  uid: true

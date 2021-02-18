@@ -1,0 +1,18 @@
+uuid: a1cad46e-58a4-43b9-ad41-9b932e0d507c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Conference Program'
+type: mt_event
+description: 'Ideal for posts presenting events within your conference or event. Examples of this could be a Welcome/Reception event, or a Closing session. Events support multiple images, which along with auto-generated thumbnails, are automatically adjusted to fit into the website layout, wherever needed.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

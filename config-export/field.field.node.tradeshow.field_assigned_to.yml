@@ -1,0 +1,37 @@
+uuid: cfdbb09a-697f-4bda-857b-448052e03b74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_assigned_to
+    - node.type.tradeshow
+id: node.tradeshow.field_assigned_to
+field_name: field_assigned_to
+entity_type: node
+bundle: tradeshow
+label: 'Assigned user'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: role
+      role:
+        exhibitor: exhibitor
+        administrator: '0'
+        eva_user: '0'
+        speaker: '0'
+        attendees: '0'
+        cache_clear: '0'
+        sponsor: '0'
+    target_bundles: null
+    sort:
+      field: field_mt_full_name
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

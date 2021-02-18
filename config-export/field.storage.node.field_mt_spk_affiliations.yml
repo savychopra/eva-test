@@ -1,0 +1,20 @@
+uuid: d1a11029-d4db-459a-9b2b-e5a2206df914
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_mt_spk_affiliations
+field_name: field_mt_spk_affiliations
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

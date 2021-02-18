@@ -1,0 +1,21 @@
+uuid: 877ba83b-1973-4631-8e59-1159e0a236f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_fltt_body
+    - paragraphs.paragraphs_type.mt_featured_linked_text_tile
+  module:
+    - text
+id: paragraph.mt_featured_linked_text_tile.field_mt_fltt_body
+field_name: field_mt_fltt_body
+entity_type: paragraph
+bundle: mt_featured_linked_text_tile
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,36 @@
+uuid: 134e8ede-9476-460a-88d9-2ca58a3cb282
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.poster.body
+    - field.field.node.poster.field_author
+    - field.field.node.poster.field_pdf
+    - field.field.node.poster.field_poster_image
+    - node.type.poster
+  module:
+    - text
+    - user
+id: node.poster.teaser
+targetEntityType: node
+bundle: poster
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_author: true
+  field_pdf: true
+  field_poster_image: true

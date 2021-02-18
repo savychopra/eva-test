@@ -1,0 +1,6 @@
+base_uri: 'http://virtualconference.evareg.com/zoomapi-webhooks'
+api_key: zoom
+api_secret: zoom
+webhook_verification_token: zoom
+_core:
+  default_config_hash: lAAtgEK9mybjDejBTstsMz2FBKuhhh_-fHIhmQfGtvA

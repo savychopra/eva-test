@@ -1,0 +1,39 @@
+uuid: c96b6770-6250-4c07-9d12-1dd05990d5fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_fancy_linked_images_block
+    - field.storage.block_content.field_mt_fancy_linked_image
+    - paragraphs.paragraphs_type.mt_fancy_linked_image
+  module:
+    - entity_reference_revisions
+id: block_content.mt_fancy_linked_images_block.field_mt_fancy_linked_image
+field_name: field_mt_fancy_linked_image
+entity_type: block_content
+bundle: mt_fancy_linked_images_block
+label: 'Fancy Linked Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      mt_fancy_linked_image: mt_fancy_linked_image
+    target_bundles_drag_drop:
+      mt_fancy_linked_image:
+        enabled: true
+        weight: 5
+      mt_fancy_tab:
+        weight: 6
+        enabled: false
+      mt_ns_slide:
+        weight: 7
+        enabled: false
+      mt_tab:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

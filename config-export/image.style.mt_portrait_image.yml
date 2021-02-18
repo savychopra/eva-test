@@ -1,0 +1,15 @@
+uuid: 65eaec9a-abee-4e56-91f7-a03a5b9407b6
+langcode: en
+status: true
+dependencies: {  }
+name: mt_portrait_image
+label: 'Portrait Image (750x846)'
+effects:
+  bdfa9779-ef7b-408f-af36-9c452cd5d928:
+    uuid: bdfa9779-ef7b-408f-af36-9c452cd5d928
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 750
+      height: 846
+      anchor: center-center

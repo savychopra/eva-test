@@ -1,0 +1,21 @@
+uuid: ec1cfab2-d47f-4e29-a92a-1c08eb0405f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user_organization
+    - node.type.zoom_registrant
+_core:
+  default_config_hash: q_b45RgILSG9PoK4t-8t833WVfM13W0kbYr5BD_FXBk
+id: node.zoom_registrant.field_user_organization
+field_name: field_user_organization
+entity_type: node
+bundle: zoom_registrant
+label: Organization
+description: 'User''s organization or company.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

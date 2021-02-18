@@ -1,0 +1,29 @@
+uuid: 9df2d20e-ac09-4a02-bad0-4d1d4823e15d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponsor_category_type
+    - node.type.tradeshow
+    - taxonomy.vocabulary.sponsors_category_type
+id: node.tradeshow.field_sponsor_category_type
+field_name: field_sponsor_category_type
+entity_type: node
+bundle: tradeshow
+label: 'Sponsor Category Type'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sponsors_category_type: sponsors_category_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

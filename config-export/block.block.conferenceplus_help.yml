@@ -1,0 +1,22 @@
+uuid: fd5d8f8d-69f9-4584-a429-962b1fbf6cc9
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - conferenceplus
+_core:
+  default_config_hash: HWyVkM_vrMjl9s6bvE0rcsiojM6FCs7TD2mpjqLEezQ
+id: conferenceplus_help
+theme: conferenceplus
+region: content
+weight: -57
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

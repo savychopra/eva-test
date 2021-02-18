@@ -1,0 +1,214 @@
+uuid: b8964e63-5165-479e-a3ea-d87f1a987f07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mt_event.field_assigned_to
+    - field.field.node.mt_event.field_ceu_details
+    - field.field.node.mt_event.field_conf_status
+    - field.field.node.mt_event.field_end_date
+    - field.field.node.mt_event.field_events
+    - field.field.node.mt_event.field_metatags
+    - field.field.node.mt_event.field_mt_evn_body
+    - field.field.node.mt_event.field_mt_evn_date
+    - field.field.node.mt_event.field_mt_evn_event_category
+    - field.field.node.mt_event.field_mt_evn_files
+    - field.field.node.mt_event.field_mt_evn_image
+    - field.field.node.mt_event.field_mt_evn_location
+    - field.field.node.mt_event.field_mt_evn_map_zoom
+    - field.field.node.mt_event.field_mt_evn_place
+    - field.field.node.mt_event.field_mt_evn_speaker
+    - field.field.node.mt_event.field_mt_evn_sponsor
+    - field.field.node.mt_event.field_mt_evn_video
+    - field.field.node.mt_event.field_session_timezone
+    - field.field.node.mt_event.field_session_track
+    - field.field.node.mt_event.field_session_type
+    - field.field.node.mt_event.field_upload_
+    - image.style.thumbnail
+    - node.type.mt_event
+  module:
+    - datetime
+    - image
+    - metatag
+    - paragraphs
+    - path
+    - text
+    - video_embed_field
+id: node.mt_event.default
+targetEntityType: node
+bundle: mt_event
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ceu_details:
+    weight: 15
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_conf_status:
+    weight: 18
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_end_date:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_events:
+    weight: 17
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_metatags:
+    weight: 16
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_mt_evn_body:
+    weight: 5
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_mt_evn_date:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_mt_evn_event_category:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mt_evn_image:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_mt_evn_speaker:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mt_evn_sponsor:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mt_evn_video:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
+    region: content
+  field_session_timezone:
+    weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_session_track:
+    weight: 22
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_session_type:
+    weight: 21
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_upload_:
+    weight: 23
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  path:
+    type: path
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 11
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 14
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 12
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_assigned_to: true
+  field_mt_evn_files: true
+  field_mt_evn_location: true
+  field_mt_evn_map_zoom: true
+  field_mt_evn_place: true

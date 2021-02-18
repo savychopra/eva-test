@@ -1,0 +1,19 @@
+uuid: 7ff34684-8c4f-444d-a27e-1a2f02eb3585
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponser_email
+    - node.type.tradeshow
+id: node.tradeshow.field_sponser_email
+field_name: field_sponser_email
+entity_type: node
+bundle: tradeshow
+label: Email
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

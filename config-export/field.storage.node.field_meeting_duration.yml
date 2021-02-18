@@ -1,0 +1,22 @@
+uuid: 3c8e15bc-6659-418a-aa9d-9d176d283bec
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: jyBy85yGbjwEoPMzOxK0LW-YBK1Qh8D45aMFHAcAyzg
+id: node.field_meeting_duration
+field_name: field_meeting_duration
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

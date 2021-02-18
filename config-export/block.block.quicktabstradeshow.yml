@@ -1,0 +1,26 @@
+uuid: 3b5a472a-bb01-45d5-90e5-d097638b44a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - quicktabs
+    - system
+  theme:
+    - conferenceplus
+id: quicktabstradeshow
+theme: conferenceplus
+region: content
+weight: 0
+provider: null
+plugin: 'quicktabs_block:tradeshow'
+settings:
+  id: 'quicktabs_block:tradeshow'
+  label: 'QuickTabs - Tradeshow'
+  provider: quicktabs
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /tradeshow
+    negate: false
+    context_mapping: {  }

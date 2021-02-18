@@ -1,0 +1,23 @@
+uuid: 046d32d1-ebf9-4d60-81bc-57076b72d6b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_main_slideshow_block
+    - field.storage.block_content.field_mt_ms_bullets_position
+  module:
+    - options
+id: block_content.mt_main_slideshow_block.field_mt_ms_bullets_position
+field_name: field_mt_ms_bullets_position
+entity_type: block_content
+bundle: mt_main_slideshow_block
+label: 'Slideshow Navigation Bullets Position'
+description: 'From the drop-down menu, select the position you prefer.'
+required: false
+translatable: false
+default_value:
+  -
+    value: center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

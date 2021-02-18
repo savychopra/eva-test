@@ -1,0 +1,63 @@
+uuid: 30711c7b-450f-40e2-a034-36111d0222e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mt_testimonial.field_mt_tst_body
+    - field.field.node.mt_testimonial.field_mt_tst_subtitle
+    - field.field.node.mt_testimonial.field_mt_tst_testimonial_image
+    - field.field.node.mt_testimonial.field_mt_tst_testimonial_link
+    - image.style.mt_testimonial_image
+    - node.type.mt_testimonial
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.mt_testimonial.default
+targetEntityType: node
+bundle: mt_testimonial
+mode: default
+content:
+  field_mt_tst_body:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_tst_subtitle:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_tst_testimonial_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: mt_testimonial_image
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_tst_testimonial_link:
+    weight: 7
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

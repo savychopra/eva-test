@@ -1,0 +1,23 @@
+uuid: dd7b7186-fc99-4e24-ac6d-481d29194524
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_main_slideshow_block
+    - field.storage.block_content.field_mt_ms_navigation_style
+  module:
+    - options
+id: block_content.mt_main_slideshow_block.field_mt_ms_navigation_style
+field_name: field_mt_ms_navigation_style
+entity_type: block_content
+bundle: mt_main_slideshow_block
+label: 'Slideshow Navigation Style'
+description: 'From the drop-down menu, select the style you prefer.'
+required: false
+translatable: false
+default_value:
+  -
+    value: bullets
+default_value_callback: ''
+settings: {  }
+field_type: list_string

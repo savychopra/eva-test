@@ -1,0 +1,25 @@
+uuid: 584f76a5-06a8-49f8-802a-49362220ab53
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0524307c-2048-42b8-833e-fe424b730597'
+  module:
+    - block_content
+  theme:
+    - conferenceplus
+id: highlights
+theme: conferenceplus
+region: hidden_blocks_collection
+weight: -65
+provider: null
+plugin: 'block_content:0524307c-2048-42b8-833e-fe424b730597'
+settings:
+  id: 'block_content:0524307c-2048-42b8-833e-fe424b730597'
+  label: 'Our highlights, in short.'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

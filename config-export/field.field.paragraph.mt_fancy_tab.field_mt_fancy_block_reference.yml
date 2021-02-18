@@ -1,0 +1,23 @@
+uuid: eeeef153-2eba-46fa-90d5-2eb8ee48663a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_fancy_block_reference
+    - paragraphs.paragraphs_type.mt_fancy_tab
+id: paragraph.mt_fancy_tab.field_mt_fancy_block_reference
+field_name: field_mt_fancy_block_reference
+entity_type: paragraph
+bundle: mt_fancy_tab
+label: 'Block Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

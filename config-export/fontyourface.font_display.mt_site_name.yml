@@ -1,0 +1,10 @@
+uuid: e3ad3996-daab-420e-9ea1-1d7c17927d6d
+langcode: en
+status: true
+dependencies: {  }
+id: mt_site_name
+label: 'Site name'
+font_url: 'http://www.google.com/webfonts/family?family=Nunito&subset=latin#700'
+fallback: 'Helvetica Neue, Arial, sans-serif'
+selectors: '.sff-fyf .site-name'
+theme: topplus

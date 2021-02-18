@@ -1,0 +1,30 @@
+uuid: 462c7f76-3045-481a-aa9a-efb99baad0ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.events.field_memid
+    - taxonomy.vocabulary.events
+  module:
+    - text
+id: taxonomy_term.events.default
+targetEntityType: taxonomy_term
+bundle: events
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_memid:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

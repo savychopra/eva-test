@@ -1,0 +1,24 @@
+uuid: d2d59f86-d41d-4c05-91f0-3c612f6a9323
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_video_gallery_block
+    - field.field.block_content.mt_video_gallery_block.field_mt_video_gallery_slides
+  module:
+    - entity_reference_revisions
+id: block_content.mt_video_gallery_block.default
+targetEntityType: block_content
+bundle: mt_video_gallery_block
+mode: default
+content:
+  field_mt_video_gallery_slides:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

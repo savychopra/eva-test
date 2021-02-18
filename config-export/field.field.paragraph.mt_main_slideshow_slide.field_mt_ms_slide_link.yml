@@ -1,0 +1,23 @@
+uuid: 7a2c2551-6edb-4854-a578-89c3e7f2f7ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_ms_slide_link
+    - paragraphs.paragraphs_type.mt_main_slideshow_slide
+  module:
+    - link
+id: paragraph.mt_main_slideshow_slide.field_mt_ms_slide_link
+field_name: field_mt_ms_slide_link
+entity_type: paragraph
+bundle: mt_main_slideshow_slide
+label: 'Slide Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

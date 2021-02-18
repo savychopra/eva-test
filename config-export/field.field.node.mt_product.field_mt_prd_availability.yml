@@ -1,0 +1,21 @@
+uuid: dda452e3-f319-4a83-be91-ccf7673fa96a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prd_availability
+    - node.type.mt_product
+  module:
+    - options
+id: node.mt_product.field_mt_prd_availability
+field_name: field_mt_prd_availability
+entity_type: node
+bundle: mt_product
+label: Availability
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

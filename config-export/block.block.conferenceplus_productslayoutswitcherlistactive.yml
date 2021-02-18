@@ -1,0 +1,31 @@
+uuid: 612fa5b3-9c73-4a4d-823f-2d4e4c953f4e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9acb6453-8126-426b-88ec-d750288e958c'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: conferenceplus_productslayoutswitcherlistactive
+theme: conferenceplus
+region: content
+weight: -59
+provider: null
+plugin: 'block_content:9acb6453-8126-426b-88ec-d750288e958c'
+settings:
+  id: 'block_content:9acb6453-8126-426b-88ec-d750288e958c'
+  label: 'Merchandise Layout Switcher (List Active)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /merchandise-list
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,15 @@
+uuid: db0dcd96-49e4-4297-a448-90de5a7dc591
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.add_to_schedule_events
+  module:
+    - flag
+id: flag_action.add_to_schedule_events_unflag
+label: 'Remove from Schedule'
+type: node
+plugin: 'flag_action:add_to_schedule_events_unflag'
+configuration:
+  flag_id: add_to_schedule_events
+  flag_action: unflag

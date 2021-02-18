@@ -1,0 +1,31 @@
+uuid: 95853e93-2d3a-4042-86f2-491b12d5f8e2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:777da137-efb6-4b98-a65c-1efdb5ebd6ec'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: paymentmethods
+theme: conferenceplus
+region: sidebar_second
+weight: -50
+provider: null
+plugin: 'block_content:777da137-efb6-4b98-a65c-1efdb5ebd6ec'
+settings:
+  id: 'block_content:777da137-efb6-4b98-a65c-1efdb5ebd6ec'
+  label: 'Payment methods'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /form/register
+    negate: false
+    context_mapping: {  }

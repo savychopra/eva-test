@@ -1,0 +1,14 @@
+uuid: a8d73006-899f-49a2-ae87-1aab72b2a60b
+langcode: en
+status: true
+dependencies: {  }
+id: exhibitor
+label: Exhibitor
+weight: 6
+is_admin: null
+permissions:
+  - RAC_view_exhibitor
+  - 'access toolbar'
+  - 'rabbit hole bypass node'
+  - 'rabbit hole bypass taxonomy_term'
+  - 'rabbit hole bypass user'

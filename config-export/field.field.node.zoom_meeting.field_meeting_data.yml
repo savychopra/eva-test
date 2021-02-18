@@ -1,0 +1,21 @@
+uuid: 6556e57b-ed6b-43ae-9f23-79df63153fb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting_data
+    - node.type.zoom_meeting
+_core:
+  default_config_hash: KdywXbQWVUKws6A8iCk5sNZHTNUWFRWTFlO4jAQZVfc
+id: node.zoom_meeting.field_meeting_data
+field_name: field_meeting_data
+entity_type: node
+bundle: zoom_meeting
+label: Data
+description: 'The meeting array / data provided from Zoom.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,25 @@
+uuid: dc0f7a98-8e90-4a61-b4f7-5676550f21a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_evn_map_zoom
+    - node.type.mt_event
+id: node.mt_event.field_mt_evn_map_zoom
+field_name: field_mt_evn_map_zoom
+entity_type: node
+bundle: mt_event
+label: 'Map Zoom'
+description: 'Enter the map zoom level or leave it to zero for auto zoom.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

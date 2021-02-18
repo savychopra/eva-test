@@ -1,0 +1,45 @@
+uuid: b3f2234e-46f4-4172-9ee8-392185faa425
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_fltt_block
+    - field.storage.block_content.field_mt_fltt
+    - paragraphs.paragraphs_type.mt_featured_linked_text_tile
+  module:
+    - entity_reference_revisions
+id: block_content.mt_fltt_block.field_mt_fltt
+field_name: field_mt_fltt
+entity_type: block_content
+bundle: mt_fltt_block
+label: 'Featured Linked Text Tile'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      mt_featured_linked_text_tile: mt_featured_linked_text_tile
+    target_bundles_drag_drop:
+      mt_collapse:
+        weight: 7
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 8
+        enabled: false
+      mt_fancy_tab:
+        weight: 9
+        enabled: false
+      mt_featured_linked_text_tile:
+        enabled: true
+        weight: 10
+      mt_media_tab:
+        weight: 11
+        enabled: false
+      mt_tab:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

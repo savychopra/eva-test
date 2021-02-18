@@ -1,0 +1,19 @@
+uuid: 0b43c71d-e59d-4f58-8fed-fd3a92a1eb5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_spk_subtitle
+    - node.type.mt_speaker
+id: node.mt_speaker.field_mt_spk_subtitle
+field_name: field_mt_spk_subtitle
+entity_type: node
+bundle: mt_speaker
+label: 'Company Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

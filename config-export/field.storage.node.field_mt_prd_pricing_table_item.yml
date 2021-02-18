@@ -1,0 +1,21 @@
+uuid: ba4ebccf-deee-443e-a92c-156111fe424a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_mt_prd_pricing_table_item
+field_name: field_mt_prd_pricing_table_item
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

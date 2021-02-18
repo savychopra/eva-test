@@ -1,0 +1,25 @@
+uuid: c14e7079-b528-42c2-87ec-cbcd9b6520b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting_duration
+    - node.type.zoom_meeting
+_core:
+  default_config_hash: cO56aDBk1uvvIeO03dtSeXaw63l8uJ41UKcx53FDoxw
+id: node.zoom_meeting.field_meeting_duration
+field_name: field_meeting_duration
+entity_type: node
+bundle: zoom_meeting
+label: Duration
+description: 'The meeting duration (minutes). For scheduled meeting only.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

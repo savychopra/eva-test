@@ -1,0 +1,34 @@
+uuid: 7c56eade-8f51-414b-892d-8558d14bd2c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_session_track
+field_name: field_session_track
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Advocacy
+      label: Advocacy
+    -
+      value: Leadership
+      label: Leadership
+    -
+      value: 'Online Safety'
+      label: 'Online Safety'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,48 @@
+uuid: 50f1dd0b-3a06-44b9-b2a6-1049306fc712
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - twitter_embed
+  theme:
+    - conferenceplus
+id: twittertimeline
+theme: conferenceplus
+region: content
+weight: 0
+provider: null
+plugin: twitter_embed_timeline
+settings:
+  id: twitter_embed_timeline
+  label: 'Twitter Timeline'
+  provider: twitter_embed
+  label_display: '0'
+  username: '@aplusifyllc'
+  type: profile
+  type_value: ''
+  display_style: timeline
+  theme: light
+  chrome:
+    noheader: 0
+    nofooter: 0
+    noborders: 0
+    transparent: 0
+    noscrollbar: 0
+  width: '450'
+  height: '700'
+  link_color: '#2b7bb9'
+  border_color: '#000000'
+  tweet_limit: '0'
+  show_replies: 0
+  aria_polite: polite
+  language: ''
+  hide_username: false
+  hide_followers_count: false
+  size: null
+visibility:
+  request_path:
+    id: request_path
+    pages: '*'
+    negate: true
+    context_mapping: {  }

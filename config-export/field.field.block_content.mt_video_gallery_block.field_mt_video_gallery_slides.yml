@@ -1,0 +1,51 @@
+uuid: d637e6d3-d559-42e2-9a86-7347a494ac49
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_video_gallery_block
+    - field.storage.block_content.field_mt_video_gallery_slides
+    - paragraphs.paragraphs_type.mt_video_gallery_slide
+  module:
+    - entity_reference_revisions
+id: block_content.mt_video_gallery_block.field_mt_video_gallery_slides
+field_name: field_mt_video_gallery_slides
+entity_type: block_content
+bundle: mt_video_gallery_block
+label: 'Video Gallery slides'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      mt_video_gallery_slide: mt_video_gallery_slide
+    target_bundles_drag_drop:
+      mt_collapse:
+        weight: 9
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 10
+        enabled: false
+      mt_fancy_tab:
+        weight: 11
+        enabled: false
+      mt_featured_linked_text_tile:
+        weight: 12
+        enabled: false
+      mt_main_slideshow_slide:
+        weight: 13
+        enabled: false
+      mt_media_tab:
+        weight: 14
+        enabled: false
+      mt_tab:
+        weight: 15
+        enabled: false
+      mt_video_gallery_slide:
+        enabled: true
+        weight: 16
+field_type: entity_reference_revisions

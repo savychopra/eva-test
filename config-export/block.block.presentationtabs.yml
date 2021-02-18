@@ -1,0 +1,33 @@
+uuid: e92bd59f-0f63-4072-9913-e9bc91bb21af
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_tabs_block:66f70a0f-8643-4142-9e65-18b27e2e59d4'
+  module:
+    - block_content
+    - node
+  theme:
+    - conferenceplus
+id: presentationtabs
+theme: conferenceplus
+region: sidebar_second
+weight: -64
+provider: null
+plugin: 'block_content:66f70a0f-8643-4142-9e65-18b27e2e59d4'
+settings:
+  id: 'block_content:66f70a0f-8643-4142-9e65-18b27e2e59d4'
+  label: 'Presentation Tabs'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      mt_presentation: mt_presentation
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

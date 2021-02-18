@@ -1,0 +1,111 @@
+uuid: d18a9a9e-e56c-4df8-8984-9c0e243b88fa
+langcode: en
+status: true
+dependencies: {  }
+id: tradeshow
+label: Tradeshow
+renderer: quick_tabs
+options:
+  quick_tabs:
+    class: nav-item
+    style: ''
+    ajax: false
+  accordion_tabs:
+    jquery_ui:
+      collapsible: false
+      heightStyle: auto
+hide_empty_tabs: false
+default_tab: 9999
+configuration_data:
+  -
+    title: All
+    weight: 0
+    type: view_content
+    content:
+      block_content:
+        options:
+          bid: 'entity_view:node'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: tradeshow
+          display: block_4
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: schedule_at_a_glance
+  -
+    title: Platinum
+    weight: 0
+    type: view_content
+    content:
+      block_content:
+        options:
+          bid: 'entity_view:node'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: tradeshow
+          display: block_1
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: schedule_at_a_glance
+  -
+    title: Gold
+    weight: 0
+    type: view_content
+    content:
+      block_content:
+        options:
+          bid: 'entity_view:node'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: tradeshow
+          display: block_2
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: schedule_at_a_glance
+  -
+    title: Silver
+    weight: 0
+    type: view_content
+    content:
+      block_content:
+        options:
+          bid: 'entity_view:node'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: tradeshow
+          display: block_3
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: schedule_at_a_glance

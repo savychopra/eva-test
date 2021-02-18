@@ -1,0 +1,23 @@
+uuid: 974767ed-4e6c-4913-abe3-646727e95c35
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_main_slideshow_block
+    - field.storage.block_content.field_mt_ms_effect
+  module:
+    - options
+id: block_content.mt_main_slideshow_block.field_mt_ms_effect
+field_name: field_mt_ms_effect
+entity_type: block_content
+bundle: mt_main_slideshow_block
+label: 'Slideshow Effect'
+description: 'From the drop-down menu, select the slideshow effect you prefer.'
+required: false
+translatable: false
+default_value:
+  -
+    value: fade
+default_value_callback: ''
+settings: {  }
+field_type: list_string

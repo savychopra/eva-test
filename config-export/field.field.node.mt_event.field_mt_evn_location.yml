@@ -1,0 +1,70 @@
+uuid: cb4aa9af-87d2-439e-a4b6-09779d3495d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_evn_location
+    - node.type.mt_event
+    - paragraphs.paragraphs_type.mt_map_location
+  module:
+    - entity_reference_revisions
+id: node.mt_event.field_mt_evn_location
+field_name: field_mt_evn_location
+entity_type: node
+bundle: mt_event
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      mt_map_location: mt_map_location
+    target_bundles_drag_drop:
+      mt_additional_feature:
+        weight: 15
+        enabled: false
+      mt_collapse:
+        weight: 16
+        enabled: false
+      mt_dropdown:
+        weight: 17
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 18
+        enabled: false
+      mt_fancy_tab:
+        weight: 19
+        enabled: false
+      mt_featured_linked_text_tile:
+        weight: 20
+        enabled: false
+      mt_highlight:
+        weight: 21
+        enabled: false
+      mt_icon_features:
+        weight: 22
+        enabled: false
+      mt_main_slideshow_slide:
+        weight: 23
+        enabled: false
+      mt_map_location:
+        enabled: true
+        weight: 24
+      mt_media_tab:
+        weight: 25
+        enabled: false
+      mt_tab:
+        weight: 26
+        enabled: false
+      mt_timeline_item:
+        weight: 27
+        enabled: false
+      mt_video_gallery_slide:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions

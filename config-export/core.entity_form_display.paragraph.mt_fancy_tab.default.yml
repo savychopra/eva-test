@@ -1,0 +1,44 @@
+uuid: 907285b5-06ed-4d87-b482-1d56b154ebdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_fancy_tab.field_mt_fancy_block_reference
+    - field.field.paragraph.mt_fancy_tab.field_mt_fancy_subtitle
+    - field.field.paragraph.mt_fancy_tab.field_mt_fancy_title
+    - paragraphs.paragraphs_type.mt_fancy_tab
+id: paragraph.mt_fancy_tab.default
+targetEntityType: paragraph
+bundle: mt_fancy_tab
+mode: default
+content:
+  field_mt_fancy_block_reference:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_mt_fancy_subtitle:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_fancy_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

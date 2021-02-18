@@ -1,0 +1,8 @@
+uuid: e4349883-bd52-4363-813e-4409a93a7688
+langcode: en
+status: true
+dependencies: {  }
+name: 'User Category'
+vid: user_category
+description: 'User Category'
+weight: 0

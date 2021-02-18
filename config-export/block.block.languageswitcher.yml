@@ -1,0 +1,25 @@
+uuid: 6b1c8b70-5c53-427b-8091-3fa772e60fe5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:eb34fbf2-b05a-462a-bb6d-0d71197be193'
+  module:
+    - block_content
+  theme:
+    - conferenceplus
+id: languageswitcher
+theme: conferenceplus
+region: hidden_blocks_collection
+weight: -64
+provider: null
+plugin: 'block_content:eb34fbf2-b05a-462a-bb6d-0d71197be193'
+settings:
+  id: 'block_content:eb34fbf2-b05a-462a-bb6d-0d71197be193'
+  label: 'Language Switcher'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

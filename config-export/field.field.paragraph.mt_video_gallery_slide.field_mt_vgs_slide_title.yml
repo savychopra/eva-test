@@ -1,0 +1,19 @@
+uuid: accbab0b-6151-461f-8b78-6629b3e991c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_vgs_slide_title
+    - paragraphs.paragraphs_type.mt_video_gallery_slide
+id: paragraph.mt_video_gallery_slide.field_mt_vgs_slide_title
+field_name: field_mt_vgs_slide_title
+entity_type: paragraph
+bundle: mt_video_gallery_slide
+label: 'Slide Title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

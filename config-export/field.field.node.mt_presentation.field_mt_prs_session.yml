@@ -1,0 +1,29 @@
+uuid: 5fd4e67c-ca7f-4372-95c9-791b73fc79ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prs_session
+    - node.type.mt_presentation
+    - taxonomy.vocabulary.mt_session
+id: node.mt_presentation.field_mt_prs_session
+field_name: field_mt_prs_session
+entity_type: node
+bundle: mt_presentation
+label: Session
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      mt_session: mt_session
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

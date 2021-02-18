@@ -1,0 +1,29 @@
+uuid: 235ffff1-7343-47f9-9694-465345f7467d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_alb_tags
+    - node.type.mt_album
+    - taxonomy.vocabulary.mt_album_categories
+id: node.mt_album.field_mt_alb_tags
+field_name: field_mt_alb_tags
+entity_type: node
+bundle: mt_album
+label: Tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      mt_album_categories: mt_album_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

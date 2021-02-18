@@ -1,0 +1,8 @@
+uuid: 1ac0ea28-050e-4b82-a965-6d5b3fcd1b45
+langcode: en
+status: true
+dependencies: {  }
+name: Membership
+vid: events
+description: ''
+weight: 0

@@ -1,0 +1,19 @@
+uuid: e8821283-b047-4595-9afe-299ac34eeabe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zip
+    - node.type.mt_sponsor
+id: node.mt_sponsor.field_zip
+field_name: field_zip
+entity_type: node
+bundle: mt_sponsor
+label: Zip
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

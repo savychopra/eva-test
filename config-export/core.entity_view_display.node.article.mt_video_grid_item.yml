@@ -1,0 +1,44 @@
+uuid: 549c3a30-b97a-40b8-b0db-115a77a79e1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.mt_video_grid_item
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_image
+    - field.field.node.article.field_mt_slideshow
+    - field.field.node.article.field_mt_slideshow_image
+    - field.field.node.article.field_mt_slideshow_text
+    - field.field.node.article.field_mt_video
+    - field.field.node.article.field_tags
+    - image.style.large
+    - node.type.article
+  module:
+    - user
+    - video_embed_field
+_core:
+  default_config_hash: JtAg_-waIt1quMtdDtHIaXJMxvTuSmxW7bWyO6Zd68E
+id: node.article.mt_video_grid_item
+targetEntityType: node
+bundle: article
+mode: mt_video_grid_item
+content:
+  field_mt_video:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      link_image_to: content
+    third_party_settings: {  }
+    type: video_embed_field_thumbnail
+    region: content
+hidden:
+  body: true
+  comment: true
+  field_image: true
+  field_mt_slideshow: true
+  field_mt_slideshow_image: true
+  field_mt_slideshow_text: true
+  field_tags: true
+  links: true

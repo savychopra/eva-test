@@ -1,0 +1,19 @@
+uuid: 0087af17-534d-49f7-a1d8-bb400494b7f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_street_1
+    - node.type.mt_sponsor
+id: node.mt_sponsor.field_street_1
+field_name: field_street_1
+entity_type: node
+bundle: mt_sponsor
+label: Street-1
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

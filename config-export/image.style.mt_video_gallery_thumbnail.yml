@@ -1,0 +1,15 @@
+uuid: 54917034-6898-44a1-9a10-4969810f0780
+langcode: en
+status: true
+dependencies: {  }
+name: mt_video_gallery_thumbnail
+label: 'Video Gallery thumbnail (400×226 )'
+effects:
+  726c5b5b-deaf-4e73-ab17-cfb1986a71b1:
+    uuid: 726c5b5b-deaf-4e73-ab17-cfb1986a71b1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 226
+      anchor: center-center

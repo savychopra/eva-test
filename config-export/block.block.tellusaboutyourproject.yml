@@ -1,0 +1,25 @@
+uuid: 5739756b-4957-4eee-a4e4-2828c96f9345
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2f082cb7-167a-4837-b03e-7c523b059c9c'
+  module:
+    - block_content
+  theme:
+    - conferenceplus
+id: tellusaboutyourproject
+theme: conferenceplus
+region: hidden_blocks_collection
+weight: -62
+provider: null
+plugin: 'block_content:2f082cb7-167a-4837-b03e-7c523b059c9c'
+settings:
+  id: 'block_content:2f082cb7-167a-4837-b03e-7c523b059c9c'
+  label: 'Buy a Ticket'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

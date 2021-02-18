@@ -1,0 +1,33 @@
+uuid: d15e5d4e-7e8d-4662-88d7-c4a43d3aa058
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_mt_fli_shape
+field_name: field_mt_fli_shape
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: none
+      label: None
+    -
+      value: rectangle
+      label: Rectangle
+    -
+      value: circle
+      label: Circle
+    -
+      value: pentagon
+      label: Pentagon
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

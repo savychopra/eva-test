@@ -1,0 +1,58 @@
+uuid: dcf6cde2-0ae6-4fc0-b6e2-b0ced9df5862
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_caption
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_caption_color
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_caption_opac
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_image
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_link
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_title
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_vimeo_id
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_volume
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_youtube_id
+    - paragraphs.paragraphs_type.mt_main_slideshow_slide
+  module:
+    - link
+id: paragraph.mt_main_slideshow_slide.default
+targetEntityType: paragraph
+bundle: mt_main_slideshow_slide
+mode: default
+content:
+  field_mt_ms_slide_caption:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_mt_ms_slide_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_mt_ms_slide_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  created: true
+  field_mt_ms_slide_caption_color: true
+  field_mt_ms_slide_caption_opac: true
+  field_mt_ms_slide_image: true
+  field_mt_ms_slide_vimeo_id: true
+  field_mt_ms_slide_volume: true
+  field_mt_ms_slide_youtube_id: true
+  uid: true

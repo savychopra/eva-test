@@ -1,0 +1,14 @@
+uuid: a5e41d66-3fac-48a4-9e2e-bc7d10da270a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.eva_user
+  module:
+    - user
+id: user_add_role_action.eva_user
+label: 'Add the EVA user role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: eva_user

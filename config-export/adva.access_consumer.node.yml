@@ -1,0 +1,360 @@
+uuid: 52da1c50-bc36-4204-8f79-bd9c506c41ce
+langcode: en
+status: true
+dependencies: {  }
+id: node
+settings: {  }
+providers: {  }
+provider_config:
+  anonymous:
+    default:
+      enabled: '1'
+      operations:
+        view:
+          anonymous: '1'
+        update: {  }
+        delete: {  }
+    bundles:
+      enabled:
+        mt_speaker: mt_speaker
+      override:
+        article:
+          operations:
+            view: {  }
+            update: {  }
+            delete: {  }
+        faq:
+          operations:
+            view: {  }
+            update: {  }
+            delete: {  }
+        forum:
+          operations:
+            view: {  }
+            update: {  }
+            delete: {  }
+        keynotes:
+          operations:
+            view: {  }
+            update: {  }
+            delete: {  }
+        mt_album:
+          operations:
+            view: {  }
+            update: {  }
+            delete: {  }
+        mt_canvas_page:
+          operations:
+            view: {  }
+            update: {  }
+            delete: {  }
+        mt_event:
+          operations:
+            view: {  }
+            update: {  }
+            delete: {  }
+        mt_presentation:
+          operations:
+            view: {  }
+            update: {  }
+            delete: {  }
+        mt_product:
+          operations:
+            view: {  }
+            update: {  }
+            delete: {  }
+        mt_program_entry:
+          operations:
+            view: {  }
+            update: {  }
+            delete: {  }
+        mt_service:
+          operations:
+            view: {  }
+            update: {  }
+            delete: {  }
+        mt_speaker:
+          operations:
+            view:
+              anonymous: '1'
+            update: {  }
+            delete: {  }
+        mt_sponsor:
+          operations:
+            view: {  }
+            update: {  }
+            delete: {  }
+        mt_team_member:
+          operations:
+            view: {  }
+            update: {  }
+            delete: {  }
+        mt_testimonial:
+          operations:
+            view: {  }
+            update: {  }
+            delete: {  }
+        page:
+          operations:
+            view: {  }
+            update: {  }
+            delete: {  }
+        poster:
+          operations:
+            view: {  }
+            update: {  }
+            delete: {  }
+        tradeshow:
+          operations:
+            view: {  }
+            update: {  }
+            delete: {  }
+        zoom_meeting:
+          operations:
+            view: {  }
+            update: {  }
+            delete: {  }
+        zoom_registrant:
+          operations:
+            view: {  }
+            update: {  }
+            delete: {  }
+  rac_typed:
+    bundles:
+      enabled:
+        mt_speaker: mt_speaker
+      override:
+        article:
+          operations:
+            view:
+              unpublished: 0
+              roles: {  }
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+        faq:
+          operations:
+            view:
+              unpublished: 0
+              roles: {  }
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+        forum:
+          operations:
+            view:
+              unpublished: 0
+              roles: {  }
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+        keynotes:
+          operations:
+            view:
+              unpublished: 0
+              roles: {  }
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+        mt_album:
+          operations:
+            view:
+              unpublished: 0
+              roles: {  }
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+        mt_canvas_page:
+          operations:
+            view:
+              unpublished: 0
+              roles: {  }
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+        mt_event:
+          operations:
+            view:
+              unpublished: 0
+              roles: {  }
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+        mt_presentation:
+          operations:
+            view:
+              unpublished: 0
+              roles: {  }
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+        mt_product:
+          operations:
+            view:
+              unpublished: 0
+              roles: {  }
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+        mt_program_entry:
+          operations:
+            view:
+              unpublished: 0
+              roles: {  }
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+        mt_service:
+          operations:
+            view:
+              unpublished: 0
+              roles: {  }
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+        mt_speaker:
+          operations:
+            view:
+              roles:
+                speaker: speaker
+              unpublished: 0
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+        mt_sponsor:
+          operations:
+            view:
+              unpublished: 0
+              roles: {  }
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+        mt_team_member:
+          operations:
+            view:
+              unpublished: 0
+              roles: {  }
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+        mt_testimonial:
+          operations:
+            view:
+              unpublished: 0
+              roles: {  }
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+        page:
+          operations:
+            view:
+              unpublished: 0
+              roles: {  }
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+        poster:
+          operations:
+            view:
+              unpublished: 0
+              roles: {  }
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+        tradeshow:
+          operations:
+            view:
+              unpublished: 0
+              roles: {  }
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+        zoom_meeting:
+          operations:
+            view:
+              unpublished: 0
+              roles: {  }
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+        zoom_registrant:
+          operations:
+            view:
+              unpublished: 0
+              roles: {  }
+            update:
+              unpublished: 0
+              roles: {  }
+            delete:
+              unpublished: 0
+              roles: {  }
+    default:
+      enabled: '1'
+      operations:
+        view:
+          roles:
+            speaker: speaker
+          unpublished: 0
+        update:
+          unpublished: 0
+          roles: {  }
+        delete:
+          unpublished: 0
+          roles: {  }

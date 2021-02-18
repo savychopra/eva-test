@@ -1,0 +1,17 @@
+uuid: 239c9ccf-5a71-4f82-8a00-48a843e77dd2
+langcode: en
+status: true
+dependencies: {  }
+id: speaker
+label: Speaker
+weight: 4
+is_admin: null
+permissions:
+  - 'RAC update speaker'
+  - RAC_view_speaker
+  - 'access toolbar'
+  - 'rabbit hole bypass node'
+  - 'rabbit hole bypass taxonomy_term'
+  - 'rabbit hole bypass user'
+  - 'view any mt_speaker content'
+  - 'view own mt_speaker content'

@@ -1,0 +1,31 @@
+uuid: c2fe3bfd-3728-4cc7-9c81-718ba5a5f84f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_background_image_block:f80a84a8-6e49-4b3c-a2a8-2dec831316dc'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: backgroundimageblockcta
+theme: conferenceplus
+region: content_top_highlighted
+weight: -59
+provider: null
+plugin: 'block_content:f80a84a8-6e49-4b3c-a2a8-2dec831316dc'
+settings:
+  id: 'block_content:f80a84a8-6e49-4b3c-a2a8-2dec831316dc'
+  label: 'Background image block - CtA'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }

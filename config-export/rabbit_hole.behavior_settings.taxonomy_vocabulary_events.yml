@@ -1,0 +1,14 @@
+uuid: 59be5fa2-c9d4-43f0-aaaf-e99eb6952a52
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.events
+id: taxonomy_vocabulary_events
+entity_type_id: taxonomy_vocabulary
+entity_id: events
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

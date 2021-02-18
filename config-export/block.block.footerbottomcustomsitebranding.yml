@@ -1,0 +1,31 @@
+uuid: 4e216a01-764f-4790-8c2a-bcc96f1bad5f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:30cd384d-66e1-462a-b606-9af85d356ef1'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: footerbottomcustomsitebranding
+theme: conferenceplus
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:30cd384d-66e1-462a-b606-9af85d356ef1'
+settings:
+  id: 'block_content:30cd384d-66e1-462a-b606-9af85d356ef1'
+  label: 'Footer bottom custom site branding'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/60
+    negate: false
+    context_mapping: {  }

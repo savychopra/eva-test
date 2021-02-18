@@ -1,0 +1,134 @@
+uuid: 85702174-073e-44d7-9b60-fc87eb483874
+langcode: en
+status: true
+dependencies: {  }
+id: schedule_at_a_glance
+label: 'Schedule at a glance'
+renderer: quick_tabs
+options:
+  quick_tabs:
+    class: nav-item
+    style: ''
+    ajax: false
+  accordion_tabs:
+    jquery_ui:
+      collapsible: false
+      heightStyle: auto
+hide_empty_tabs: false
+default_tab: 0
+configuration_data:
+  -
+    title: All
+    weight: -10
+    type: view_content
+    content:
+      block_content:
+        options:
+          bid: 'entity_view:node'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: schedule_at_a_glance_page
+          display: block_10
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: sponsors_
+  -
+    title: 'General Session'
+    weight: -9
+    type: view_content
+    content:
+      block_content:
+        options:
+          bid: 'entity_view:node'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: schedule_at_a_glance_page
+          display: block_1
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: sponsors_
+  -
+    title: 'Breakout Session'
+    weight: -8
+    type: view_content
+    content:
+      block_content:
+        options:
+          bid: 'entity_view:node'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: schedule_at_a_glance_page
+          display: block_7
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: sponsors_
+  -
+    title: Workshop
+    weight: -7
+    type: view_content
+    content:
+      block_content:
+        options:
+          bid: 'entity_view:node'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: schedule_at_a_glance_page
+          display: block_8
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: sponsors_
+  -
+    title: 'Commercial Session'
+    weight: -6
+    type: view_content
+    content:
+      block_content:
+        options:
+          bid: 'entity_view:node'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: schedule_at_a_glance_page
+          display: block_9
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: sponsors_

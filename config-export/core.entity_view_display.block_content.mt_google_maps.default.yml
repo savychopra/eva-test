@@ -1,0 +1,26 @@
+uuid: 27bffcb5-39e6-42bc-a34d-2ffed0abeb1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_google_maps
+    - field.field.block_content.mt_google_maps.field_mt_map_location
+    - field.field.block_content.mt_google_maps.field_mt_map_zoom
+  module:
+    - entity_reference_revisions
+id: block_content.mt_google_maps.default
+targetEntityType: block_content
+bundle: mt_google_maps
+mode: default
+content:
+  field_mt_map_location:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_mt_map_zoom: true

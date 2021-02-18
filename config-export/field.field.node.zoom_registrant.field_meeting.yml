@@ -1,0 +1,30 @@
+uuid: 6379a085-05b8-49c2-b87d-f138ef58e0f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting
+    - node.type.zoom_meeting
+    - node.type.zoom_registrant
+_core:
+  default_config_hash: sgYL-PlzwlWqvx5Q7pOPlEiCNbRCSZuV29zAGWRILLk
+id: node.zoom_registrant.field_meeting
+field_name: field_meeting
+entity_type: node
+bundle: zoom_registrant
+label: Meeting
+description: 'The Zoom Meeting that this registration is for.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      zoom_meeting: zoom_meeting
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

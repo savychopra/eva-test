@@ -1,0 +1,64 @@
+uuid: c52b28a7-2ea0-4571-8812-69459f54ce0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.poster.body
+    - field.field.node.poster.field_author
+    - field.field.node.poster.field_pdf
+    - field.field.node.poster.field_poster_image
+    - node.type.poster
+  module:
+    - image
+    - pdf_reader
+    - text
+    - user
+id: node.poster.default
+targetEntityType: node
+bundle: poster
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_author:
+    weight: 102
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_pdf:
+    weight: 104
+    label: hidden
+    settings:
+      pdf_width: null
+      pdf_height: 450
+      renderer: google
+      embed_view_fit: Fit
+      link_placement: top
+      embed_hide_toolbar: false
+      download: false
+    third_party_settings: {  }
+    type: FieldPdfReaderFields
+    region: content
+  field_poster_image:
+    weight: 103
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

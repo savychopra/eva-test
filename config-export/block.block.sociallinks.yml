@@ -1,0 +1,31 @@
+uuid: df4fe143-d4e1-457f-ae15-b2bcc6d0fba1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:af6f94ee-1e69-4b04-b8e0-aa57e603e25c'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: sociallinks
+theme: conferenceplus
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:af6f94ee-1e69-4b04-b8e0-aa57e603e25c'
+settings:
+  id: 'block_content:af6f94ee-1e69-4b04-b8e0-aa57e603e25c'
+  label: 'Social Links'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }

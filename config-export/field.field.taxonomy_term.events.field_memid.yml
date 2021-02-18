@@ -1,0 +1,19 @@
+uuid: eb89c204-cc63-431c-acda-0fed76650d5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_memid
+    - taxonomy.vocabulary.events
+id: taxonomy_term.events.field_memid
+field_name: field_memid
+entity_type: taxonomy_term
+bundle: events
+label: memid
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

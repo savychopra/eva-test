@@ -1,0 +1,21 @@
+uuid: d0cc1c8a-9126-48f4-b816-29b0bb812b69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prg_start_date
+    - node.type.mt_program_entry
+  module:
+    - datetime
+id: node.mt_program_entry.field_mt_prg_start_date
+field_name: field_mt_prg_start_date
+entity_type: node
+bundle: mt_program_entry
+label: 'Start Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

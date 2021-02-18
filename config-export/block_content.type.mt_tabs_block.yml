@@ -1,0 +1,8 @@
+uuid: a6cd2a36-e4ad-43ad-85ff-b6d44a316a60
+langcode: en
+status: true
+dependencies: {  }
+id: mt_tabs_block
+label: 'Tabs block'
+revision: 0
+description: 'Use this custom block type to display other blocks in a tabbed design, using the corresponding Bootstrap feature.'

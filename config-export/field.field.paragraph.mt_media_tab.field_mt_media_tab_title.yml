@@ -1,0 +1,19 @@
+uuid: 9aa9532c-d771-45d7-b444-02cd499867ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_media_tab_title
+    - paragraphs.paragraphs_type.mt_media_tab
+id: paragraph.mt_media_tab.field_mt_media_tab_title
+field_name: field_mt_media_tab_title
+entity_type: paragraph
+bundle: mt_media_tab
+label: 'Media Tab Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

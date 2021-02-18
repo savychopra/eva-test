@@ -1,0 +1,31 @@
+uuid: 4a2b38dd-f09b-4d8e-a086-c3bde3f1549c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b881398c-7d2f-4579-9930-9300538bd2aa'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: mystory
+theme: conferenceplus
+region: content_top
+weight: -66
+provider: null
+plugin: 'block_content:b881398c-7d2f-4579-9930-9300538bd2aa'
+settings:
+  id: 'block_content:b881398c-7d2f-4579-9930-9300538bd2aa'
+  label: 'My Story'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }

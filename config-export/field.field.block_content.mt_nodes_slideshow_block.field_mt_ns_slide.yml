@@ -1,0 +1,30 @@
+uuid: 5e48e528-c122-4020-984a-e98c7ffe27d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_nodes_slideshow_block
+    - field.storage.block_content.field_mt_ns_slide
+    - node.type.mt_product
+    - node.type.mt_service
+id: block_content.mt_nodes_slideshow_block.field_mt_ns_slide
+field_name: field_mt_ns_slide
+entity_type: block_content
+bundle: mt_nodes_slideshow_block
+label: 'Node Slide'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      mt_product: mt_product
+      mt_service: mt_service
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: mt_product
+field_type: entity_reference

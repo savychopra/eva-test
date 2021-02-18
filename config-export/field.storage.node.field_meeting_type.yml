@@ -1,0 +1,22 @@
+uuid: 86dc51aa-b001-47d9-8db3-87a87bd2109b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: rNumwSrKaGOWXgJ8kCxxOgVMQTjNvJ1_804hxpuHyaE
+id: node.field_meeting_type
+field_name: field_meeting_type
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

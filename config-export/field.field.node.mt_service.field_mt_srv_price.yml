@@ -1,0 +1,19 @@
+uuid: 06dd9a5c-813b-4d07-9861-bb83b20f2855
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_srv_price
+    - node.type.mt_service
+id: node.mt_service.field_mt_srv_price
+field_name: field_mt_srv_price
+entity_type: node
+bundle: mt_service
+label: Price
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

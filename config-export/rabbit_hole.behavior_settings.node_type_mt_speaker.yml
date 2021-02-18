@@ -1,0 +1,14 @@
+uuid: 813a5bfa-45ea-485b-8226-6cd62fc77cf6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mt_speaker
+id: node_type_mt_speaker
+entity_type_id: node_type
+entity_id: mt_speaker
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

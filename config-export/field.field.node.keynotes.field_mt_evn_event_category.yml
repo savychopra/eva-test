@@ -1,0 +1,29 @@
+uuid: 3a470c88-02f9-4814-a8f2-27550c243680
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_evn_event_category
+    - node.type.keynotes
+    - taxonomy.vocabulary.mt_event_categories
+id: node.keynotes.field_mt_evn_event_category
+field_name: field_mt_evn_event_category
+entity_type: node
+bundle: keynotes
+label: 'Event Category'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      mt_event_categories: mt_event_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

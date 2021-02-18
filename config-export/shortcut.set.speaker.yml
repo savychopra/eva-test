@@ -1,0 +1,6 @@
+uuid: be79b243-b4cc-43ff-8830-a0a13dabf82d
+langcode: en
+status: true
+dependencies: {  }
+id: speaker
+label: Speaker

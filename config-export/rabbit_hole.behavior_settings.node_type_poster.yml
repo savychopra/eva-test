@@ -1,0 +1,14 @@
+uuid: d7f63eae-1d25-40aa-b30c-10f6fa7d6c79
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.poster
+id: node_type_poster
+entity_type_id: node_type
+entity_id: poster
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

@@ -1,0 +1,23 @@
+uuid: d6e9e355-572d-42fe-8d08-7db6c40dc2aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_timeline_block
+    - field.storage.block_content.field_mt_tml_timeline_viewmore
+  module:
+    - link
+id: block_content.mt_timeline_block.field_mt_tml_timeline_viewmore
+field_name: field_mt_tml_timeline_viewmore
+entity_type: block_content
+bundle: mt_timeline_block
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

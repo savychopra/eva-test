@@ -1,0 +1,24 @@
+uuid: e6534ec1-3f9f-4ac9-828d-eddca6100f3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.zoom_meeting
+_core:
+  default_config_hash: Lf5aTHc0-eUymNv8zZn6mZIxnLrSWM5OvFeLJB6ZY-I
+id: node.zoom_meeting.promote
+field_name: promote
+entity_type: node
+bundle: zoom_meeting
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

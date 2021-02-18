@@ -1,0 +1,23 @@
+uuid: 269be0cc-b9e2-469d-91bc-42e9d051e0fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_mt_signature
+  module:
+    - text
+    - user
+id: user.user.field_mt_signature
+field_name: field_mt_signature
+entity_type: user
+bundle: user
+label: Signature
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

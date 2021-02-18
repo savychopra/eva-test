@@ -1,0 +1,30 @@
+uuid: cd0709eb-ce89-4a7c-8613-040b4e35b830
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.timeline_home_page
+  module:
+    - system
+    - views
+  theme:
+    - conferenceplus
+id: views_block__timeline_home_page_block_1
+theme: conferenceplus
+region: content
+weight: -51
+provider: null
+plugin: 'views_block:timeline_home_page-block_1'
+settings:
+  id: 'views_block:timeline_home_page-block_1'
+  label: 'Upcoming Events'
+  provider: views
+  label_display: visible
+  views_label: 'Upcoming Events'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

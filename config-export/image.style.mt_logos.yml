@@ -1,0 +1,15 @@
+uuid: 80cba29a-9c51-4aec-bdd0-04f3ff568ed4
+langcode: en
+status: true
+dependencies: {  }
+name: mt_logos
+label: 'Logos (scale width to 230)'
+effects:
+  8af07862-9b1c-4759-b122-673b58bcc855:
+    uuid: 8af07862-9b1c-4759-b122-673b58bcc855
+    id: image_scale
+    weight: 1
+    data:
+      width: 230
+      height: null
+      upscale: false

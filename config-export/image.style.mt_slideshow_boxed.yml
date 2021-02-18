@@ -1,0 +1,15 @@
+uuid: 802866b5-fdbc-4851-85e8-9d8a225530c8
+langcode: en
+status: true
+dependencies: {  }
+name: mt_slideshow_boxed
+label: 'Slideshow Boxed Width (1140x650)'
+effects:
+  86d54018-c393-4d94-b8a4-0d61380fbcf0:
+    uuid: 86d54018-c393-4d94-b8a4-0d61380fbcf0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1140
+      height: 650
+      anchor: center-center

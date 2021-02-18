@@ -1,0 +1,23 @@
+uuid: 033e1106-e2fd-4fec-861a-5634185014c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_ms_slide_caption_color
+    - paragraphs.paragraphs_type.mt_main_slideshow_slide
+  module:
+    - options
+id: paragraph.mt_main_slideshow_slide.field_mt_ms_slide_caption_color
+field_name: field_mt_ms_slide_caption_color
+entity_type: paragraph
+bundle: mt_main_slideshow_slide
+label: 'Slide Caption Background Color'
+description: 'From the drop-down menu, select the color you prefer.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 'region--light-typography region--dark-background'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

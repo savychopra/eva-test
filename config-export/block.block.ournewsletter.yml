@@ -1,0 +1,31 @@
+uuid: 7ab65d6a-a18a-4dd2-9e82-9baaa225289c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a007890a-a321-4ab4-84f1-049b7b98801c'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: ournewsletter
+theme: conferenceplus
+region: featured_top
+weight: -60
+provider: null
+plugin: 'block_content:a007890a-a321-4ab4-84f1-049b7b98801c'
+settings:
+  id: 'block_content:a007890a-a321-4ab4-84f1-049b7b98801c'
+  label: 'Our Newsletter'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }

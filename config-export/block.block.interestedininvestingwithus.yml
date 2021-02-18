@@ -1,0 +1,31 @@
+uuid: 925dad75-2bb5-4c8d-ae40-377b64669731
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ac329bb8-6f7c-4394-90aa-c4dbcdff8764'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: interestedininvestingwithus
+theme: conferenceplus
+region: sub_featured
+weight: -64
+provider: null
+plugin: 'block_content:ac329bb8-6f7c-4394-90aa-c4dbcdff8764'
+settings:
+  id: 'block_content:ac329bb8-6f7c-4394-90aa-c4dbcdff8764'
+  label: 'Interested in investing with us?'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /investors
+    negate: false
+    context_mapping: {  }

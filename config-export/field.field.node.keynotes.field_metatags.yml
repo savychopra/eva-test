@@ -1,0 +1,21 @@
+uuid: 16dd2d42-35ca-4f18-8773-5e208ecdfedd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.keynotes
+  module:
+    - metatag
+id: node.keynotes.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: keynotes
+label: Metatags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

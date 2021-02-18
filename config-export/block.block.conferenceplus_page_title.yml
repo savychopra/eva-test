@@ -1,0 +1,27 @@
+uuid: f7a6be46-2344-4820-8fdf-b49578e6a2c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - conferenceplus
+_core:
+  default_config_hash: 6JlyFDpCLptKyEp6Q5AIUuhX9loH6iTrv_QCxEM7bxA
+id: conferenceplus_page_title
+theme: conferenceplus
+region: content
+weight: -61
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/35\r\n/node/16\r\n/node/17\r\n/node/40\r\n/node/53\r\n/node/54\r\n/node/55\r\n/node/58\r\n/node/59\r\n/node/63\r\n/node/82\r\n/showcases-3-col\r\n/showcases-2-col\r\n/about-us\r\n/investors\r\n/services-3-col\r\n/services-2-col\r\n/services-list\r\n/services-isotope\r\n/products-2-col\r\n/products-3-col\r\n/products-isotope\r\n/products-list\r\n/products-masonry\r\n/showcases-2-col\r\n/showcases-3-col\r\n/showcases-3-col-style-2\r\n/showcases-isotope\r\n/alternative-footer\r\n/mega-menu\r\n/conference-program/*\r\n/speaker/*\r\n/keynotes/*\r\n/tradeshow/*"
+    negate: true
+    context_mapping: {  }

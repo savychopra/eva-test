@@ -1,0 +1,24 @@
+uuid: 261f9a48-9380-4025-b725-8b67f250af9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_products_list
+  module:
+    - views
+  theme:
+    - conferenceplus
+id: conferenceplus_views_block__mt_products_list_block_1
+theme: conferenceplus
+region: hidden_blocks_collection
+weight: -61
+provider: null
+plugin: 'views_block:mt_products_list-block_1'
+settings:
+  id: 'views_block:mt_products_list-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

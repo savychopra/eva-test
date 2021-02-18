@@ -1,0 +1,53 @@
+uuid: cb83fc12-0efe-4958-9b6d-68cd870db8f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_additional_feature.field_mt_adf_body
+    - field.field.paragraph.mt_additional_feature.field_mt_adf_fa_icon
+    - field.field.paragraph.mt_additional_feature.field_mt_adf_image
+    - field.field.paragraph.mt_additional_feature.field_mt_adf_title
+    - image.style.large
+    - paragraphs.paragraphs_type.mt_additional_feature
+  module:
+    - fontawesome
+    - image
+    - text
+id: paragraph.mt_additional_feature.default
+targetEntityType: paragraph
+bundle: mt_additional_feature
+mode: default
+content:
+  field_mt_adf_body:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_adf_fa_icon:
+    weight: 2
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    type: fontawesome_icon_formatter
+    region: content
+  field_mt_adf_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_adf_title:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

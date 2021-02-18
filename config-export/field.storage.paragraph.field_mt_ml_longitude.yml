@@ -1,0 +1,21 @@
+uuid: 31840a61-d96b-462b-8f51-baf1e38d0bb8
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_mt_ml_longitude
+field_name: field_mt_ml_longitude
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

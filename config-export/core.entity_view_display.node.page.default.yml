@@ -1,0 +1,69 @@
+uuid: 3c83f4f8-4f03-41d4-b090-506c51f23482
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_mt_subheader_body
+    - field.field.node.page.field_twitter_feed
+    - node.type.page
+  module:
+    - text
+    - twitter_embed
+    - user
+_core:
+  default_config_hash: oZ-7vpIJxjxL2up9B5KrJGD0lazQ9aN0P-fIPo6OrSU
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_mt_subheader_body:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_twitter_feed:
+    weight: 11
+    label: above
+    settings:
+      username: ''
+      type: profile
+      type_value: ''
+      display_style: timeline
+      theme: light
+      chrome: null
+      width: 0
+      height: 600
+      link_color: '#2b7bb9'
+      border_color: '#000000'
+      tweet_limit: 0
+      show_replies: false
+      aria_polite: polite
+      language: ''
+      hide_username: false
+      hide_followers_count: false
+      size: null
+    third_party_settings: {  }
+    type: twitter_timeline_formatter
+    region: content
+  flag_bookmark:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

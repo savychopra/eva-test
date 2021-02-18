@@ -1,0 +1,39 @@
+uuid: 75348b10-8fc5-4961-85ac-27734415b947
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_mt_ms_slide_caption_color
+field_name: field_mt_ms_slide_caption_color
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'region--dark-typography region--white-background'
+      label: White
+    -
+      value: 'region--dark-typography region--gray-background'
+      label: 'Light Gray'
+    -
+      value: 'region--light-typography region--dark-gray-background'
+      label: 'Dark Gray'
+    -
+      value: 'region--light-typography region--colored-background'
+      label: Colored
+    -
+      value: 'region--light-typography region--dark-background'
+      label: 'Dark Colored'
+    -
+      value: 'region--light-typography region--black-background'
+      label: Black
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,34 @@
+uuid: 8efc2e26-37ec-4457-8e21-0d53c55466bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_video_gallery_block
+    - field.field.block_content.mt_video_gallery_block.field_mt_video_gallery_slides
+  module:
+    - paragraphs
+id: block_content.mt_video_gallery_block.default
+targetEntityType: block_content
+bundle: mt_video_gallery_block
+mode: default
+content:
+  field_mt_video_gallery_slides:
+    type: entity_reference_paragraphs
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

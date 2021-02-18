@@ -1,0 +1,25 @@
+uuid: 2b69e964-be88-49ac-a4d8-05e1e2b2c847
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:484e39d9-79e3-484e-9855-6b935d61bd03'
+  module:
+    - block_content
+  theme:
+    - conferenceplus
+id: calltoaction
+theme: conferenceplus
+region: hidden_blocks_collection
+weight: -64
+provider: null
+plugin: 'block_content:484e39d9-79e3-484e-9855-6b935d61bd03'
+settings:
+  id: 'block_content:484e39d9-79e3-484e-9855-6b935d61bd03'
+  label: 'Call to action'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

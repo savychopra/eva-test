@@ -1,0 +1,148 @@
+uuid: e77041ec-7e62-4132-ba57-10a3b832b971
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.mt_listing_item
+    - field.field.node.mt_event.field_assigned_to
+    - field.field.node.mt_event.field_ceu_details
+    - field.field.node.mt_event.field_conf_status
+    - field.field.node.mt_event.field_end_date
+    - field.field.node.mt_event.field_events
+    - field.field.node.mt_event.field_metatags
+    - field.field.node.mt_event.field_mt_evn_body
+    - field.field.node.mt_event.field_mt_evn_date
+    - field.field.node.mt_event.field_mt_evn_event_category
+    - field.field.node.mt_event.field_mt_evn_files
+    - field.field.node.mt_event.field_mt_evn_image
+    - field.field.node.mt_event.field_mt_evn_location
+    - field.field.node.mt_event.field_mt_evn_map_zoom
+    - field.field.node.mt_event.field_mt_evn_place
+    - field.field.node.mt_event.field_mt_evn_speaker
+    - field.field.node.mt_event.field_mt_evn_sponsor
+    - field.field.node.mt_event.field_mt_evn_video
+    - field.field.node.mt_event.field_session_timezone
+    - field.field.node.mt_event.field_session_track
+    - field.field.node.mt_event.field_session_type
+    - field.field.node.mt_event.field_upload_
+    - image.style.large
+    - node.type.mt_event
+  module:
+    - datetime
+    - entity_reference_revisions
+    - file
+    - image
+    - text
+    - user
+    - video_embed_field
+id: node.mt_event.mt_listing_item
+targetEntityType: node
+bundle: mt_event
+mode: mt_listing_item
+content:
+  field_mt_evn_body:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_evn_date:
+    weight: 0
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: mt_time
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_mt_evn_event_category:
+    weight: 9
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mt_evn_files:
+    weight: 8
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_mt_evn_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: large
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_evn_location:
+    type: entity_reference_revisions_entity_view
+    weight: 7
+    label: hidden
+    settings:
+      view_mode: mt_get_directions_button
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_mt_evn_place:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_evn_speaker:
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_mt_evn_sponsor:
+    weight: 6
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_mt_evn_video:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: large
+      link_image_to: provider
+    third_party_settings: {  }
+    type: video_embed_field_thumbnail
+    region: content
+  flag_add_to_schedule_events:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_assigned_to: true
+  field_ceu_details: true
+  field_conf_status: true
+  field_end_date: true
+  field_events: true
+  field_metatags: true
+  field_mt_evn_map_zoom: true
+  field_session_timezone: true
+  field_session_track: true
+  field_session_type: true
+  field_upload_: true

@@ -1,0 +1,97 @@
+uuid: f4280b6a-3f28-4d72-a30c-e7a053c1ec39
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_event.field_assigned_to
+    - field.field.node.mt_event.field_ceu_details
+    - field.field.node.mt_event.field_conf_status
+    - field.field.node.mt_event.field_end_date
+    - field.field.node.mt_event.field_events
+    - field.field.node.mt_event.field_metatags
+    - field.field.node.mt_event.field_mt_evn_body
+    - field.field.node.mt_event.field_mt_evn_date
+    - field.field.node.mt_event.field_mt_evn_event_category
+    - field.field.node.mt_event.field_mt_evn_files
+    - field.field.node.mt_event.field_mt_evn_image
+    - field.field.node.mt_event.field_mt_evn_location
+    - field.field.node.mt_event.field_mt_evn_map_zoom
+    - field.field.node.mt_event.field_mt_evn_place
+    - field.field.node.mt_event.field_mt_evn_speaker
+    - field.field.node.mt_event.field_mt_evn_sponsor
+    - field.field.node.mt_event.field_mt_evn_video
+    - field.field.node.mt_event.field_session_timezone
+    - field.field.node.mt_event.field_session_track
+    - field.field.node.mt_event.field_session_type
+    - field.field.node.mt_event.field_upload_
+    - image.style.large
+    - node.type.mt_event
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.mt_event.teaser
+targetEntityType: node
+bundle: mt_event
+mode: teaser
+content:
+  field_mt_evn_body:
+    type: text_summary_or_trimmed
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      trim_length: 250
+    third_party_settings: {  }
+  field_mt_evn_date:
+    type: datetime_default
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_mt_evn_image:
+    type: image
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      image_style: large
+      image_link: content
+    third_party_settings: {  }
+  field_mt_evn_place:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  flag_add_to_schedule_events:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_assigned_to: true
+  field_ceu_details: true
+  field_conf_status: true
+  field_end_date: true
+  field_events: true
+  field_metatags: true
+  field_mt_evn_event_category: true
+  field_mt_evn_files: true
+  field_mt_evn_location: true
+  field_mt_evn_map_zoom: true
+  field_mt_evn_speaker: true
+  field_mt_evn_sponsor: true
+  field_mt_evn_video: true
+  field_session_timezone: true
+  field_session_track: true
+  field_session_type: true
+  field_upload_: true
+  links: true

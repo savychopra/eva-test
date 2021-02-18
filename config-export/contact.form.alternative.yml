@@ -1,0 +1,12 @@
+uuid: c04f9bc4-1a2c-4170-855d-4f9a0073373d
+langcode: en
+status: true
+dependencies: {  }
+id: alternative
+label: 'Alternative Contact'
+recipients:
+  - noreply@domain.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

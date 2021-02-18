@@ -1,0 +1,14 @@
+uuid: 2051ce94-4683-4202-a457-1b79e2757eef
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: daP7SqQXImu8-yzdgVy7UL49H0Z6fjqK8NpmIVOoljc
+id: frequently_asked_questions
+label: 'Frequently Asked Questions'
+description: ''
+use_admin_theme: false
+path: /faqs
+access_logic: and
+access_conditions: {  }
+parameters: {  }

@@ -1,0 +1,42 @@
+uuid: fb3e5e5d-bad3-4d2b-af1c-c80d125c3a10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_map_location.field_mt_ml_latitude
+    - field.field.paragraph.mt_map_location.field_mt_ml_location_name
+    - field.field.paragraph.mt_map_location.field_mt_ml_longitude
+    - paragraphs.paragraphs_type.mt_map_location
+id: paragraph.mt_map_location.default
+targetEntityType: paragraph
+bundle: mt_map_location
+mode: default
+content:
+  field_mt_ml_latitude:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_ml_location_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_ml_longitude:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

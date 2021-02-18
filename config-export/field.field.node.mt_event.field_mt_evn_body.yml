@@ -1,0 +1,23 @@
+uuid: 54f9ec84-30f0-4e01-9913-c195cf1483fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_evn_body
+    - node.type.mt_event
+  module:
+    - text
+id: node.mt_event.field_mt_evn_body
+field_name: field_mt_evn_body
+entity_type: node
+bundle: mt_event
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,8 @@
+uuid: 7e12e657-fc36-45f9-b838-8371643734d5
+langcode: en
+status: true
+dependencies: {  }
+name: 'Event Categories'
+vid: mt_event_categories
+description: ''
+weight: 0

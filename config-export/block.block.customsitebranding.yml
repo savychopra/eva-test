@@ -1,0 +1,31 @@
+uuid: b1913af5-1acb-4c6f-a1b7-7fabda0567bc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:31d21c04-eb31-438b-8730-00c9e7511dd7'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: customsitebranding
+theme: conferenceplus
+region: slideout
+weight: -65
+provider: null
+plugin: 'block_content:31d21c04-eb31-438b-8730-00c9e7511dd7'
+settings:
+  id: 'block_content:31d21c04-eb31-438b-8730-00c9e7511dd7'
+  label: 'Custom site branding'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/17
+    negate: false
+    context_mapping: {  }

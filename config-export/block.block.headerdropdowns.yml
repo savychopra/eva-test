@@ -1,0 +1,31 @@
+uuid: 5b108211-d855-47e5-ab36-4b43b07beb96
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_dropdowns_block:18dc1432-7c77-4b0b-b804-5bd46ab9769a'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: headerdropdowns
+theme: conferenceplus
+region: header_third
+weight: -65
+provider: null
+plugin: 'block_content:18dc1432-7c77-4b0b-b804-5bd46ab9769a'
+settings:
+  id: 'block_content:18dc1432-7c77-4b0b-b804-5bd46ab9769a'
+  label: 'Header Dropdowns'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/53
+    negate: false
+    context_mapping: {  }

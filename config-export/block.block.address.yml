@@ -1,0 +1,31 @@
+uuid: d3f88b9c-42d5-4e86-9f4e-364ff7c2e313
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:165f7847-15c7-4a04-9acf-8765861ca9a1'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: address
+theme: conferenceplus
+region: sidebar_second
+weight: -56
+provider: null
+plugin: 'block_content:165f7847-15c7-4a04-9acf-8765861ca9a1'
+settings:
+  id: 'block_content:165f7847-15c7-4a04-9acf-8765861ca9a1'
+  label: 'Venue Address'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact
+    negate: false
+    context_mapping: {  }

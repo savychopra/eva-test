@@ -1,0 +1,38 @@
+uuid: f50b3c18-ab31-4e47-a23e-f0cd21a553a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_booth_image
+    - node.type.mt_sponsor
+  module:
+    - image
+id: node.mt_sponsor.field_booth_image
+field_name: field_booth_image
+entity_type: node
+bundle: mt_sponsor
+label: 'Booth Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

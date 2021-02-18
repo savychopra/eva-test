@@ -1,0 +1,31 @@
+uuid: a7228b23-8adb-481b-a519-4b8f3feb63b6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_main_slideshow_block:b2f629fe-21d9-4f21-b60a-3f820c8be0a9'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: fullwidthslideshow
+theme: conferenceplus
+region: banner
+weight: -64
+provider: null
+plugin: 'block_content:b2f629fe-21d9-4f21-b60a-3f820c8be0a9'
+settings:
+  id: 'block_content:b2f629fe-21d9-4f21-b60a-3f820c8be0a9'
+  label: 'Fullwidth Slideshow'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/59
+    negate: false
+    context_mapping: {  }

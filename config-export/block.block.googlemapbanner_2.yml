@@ -1,0 +1,31 @@
+uuid: 3b1c87e1-518e-4d8d-8283-50c1c41ff2fc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_google_maps:3a7d6304-c55c-48d0-a559-ee212ac34069'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: googlemapbanner_2
+theme: conferenceplus
+region: banner
+weight: -58
+provider: null
+plugin: 'block_content:3a7d6304-c55c-48d0-a559-ee212ac34069'
+settings:
+  id: 'block_content:3a7d6304-c55c-48d0-a559-ee212ac34069'
+  label: 'Google map - Banner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact/alternative
+    negate: false
+    context_mapping: {  }

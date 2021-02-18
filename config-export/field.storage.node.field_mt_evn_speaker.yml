@@ -1,0 +1,23 @@
+uuid: 6ee6777f-e2a3-4047-b58b-05a26c08eb15
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_mt_evn_speaker
+field_name: field_mt_evn_speaker
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

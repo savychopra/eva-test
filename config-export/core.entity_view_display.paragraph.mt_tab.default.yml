@@ -1,0 +1,26 @@
+uuid: d1b7a49b-a868-44a7-99cb-54fc1a2c8516
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_tab.field_mt_tab_content
+    - field.field.paragraph.mt_tab.field_mt_tab_title
+    - paragraphs.paragraphs_type.mt_tab
+  module:
+    - text
+id: paragraph.mt_tab.default
+targetEntityType: paragraph
+bundle: mt_tab
+mode: default
+content:
+  field_mt_tab_content:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  created: true
+  field_mt_tab_title: true
+  uid: true

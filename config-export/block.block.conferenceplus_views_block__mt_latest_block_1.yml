@@ -1,0 +1,24 @@
+uuid: 8592efcd-ab10-4322-a84d-a5c31d90529b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_latest
+  module:
+    - views
+  theme:
+    - conferenceplus
+id: conferenceplus_views_block__mt_latest_block_1
+theme: conferenceplus
+region: hidden_blocks_collection
+weight: -59
+provider: null
+plugin: 'views_block:mt_latest-block_1'
+settings:
+  id: 'views_block:mt_latest-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

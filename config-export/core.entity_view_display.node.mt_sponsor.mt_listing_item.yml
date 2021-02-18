@@ -1,0 +1,76 @@
+uuid: d08d6598-4f43-40fc-9bb0-1cff37f2aef2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.mt_listing_item
+    - field.field.node.mt_sponsor.field_assigned_to
+    - field.field.node.mt_sponsor.field_booth_image
+    - field.field.node.mt_sponsor.field_city
+    - field.field.node.mt_sponsor.field_country
+    - field.field.node.mt_sponsor.field_keynotes_video
+    - field.field.node.mt_sponsor.field_metatags
+    - field.field.node.mt_sponsor.field_mt_spn_body
+    - field.field.node.mt_sponsor.field_mt_spn_logo
+    - field.field.node.mt_sponsor.field_phone
+    - field.field.node.mt_sponsor.field_sponser_address
+    - field.field.node.mt_sponsor.field_sponser_category
+    - field.field.node.mt_sponsor.field_sponser_email
+    - field.field.node.mt_sponsor.field_sponser_facebook
+    - field.field.node.mt_sponsor.field_sponser_linkedin
+    - field.field.node.mt_sponsor.field_sponser_twitter
+    - field.field.node.mt_sponsor.field_sponsor_category_type
+    - field.field.node.mt_sponsor.field_state
+    - field.field.node.mt_sponsor.field_status
+    - field.field.node.mt_sponsor.field_street_1
+    - field.field.node.mt_sponsor.field_street_2
+    - field.field.node.mt_sponsor.field_uplo
+    - field.field.node.mt_sponsor.field_user
+    - field.field.node.mt_sponsor.field_user_type
+    - field.field.node.mt_sponsor.field_website
+    - field.field.node.mt_sponsor.field_zip
+    - image.style.mt_logos
+    - node.type.mt_sponsor
+  module:
+    - image
+    - user
+id: node.mt_sponsor.mt_listing_item
+targetEntityType: node
+bundle: mt_sponsor
+mode: mt_listing_item
+content:
+  field_mt_spn_logo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: mt_logos
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_assigned_to: true
+  field_booth_image: true
+  field_city: true
+  field_country: true
+  field_keynotes_video: true
+  field_metatags: true
+  field_mt_spn_body: true
+  field_phone: true
+  field_sponser_address: true
+  field_sponser_category: true
+  field_sponser_email: true
+  field_sponser_facebook: true
+  field_sponser_linkedin: true
+  field_sponser_twitter: true
+  field_sponsor_category_type: true
+  field_state: true
+  field_status: true
+  field_street_1: true
+  field_street_2: true
+  field_uplo: true
+  field_user: true
+  field_user_type: true
+  field_website: true
+  field_zip: true
+  links: true

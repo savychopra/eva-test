@@ -1,0 +1,30 @@
+uuid: 18abc9d7-dc76-423e-ad47-abce868b549f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.front_section
+  module:
+    - system
+    - views
+  theme:
+    - conferenceplus
+id: views_block__front_section_block_4
+theme: conferenceplus
+region: featured_top
+weight: -53
+provider: null
+plugin: 'views_block:front_section-block_4'
+settings:
+  id: 'views_block:front_section-block_4'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

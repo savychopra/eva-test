@@ -1,0 +1,31 @@
+uuid: 886dcb82-e300-45ee-ace2-9eb4f6c977bb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a6c786ea-831a-4420-bbdc-4257c37aacd4'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: registrationlocationinthevenue
+theme: conferenceplus
+region: sidebar_second
+weight: -55
+provider: null
+plugin: 'block_content:a6c786ea-831a-4420-bbdc-4257c37aacd4'
+settings:
+  id: 'block_content:a6c786ea-831a-4420-bbdc-4257c37aacd4'
+  label: 'Registration location in the venue'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact
+    negate: false
+    context_mapping: {  }

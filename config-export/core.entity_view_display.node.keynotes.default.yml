@@ -1,0 +1,108 @@
+uuid: 9a0238f4-85be-4f4a-9793-477115bc5354
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.keynotes.body
+    - field.field.node.keynotes.field_bottom
+    - field.field.node.keynotes.field_event_end_date
+    - field.field.node.keynotes.field_keynotes_video
+    - field.field.node.keynotes.field_metatags
+    - field.field.node.keynotes.field_mt_evn_date
+    - field.field.node.keynotes.field_mt_evn_event_category
+    - field.field.node.keynotes.field_mt_evn_speaker
+    - field.field.node.keynotes.field_mt_evn_sponsor
+    - node.type.keynotes
+  module:
+    - datetime
+    - metatag
+    - text
+    - user
+    - video_embed_field
+id: node.keynotes.default
+targetEntityType: node
+bundle: keynotes
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_bottom:
+    weight: 107
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_event_end_date:
+    weight: 105
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_keynotes_video:
+    weight: 106
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+  field_metatags:
+    weight: 109
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_mt_evn_date:
+    weight: 103
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_mt_evn_event_category:
+    weight: 104
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mt_evn_speaker:
+    weight: 102
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_mt_evn_sponsor:
+    weight: 108
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

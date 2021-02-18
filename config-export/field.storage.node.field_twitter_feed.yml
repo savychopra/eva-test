@@ -1,0 +1,23 @@
+uuid: 33657f1f-37ef-4b3b-8990-0e0a5134c23a
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - twitter_embed
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_twitter_feed
+field_name: field_twitter_feed
+entity_type: node
+type: twitter_embed_field
+settings: {  }
+module: twitter_embed
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

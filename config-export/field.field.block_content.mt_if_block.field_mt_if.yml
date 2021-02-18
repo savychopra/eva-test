@@ -1,0 +1,63 @@
+uuid: 95953737-44ab-4383-a154-9283325ad37a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_if_block
+    - field.storage.block_content.field_mt_if
+    - paragraphs.paragraphs_type.mt_icon_features
+  module:
+    - entity_reference_revisions
+id: block_content.mt_if_block.field_mt_if
+field_name: field_mt_if
+entity_type: block_content
+bundle: mt_if_block
+label: 'Icon Feature'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      mt_icon_features: mt_icon_features
+    target_bundles_drag_drop:
+      mt_collapse:
+        weight: 13
+        enabled: false
+      mt_dropdown:
+        weight: 14
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 15
+        enabled: false
+      mt_fancy_tab:
+        weight: 16
+        enabled: false
+      mt_featured_linked_text_tile:
+        weight: 17
+        enabled: false
+      mt_highlight:
+        weight: 18
+        enabled: false
+      mt_icon_features:
+        enabled: true
+        weight: 19
+      mt_main_slideshow_slide:
+        weight: 20
+        enabled: false
+      mt_map_location:
+        weight: 21
+        enabled: false
+      mt_media_tab:
+        weight: 22
+        enabled: false
+      mt_tab:
+        weight: 23
+        enabled: false
+      mt_video_gallery_slide:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

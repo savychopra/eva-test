@@ -1,0 +1,6 @@
+uuid: ffc819cc-5337-4afa-a786-aa9d8a4b74f6
+langcode: en
+status: true
+dependencies: {  }
+id: mt_media_tab
+label: 'Media Tab'

@@ -1,0 +1,62 @@
+uuid: 61d1d94e-c76c-4b7e-aa3f-472b5666e40a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_video_gallery_slide.field_mt_vgs_slide_title
+    - field.field.paragraph.mt_video_gallery_slide.field_mt_vgs_thumbnail
+    - field.field.paragraph.mt_video_gallery_slide.field_mt_vgs_vimeo_id
+    - field.field.paragraph.mt_video_gallery_slide.field_mt_vgs_volume
+    - field.field.paragraph.mt_video_gallery_slide.field_mt_vgs_youtube_id
+    - image.style.mt_video_gallery_thumbnail
+    - paragraphs.paragraphs_type.mt_video_gallery_slide
+  module:
+    - image
+id: paragraph.mt_video_gallery_slide.default
+targetEntityType: paragraph
+bundle: mt_video_gallery_slide
+mode: default
+content:
+  field_mt_vgs_slide_title:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_vgs_thumbnail:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: mt_video_gallery_thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_vgs_vimeo_id:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_vgs_volume:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: number_unformatted
+    region: content
+  field_mt_vgs_youtube_id:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  created: true
+  uid: true

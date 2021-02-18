@@ -1,0 +1,30 @@
+uuid: 67d0e0cc-1727-4b15-b9dd-3c2b528b57b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_slideshow_full_width
+  module:
+    - system
+    - views
+  theme:
+    - conferenceplus
+id: conferenceplus_views_block__mt_slideshow_full_width_block_1
+theme: conferenceplus
+region: banner
+weight: -59
+provider: null
+plugin: 'views_block:mt_slideshow_full_width-block_1'
+settings:
+  id: 'views_block:mt_slideshow_full_width-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }

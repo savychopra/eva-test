@@ -1,0 +1,20 @@
+uuid: c240e0ca-88f5-4702-b173-fd19bbd61c52
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_mt_ms_effect_duration
+field_name: field_mt_ms_effect_duration
+entity_type: block_content
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

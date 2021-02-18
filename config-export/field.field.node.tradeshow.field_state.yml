@@ -1,0 +1,19 @@
+uuid: e45d58d8-c2a2-4432-b287-b0434035226e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_state
+    - node.type.tradeshow
+id: node.tradeshow.field_state
+field_name: field_state
+entity_type: node
+bundle: tradeshow
+label: State
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

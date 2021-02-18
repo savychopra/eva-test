@@ -1,0 +1,23 @@
+uuid: ea6328af-0cea-4c6c-ad18-c4dfd101e518
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_srv_subheader_body
+    - node.type.mt_service
+  module:
+    - text
+id: node.mt_service.field_mt_srv_subheader_body
+field_name: field_mt_srv_subheader_body
+entity_type: node
+bundle: mt_service
+label: 'Subheader body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

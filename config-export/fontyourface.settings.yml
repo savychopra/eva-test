@@ -1,0 +1,8 @@
+enabled_fonts:
+  9: 'http://www.google.com/webfonts/family?family=Fira Sans&subset=latin-ext#700'
+  10: 'http://www.google.com/webfonts/family?family=Fira Sans&subset=latin-ext#regular'
+  11: 'http://www.google.com/webfonts/family?family=Nunito&subset=latin#regular'
+  12: 'http://www.google.com/webfonts/family?family=Nunito&subset=latin#700'
+load_all_enabled_fonts: 0
+_core:
+  default_config_hash: r8uAx4mTBwCkgDFbdKCmhjgbb91BQ4HbWSYRKrlowMY

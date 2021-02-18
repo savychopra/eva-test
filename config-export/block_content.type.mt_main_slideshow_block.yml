@@ -1,0 +1,8 @@
+uuid: e67b5a79-74be-4a62-b1b5-c44cb8918296
+langcode: en
+status: true
+dependencies: {  }
+id: mt_main_slideshow_block
+label: 'Main Slideshow Block'
+revision: 0
+description: 'Use this custom block type to create main slideshow blocks.'

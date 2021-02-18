@@ -1,0 +1,39 @@
+uuid: 7b21f57f-0ca1-4b0a-865e-60b58eaab5c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_media_tabs_block
+    - field.storage.block_content.field_mt_media_tab
+    - paragraphs.paragraphs_type.mt_media_tab
+  module:
+    - entity_reference_revisions
+id: block_content.mt_media_tabs_block.field_mt_media_tab
+field_name: field_mt_media_tab
+entity_type: block_content
+bundle: mt_media_tabs_block
+label: 'Media Tab'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      mt_media_tab: mt_media_tab
+    target_bundles_drag_drop:
+      mt_fancy_linked_image:
+        weight: 5
+        enabled: false
+      mt_fancy_tab:
+        weight: 6
+        enabled: false
+      mt_media_tab:
+        enabled: true
+        weight: 7
+      mt_tab:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

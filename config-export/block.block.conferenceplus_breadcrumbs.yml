@@ -1,0 +1,27 @@
+uuid: 235d4489-7492-45bf-800f-4f4ba08aba1d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - conferenceplus
+_core:
+  default_config_hash: eWFfzfS_ToFrvA7wiGjzzwxhUEfe_-HyKewJBlOd4v8
+id: conferenceplus_breadcrumbs
+theme: conferenceplus
+region: system_messages
+weight: -65
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/node/82"
+    negate: true
+    context_mapping: {  }

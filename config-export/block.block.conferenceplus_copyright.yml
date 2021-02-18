@@ -1,0 +1,25 @@
+uuid: 11641027-cc8b-4b33-9229-d63288aceaee
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:77bbdaf0-f40e-46e6-9ecf-f4cb3eb9f644'
+  module:
+    - block_content
+  theme:
+    - conferenceplus
+id: conferenceplus_copyright
+theme: conferenceplus
+region: sub_footer_first
+weight: -58
+provider: null
+plugin: 'block_content:77bbdaf0-f40e-46e6-9ecf-f4cb3eb9f644'
+settings:
+  id: 'block_content:77bbdaf0-f40e-46e6-9ecf-f4cb3eb9f644'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

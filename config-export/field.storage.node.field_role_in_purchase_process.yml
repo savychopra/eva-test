@@ -1,0 +1,35 @@
+uuid: f48e5534-ae47-46c8-8edc-22637d2c328d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: c7_KvaUz3DkT2VHZDC7MLvRzBZHwvrZXBLl_-M2xMYw
+id: node.field_role_in_purchase_process
+field_name: field_role_in_purchase_process
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Decision Maker'
+      label: 'Decision Maker'
+    -
+      value: Evaluator/Recommender
+      label: Evaluator/Recommender
+    -
+      value: Influencer
+      label: Influencer
+    -
+      value: 'Not involved'
+      label: 'Not involved'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

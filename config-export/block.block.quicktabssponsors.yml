@@ -1,0 +1,26 @@
+uuid: cd1f3479-c3e3-4853-979b-066a00c69885
+langcode: en
+status: true
+dependencies:
+  module:
+    - quicktabs
+    - system
+  theme:
+    - conferenceplus
+id: quicktabssponsors
+theme: conferenceplus
+region: content
+weight: -48
+provider: null
+plugin: 'quicktabs_block:sponsors_'
+settings:
+  id: 'quicktabs_block:sponsors_'
+  label: 'QuickTabs - Sponsors '
+  provider: quicktabs
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/sponsors\r\n/sponsors-clone"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,23 @@
+uuid: a14ac2c2-0aa6-40f0-bfee-2ca1a8494dff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prs_body
+    - node.type.mt_presentation
+  module:
+    - text
+id: node.mt_presentation.field_mt_prs_body
+field_name: field_mt_prs_body
+entity_type: node
+bundle: mt_presentation
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

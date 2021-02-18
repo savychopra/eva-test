@@ -1,0 +1,54 @@
+uuid: 087ad6e6-706e-4790-80b5-1e7b10859152
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.zoom_meeting.body
+    - field.field.node.zoom_meeting.field_host_zoom_user_id
+    - field.field.node.zoom_meeting.field_meeting_data
+    - field.field.node.zoom_meeting.field_meeting_duration
+    - field.field.node.zoom_meeting.field_meeting_expiry
+    - field.field.node.zoom_meeting.field_meeting_id
+    - field.field.node.zoom_meeting.field_meeting_join_url
+    - field.field.node.zoom_meeting.field_meeting_start_date
+    - field.field.node.zoom_meeting.field_meeting_start_url
+    - field.field.node.zoom_meeting.field_meeting_timezone
+    - field.field.node.zoom_meeting.field_meeting_type
+    - field.field.node.zoom_meeting.field_uuid
+    - field.field.node.zoom_meeting.field_zoom_meeting_cloud_data
+    - node.type.zoom_meeting
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: jHIHD1WZoyMq_1Mi47UhkokNo_7JmI7I4xnsQjo6gWE
+id: node.zoom_meeting.teaser
+targetEntityType: node
+bundle: zoom_meeting
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_host_zoom_user_id: true
+  field_meeting_data: true
+  field_meeting_duration: true
+  field_meeting_expiry: true
+  field_meeting_id: true
+  field_meeting_join_url: true
+  field_meeting_start_date: true
+  field_meeting_start_url: true
+  field_meeting_timezone: true
+  field_meeting_type: true
+  field_uuid: true
+  field_zoom_meeting_cloud_data: true

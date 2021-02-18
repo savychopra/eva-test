@@ -1,0 +1,24 @@
+uuid: 9e00754d-db97-4126-8933-86d757bf4a57
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_collections_masonry
+  module:
+    - views
+  theme:
+    - conferenceplus
+id: conferenceplus_views_block__mt_collections_masonry_block_1
+theme: conferenceplus
+region: hidden_blocks_collection
+weight: -63
+provider: null
+plugin: 'views_block:mt_collections_masonry-block_1'
+settings:
+  id: 'views_block:mt_collections_masonry-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,30 @@
+uuid: d24c3972-6788-4628-b837-51186597afcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_popular_tags
+  module:
+    - system
+    - views
+  theme:
+    - conferenceplus
+id: conferenceplus_views_block__mt_popular_tags_block_1
+theme: conferenceplus
+region: sidebar_second
+weight: -51
+provider: null
+plugin: 'views_block:mt_popular_tags-block_1'
+settings:
+  id: 'views_block:mt_popular_tags-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/node/3\r\n/node/16\r\n/node/17\r\n/node/23\r\n/node/30\r\n/node/36\r\n/node/39\r\n/node/40\r\n/node/41\r\n/node/42\r\n/node/43\r\n/node/44\r\n/node/45\r\n/node/53\r\n/node/54\r\n/node/55\r\n/node/56\r\n/node/57\r\n/node/59\r\n/node/62\r\n/node/63\r\n/node/64\r\n/node/65\r\n/node/66\r\n/node/67\r\n/node/68\r\n/node/69\r\n/node/70\r\n/node/71\r\n/node/72\r\n/node/73\r\n/node/74\r\n/node/75\r\n/node/82\r\n/benefits\r\n/contact\r\n/contact/alternative\r\n/accommodations-4-col\r\n/accommodations\r\n/accommodations-2-col\r\n/accommodations-isotope\r\n/events-3-col\r\n/merchandise-4-col\r\n/merchandise\r\n/merchandise-3-col\r\n/merchandise-2-col\r\n/merchandise-isotope\r\n/merchandise-masonry\r\n/albums*\r\n/articles-4-col\r\n/articles-3-col\r\n/articles-2-col\r\n/videos\r\n/clients\r\n/merchandise-groups\r\n/merchandise-groups-masonry\r\n/team-members*\r\n/about-us\r\n/pricing-tables\r\n/testimonials-3-col\r\n/testimonials-3-col-2\r\n/testimonials-masonry\r\n/blocks\r\n/alternative-footer\r\n/mega-menu\r\n/photo-gallery\r\n/presentations*\r\n/form/register\r\n/program\r\n/program-google\r\n/sponsors\r\n/conference-hall\r\n/conference-program/*\r\n/schedule-a-glance\r\n/schedule-a-glance/*\r\n/*"
+    negate: true
+    context_mapping: {  }

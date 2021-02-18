@@ -1,0 +1,14 @@
+uuid: e5aa9820-b16d-4299-92fa-f3f10ca6e1ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.cache_clear
+  module:
+    - user
+id: user_add_role_action.cache_clear
+label: 'Add the Cache clear role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: cache_clear

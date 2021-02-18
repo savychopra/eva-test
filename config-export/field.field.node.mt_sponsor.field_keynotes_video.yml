@@ -1,0 +1,25 @@
+uuid: 9b4cbd1d-b289-418f-801f-85930742d943
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_keynotes_video
+    - node.type.mt_sponsor
+  module:
+    - video_embed_field
+id: node.mt_sponsor.field_keynotes_video
+field_name: field_keynotes_video
+entity_type: node
+bundle: mt_sponsor
+label: Video
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    youtube: youtube
+    vimeo: '0'
+    youtube_playlist: '0'
+field_type: video_embed_field

@@ -1,0 +1,20 @@
+uuid: 405653ec-41d6-401b-814f-c93e960a25dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_mt_alb_tags
+field_name: field_mt_alb_tags
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

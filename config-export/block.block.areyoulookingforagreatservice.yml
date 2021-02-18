@@ -1,0 +1,31 @@
+uuid: dd417b8b-815a-4deb-90b3-7fe1bcaf0a04
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c14bd468-befe-4f30-a142-81ace2726783'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: areyoulookingforagreatservice
+theme: conferenceplus
+region: featured_top
+weight: -55
+provider: null
+plugin: 'block_content:c14bd468-befe-4f30-a142-81ace2726783'
+settings:
+  id: 'block_content:c14bd468-befe-4f30-a142-81ace2726783'
+  label: 'Are you looking for a great service?'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }

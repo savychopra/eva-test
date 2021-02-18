@@ -1,0 +1,31 @@
+uuid: 23978d02-fa16-4e5f-9e67-5fc844dc4fe6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_typing_animation_block:24e5856d-18c2-4676-bdd8-d4864a4bef39'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: typinganimation
+theme: conferenceplus
+region: banner
+weight: -65
+provider: null
+plugin: 'block_content:24e5856d-18c2-4676-bdd8-d4864a4bef39'
+settings:
+  id: 'block_content:24e5856d-18c2-4676-bdd8-d4864a4bef39'
+  label: 'Typing Animation'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/node/40\r\n/node/53\r\n/node/54\r\n/node/63\r\n/alternative-footer\r\n/mega-menu"
+    negate: false
+    context_mapping: {  }

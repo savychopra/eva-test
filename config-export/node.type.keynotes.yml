@@ -1,0 +1,18 @@
+uuid: e779dee7-d6b0-454b-8921-1319e07abc62
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Keynotes
+type: keynotes
+description: Keynotes
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

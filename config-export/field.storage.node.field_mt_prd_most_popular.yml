@@ -1,0 +1,18 @@
+uuid: 6d5f86fa-218c-47ff-af97-70cc7ecf06db
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_mt_prd_most_popular
+field_name: field_mt_prd_most_popular
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

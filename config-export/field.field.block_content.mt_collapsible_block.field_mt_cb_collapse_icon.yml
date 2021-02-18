@@ -1,0 +1,19 @@
+uuid: 4840933e-2edf-4262-b29e-a092b1b5e3d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_collapsible_block
+    - field.storage.block_content.field_mt_cb_collapse_icon
+id: block_content.mt_collapsible_block.field_mt_cb_collapse_icon
+field_name: field_mt_cb_collapse_icon
+entity_type: block_content
+bundle: mt_collapsible_block
+label: 'Collapse icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

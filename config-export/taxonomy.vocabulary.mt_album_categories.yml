@@ -1,0 +1,8 @@
+uuid: 0d119282-d68b-4987-81d7-f94469bd08d3
+langcode: en
+status: true
+dependencies: {  }
+name: 'Album Categories'
+vid: mt_album_categories
+description: ''
+weight: 0

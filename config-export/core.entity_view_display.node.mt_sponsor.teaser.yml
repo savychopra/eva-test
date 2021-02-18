@@ -1,0 +1,88 @@
+uuid: c0cf4165-406d-47a9-97ea-117eb5215fce
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_sponsor.field_assigned_to
+    - field.field.node.mt_sponsor.field_booth_image
+    - field.field.node.mt_sponsor.field_city
+    - field.field.node.mt_sponsor.field_country
+    - field.field.node.mt_sponsor.field_keynotes_video
+    - field.field.node.mt_sponsor.field_metatags
+    - field.field.node.mt_sponsor.field_mt_spn_body
+    - field.field.node.mt_sponsor.field_mt_spn_logo
+    - field.field.node.mt_sponsor.field_phone
+    - field.field.node.mt_sponsor.field_sponser_address
+    - field.field.node.mt_sponsor.field_sponser_category
+    - field.field.node.mt_sponsor.field_sponser_email
+    - field.field.node.mt_sponsor.field_sponser_facebook
+    - field.field.node.mt_sponsor.field_sponser_linkedin
+    - field.field.node.mt_sponsor.field_sponser_twitter
+    - field.field.node.mt_sponsor.field_sponsor_category_type
+    - field.field.node.mt_sponsor.field_state
+    - field.field.node.mt_sponsor.field_status
+    - field.field.node.mt_sponsor.field_street_1
+    - field.field.node.mt_sponsor.field_street_2
+    - field.field.node.mt_sponsor.field_uplo
+    - field.field.node.mt_sponsor.field_user
+    - field.field.node.mt_sponsor.field_user_type
+    - field.field.node.mt_sponsor.field_website
+    - field.field.node.mt_sponsor.field_zip
+    - image.style.mt_brands
+    - node.type.mt_sponsor
+  module:
+    - image
+    - text
+    - user
+id: node.mt_sponsor.teaser
+targetEntityType: node
+bundle: mt_sponsor
+mode: teaser
+content:
+  field_mt_spn_body:
+    type: text_summary_or_trimmed
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_mt_spn_logo:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: mt_brands
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_assigned_to: true
+  field_booth_image: true
+  field_city: true
+  field_country: true
+  field_keynotes_video: true
+  field_metatags: true
+  field_phone: true
+  field_sponser_address: true
+  field_sponser_category: true
+  field_sponser_email: true
+  field_sponser_facebook: true
+  field_sponser_linkedin: true
+  field_sponser_twitter: true
+  field_sponsor_category_type: true
+  field_state: true
+  field_status: true
+  field_street_1: true
+  field_street_2: true
+  field_uplo: true
+  field_user: true
+  field_user_type: true
+  field_website: true
+  field_zip: true

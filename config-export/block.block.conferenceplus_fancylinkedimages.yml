@@ -1,0 +1,31 @@
+uuid: 2bec5add-0843-4a4b-a1e5-309c432f9ad2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_fancy_linked_images_block:2c242b3c-5f08-49b5-9943-898d1f992ced'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: conferenceplus_fancylinkedimages
+theme: conferenceplus
+region: content_top
+weight: -64
+provider: null
+plugin: 'block_content:2c242b3c-5f08-49b5-9943-898d1f992ced'
+settings:
+  id: 'block_content:2c242b3c-5f08-49b5-9943-898d1f992ced'
+  label: 'Fancy linked images'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }

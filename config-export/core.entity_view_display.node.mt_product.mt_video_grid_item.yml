@@ -1,0 +1,68 @@
+uuid: 173ae27c-4a33-4d13-9083-4dfbb94b92e8
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.mt_video_grid_item
+    - field.field.node.mt_product.field_mt_prd_additional_features
+    - field.field.node.mt_product.field_mt_prd_availability
+    - field.field.node.mt_product.field_mt_prd_banner_carousel
+    - field.field.node.mt_product.field_mt_prd_body
+    - field.field.node.mt_product.field_mt_prd_buy_link
+    - field.field.node.mt_product.field_mt_prd_categories
+    - field.field.node.mt_product.field_mt_prd_content_tabs
+    - field.field.node.mt_product.field_mt_prd_highlight
+    - field.field.node.mt_product.field_mt_prd_image
+    - field.field.node.mt_product.field_mt_prd_landscape_image
+    - field.field.node.mt_product.field_mt_prd_most_popular
+    - field.field.node.mt_product.field_mt_prd_price
+    - field.field.node.mt_product.field_mt_prd_pricing_table_item
+    - field.field.node.mt_product.field_mt_prd_product_code
+    - field.field.node.mt_product.field_mt_prd_subheader_body
+    - field.field.node.mt_product.field_mt_prd_tags
+    - field.field.node.mt_product.field_mt_prd_video
+    - image.style.large
+    - node.type.mt_product
+  module:
+    - text
+    - user
+    - video_embed_field
+id: node.mt_product.mt_video_grid_item
+targetEntityType: node
+bundle: mt_product
+mode: mt_video_grid_item
+content:
+  field_mt_prd_body:
+    type: text_summary_or_trimmed
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: 100
+    third_party_settings: {  }
+  field_mt_prd_video:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      link_image_to: content
+    third_party_settings: {  }
+    type: video_embed_field_thumbnail
+    region: content
+hidden:
+  field_mt_prd_additional_features: true
+  field_mt_prd_availability: true
+  field_mt_prd_banner_carousel: true
+  field_mt_prd_buy_link: true
+  field_mt_prd_categories: true
+  field_mt_prd_content_tabs: true
+  field_mt_prd_highlight: true
+  field_mt_prd_image: true
+  field_mt_prd_landscape_image: true
+  field_mt_prd_most_popular: true
+  field_mt_prd_price: true
+  field_mt_prd_pricing_table_item: true
+  field_mt_prd_product_code: true
+  field_mt_prd_subheader_body: true
+  field_mt_prd_tags: true
+  links: true

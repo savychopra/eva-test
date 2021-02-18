@@ -1,0 +1,18 @@
+uuid: 55b0db13-02dd-4c9e-bca8-7f44b557fa00
+langcode: en
+status: true
+dependencies: {  }
+id: sponsor
+label: Sponsor
+weight: 8
+is_admin: null
+permissions:
+  - RAC_view_sponsor
+  - 'access toolbar'
+  - 'create terms in sponsers_category'
+  - 'create terms in sponsors_category_type'
+  - 'edit terms in sponsers_category'
+  - 'edit terms in sponsors_category_type'
+  - 'rabbit hole bypass node'
+  - 'rabbit hole bypass taxonomy_term'
+  - 'rabbit hole bypass user'

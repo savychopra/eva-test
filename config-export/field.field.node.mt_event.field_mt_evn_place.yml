@@ -1,0 +1,19 @@
+uuid: bfd78a87-aa63-4939-be4c-52eb6d6295d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_evn_place
+    - node.type.mt_event
+id: node.mt_event.field_mt_evn_place
+field_name: field_mt_evn_place
+entity_type: node
+bundle: mt_event
+label: Place
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

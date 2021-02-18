@@ -1,0 +1,8 @@
+uuid: 0c5c8810-50b9-43a1-8350-1546e0a47eef
+langcode: en
+status: true
+dependencies: {  }
+id: mt_time
+label: 'Custom time'
+locked: false
+pattern: 'h:i a'

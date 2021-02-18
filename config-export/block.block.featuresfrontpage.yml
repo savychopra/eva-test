@@ -1,0 +1,31 @@
+uuid: 4789b551-d544-4938-9997-9874595380fb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:75233cc9-f9ab-4278-b3a5-3ac326245760'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: featuresfrontpage
+theme: conferenceplus
+region: content_top
+weight: -66
+provider: null
+plugin: 'block_content:75233cc9-f9ab-4278-b3a5-3ac326245760'
+settings:
+  id: 'block_content:75233cc9-f9ab-4278-b3a5-3ac326245760'
+  label: 'Features (front page)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,21 @@
+uuid: 15890e41-3e27-4f7f-921c-bdbc15d4229d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_evn_date
+    - node.type.keynotes
+  module:
+    - datetime
+id: node.keynotes.field_mt_evn_date
+field_name: field_mt_evn_date
+entity_type: node
+bundle: keynotes
+label: Date
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,31 @@
+uuid: d4f78299-2284-414b-b3af-295755977262
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_video_gallery_block:06367e41-b90b-4fdc-8dac-d2f2de5da572'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: videogalleryblock_2
+theme: conferenceplus
+region: content_top
+weight: -66
+provider: null
+plugin: 'block_content:06367e41-b90b-4fdc-8dac-d2f2de5da572'
+settings:
+  id: 'block_content:06367e41-b90b-4fdc-8dac-d2f2de5da572'
+  label: 'Video Gallery block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }

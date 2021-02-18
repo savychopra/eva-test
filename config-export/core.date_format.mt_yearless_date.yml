@@ -1,0 +1,8 @@
+uuid: 8bd0c3fa-d550-4c87-a2f9-ef4a2020bd5e
+langcode: en
+status: true
+dependencies: {  }
+id: mt_yearless_date
+label: 'Yearless date'
+locked: false
+pattern: 'M d'

@@ -1,0 +1,25 @@
+uuid: b0a743ac-6b06-49a4-bdf2-725ef69dd5f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_ms_slide_volume
+    - paragraphs.paragraphs_type.mt_main_slideshow_slide
+id: paragraph.mt_main_slideshow_slide.field_mt_ms_slide_volume
+field_name: field_mt_ms_slide_volume
+entity_type: paragraph
+bundle: mt_main_slideshow_slide
+label: 'Slide Volume'
+description: 'Set the Volume of the Video from 0 to 100 (e.g. 50). 0 value mutes the video'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100
+  prefix: ''
+  suffix: ''
+field_type: integer

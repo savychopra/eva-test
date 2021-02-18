@@ -1,0 +1,34 @@
+uuid: eee40aac-d896-4135-834d-abb714fbace3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_media_tabs_block
+    - field.field.block_content.mt_media_tabs_block.field_mt_media_tab
+  module:
+    - paragraphs
+id: block_content.mt_media_tabs_block.default
+targetEntityType: block_content
+bundle: mt_media_tabs_block
+mode: default
+content:
+  field_mt_media_tab:
+    type: entity_reference_paragraphs
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: 1747ea1e-1369-445c-b0c2-4efacbe3f491
+langcode: en
+status: true
+dependencies: {  }
+id: eva_user
+label: 'EVA user'
+weight: 3
+is_admin: null
+permissions:
+  - 'RAC update eva_user'
+  - RAC_view_eva_user
+  - 'flag add_to_schedule_events'
+  - 'rabbit hole bypass node'
+  - 'rabbit hole bypass taxonomy_term'
+  - 'rabbit hole bypass user'
+  - 'unflag add_to_schedule_events other items'
+  - 'unflag add_to_schedule_events own items'
+  - 'view field_ceu_details'
+  - 'view own field_ceu_details'

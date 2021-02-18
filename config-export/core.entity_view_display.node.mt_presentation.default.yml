@@ -1,0 +1,145 @@
+uuid: 7e69d613-711d-4659-a521-75104d35342c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mt_presentation.field_mt_prs_affiliations
+    - field.field.node.mt_presentation.field_mt_prs_authors
+    - field.field.node.mt_presentation.field_mt_prs_body
+    - field.field.node.mt_presentation.field_mt_prs_category
+    - field.field.node.mt_presentation.field_mt_prs_date
+    - field.field.node.mt_presentation.field_mt_prs_files
+    - field.field.node.mt_presentation.field_mt_prs_image
+    - field.field.node.mt_presentation.field_mt_prs_location
+    - field.field.node.mt_presentation.field_mt_prs_session
+    - field.field.node.mt_presentation.field_mt_prs_speaker
+    - field.field.node.mt_presentation.field_mt_prs_sponsor
+    - field.field.node.mt_presentation.field_mt_prs_topics
+    - field.field.node.mt_presentation.field_mt_prs_video
+    - image.style.large
+    - node.type.mt_presentation
+  module:
+    - datetime
+    - file
+    - image
+    - text
+    - user
+    - video_embed_field
+id: node.mt_presentation.default
+targetEntityType: node
+bundle: mt_presentation
+mode: default
+content:
+  field_mt_prs_affiliations:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_prs_authors:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_prs_body:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_prs_category:
+    weight: 10
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mt_prs_date:
+    weight: 0
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_mt_prs_files:
+    weight: 8
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_mt_prs_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: large
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_prs_location:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_prs_session:
+    weight: 12
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mt_prs_speaker:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mt_prs_sponsor:
+    weight: 9
+    label: above
+    settings:
+      view_mode: mt_listing_item
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_mt_prs_topics:
+    weight: 11
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mt_prs_video:
+    weight: 7
+    label: hidden
+    settings:
+      image_style: large
+      link_image_to: provider
+    third_party_settings: {  }
+    type: video_embed_field_thumbnail
+    region: content
+  links:
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

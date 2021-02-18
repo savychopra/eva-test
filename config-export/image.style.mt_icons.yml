@@ -1,0 +1,15 @@
+uuid: f0f9c2c4-8ce5-44a3-a0c2-8ffb45146cbb
+langcode: en
+status: true
+dependencies: {  }
+name: mt_icons
+label: 'Icons (90x90)'
+effects:
+  1d6b2ee3-93c6-4e3a-bde8-3e67c85e847f:
+    uuid: 1d6b2ee3-93c6-4e3a-bde8-3e67c85e847f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 90
+      height: 90
+      anchor: center-center

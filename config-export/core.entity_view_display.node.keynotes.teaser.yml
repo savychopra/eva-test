@@ -1,0 +1,46 @@
+uuid: 215b2a6c-8c9d-4a2b-8b22-ebff229243ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.keynotes.body
+    - field.field.node.keynotes.field_bottom
+    - field.field.node.keynotes.field_event_end_date
+    - field.field.node.keynotes.field_keynotes_video
+    - field.field.node.keynotes.field_metatags
+    - field.field.node.keynotes.field_mt_evn_date
+    - field.field.node.keynotes.field_mt_evn_event_category
+    - field.field.node.keynotes.field_mt_evn_speaker
+    - field.field.node.keynotes.field_mt_evn_sponsor
+    - node.type.keynotes
+  module:
+    - text
+    - user
+id: node.keynotes.teaser
+targetEntityType: node
+bundle: keynotes
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_bottom: true
+  field_event_end_date: true
+  field_keynotes_video: true
+  field_metatags: true
+  field_mt_evn_date: true
+  field_mt_evn_event_category: true
+  field_mt_evn_speaker: true
+  field_mt_evn_sponsor: true

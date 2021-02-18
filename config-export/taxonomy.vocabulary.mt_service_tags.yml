@@ -1,0 +1,8 @@
+uuid: a8a22330-d52a-4272-ab33-388270e8f814
+langcode: en
+status: true
+dependencies: {  }
+name: 'Accommodation Tags'
+vid: mt_service_tags
+description: ''
+weight: 0

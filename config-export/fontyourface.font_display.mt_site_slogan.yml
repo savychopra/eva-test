@@ -1,0 +1,10 @@
+uuid: ea6b03e6-5b95-4ebe-8d0d-75ad266f79c4
+langcode: en
+status: true
+dependencies: {  }
+id: mt_site_slogan
+label: 'Site slogan'
+font_url: 'http://www.google.com/webfonts/family?family=Nunito&subset=latin#regular'
+fallback: 'Helvetica Neue, Arial, sans-serif'
+selectors: '.slff-fyf .site-slogan'
+theme: topplus

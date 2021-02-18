@@ -1,0 +1,31 @@
+uuid: b894d68d-a55f-411f-8988-82ab71fd6ac9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_collapsible_block:2d618db5-2ef3-4607-b59e-6c41f4dae031'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: collapsibleblock
+theme: conferenceplus
+region: content_top_highlighted
+weight: 0
+provider: null
+plugin: 'block_content:2d618db5-2ef3-4607-b59e-6c41f4dae031'
+settings:
+  id: 'block_content:2d618db5-2ef3-4607-b59e-6c41f4dae031'
+  label: 'Collapsible block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "\r\n/node/16\r\n/node/17\r\n/node/40\r\n/node/53\r\n/node/54\r\n/node/55\r\n/node/59\r\n/node/63\r\n/node/82\r\n/blocks\r\n/alternative-footer\r\n/mega-menu"
+    negate: false
+    context_mapping: {  }

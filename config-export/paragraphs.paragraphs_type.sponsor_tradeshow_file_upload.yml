@@ -1,0 +1,10 @@
+uuid: 31649dd0-9c36-4c67-aa86-43adce6df96a
+langcode: en
+status: true
+dependencies: {  }
+id: sponsor_tradeshow_file_upload
+label: 'Sponsor/Tradeshow file upload'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,21 @@
+uuid: 6dc8c2c6-c24f-449b-b11c-3693d9829513
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_type
+    - node.type.mt_event
+  module:
+    - options
+id: node.mt_event.field_session_type
+field_name: field_session_type
+entity_type: node
+bundle: mt_event
+label: 'Session type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

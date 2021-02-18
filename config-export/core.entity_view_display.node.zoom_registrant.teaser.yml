@@ -1,0 +1,56 @@
+uuid: 30754e2e-9761-462b-814c-21d13938a08c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.zoom_registrant.field_custom_questions
+    - field.field.node.zoom_registrant.field_join_url
+    - field.field.node.zoom_registrant.field_meeting
+    - field.field.node.zoom_registrant.field_meeting_first_name
+    - field.field.node.zoom_registrant.field_meeting_last_name
+    - field.field.node.zoom_registrant.field_meeting_user
+    - field.field.node.zoom_registrant.field_meeting_user_address
+    - field.field.node.zoom_registrant.field_meeting_user_phone
+    - field.field.node.zoom_registrant.field_number_of_employees
+    - field.field.node.zoom_registrant.field_purchasing_time_frame
+    - field.field.node.zoom_registrant.field_questions_comments
+    - field.field.node.zoom_registrant.field_registrant_id
+    - field.field.node.zoom_registrant.field_role_in_purchase_process
+    - field.field.node.zoom_registrant.field_user_industry
+    - field.field.node.zoom_registrant.field_user_job_title
+    - field.field.node.zoom_registrant.field_user_organization
+    - field.field.node.zoom_registrant.field_zoom_data
+    - field.field.node.zoom_registrant.field_zoom_email
+    - node.type.zoom_registrant
+  module:
+    - user
+_core:
+  default_config_hash: 5gRLhEwOsQIS-Ish5wAp6iH51hXrfik1HocAit_hFdo
+id: node.zoom_registrant.teaser
+targetEntityType: node
+bundle: zoom_registrant
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_custom_questions: true
+  field_join_url: true
+  field_meeting: true
+  field_meeting_first_name: true
+  field_meeting_last_name: true
+  field_meeting_user: true
+  field_meeting_user_address: true
+  field_meeting_user_phone: true
+  field_number_of_employees: true
+  field_purchasing_time_frame: true
+  field_questions_comments: true
+  field_registrant_id: true
+  field_role_in_purchase_process: true
+  field_user_industry: true
+  field_user_job_title: true
+  field_user_organization: true
+  field_zoom_data: true
+  field_zoom_email: true

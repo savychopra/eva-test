@@ -1,0 +1,18 @@
+uuid: 9fdd1ae2-f882-4153-a8b8-2f46a0e56795
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Program Entry'
+type: mt_program_entry
+description: 'Ideal for helping you to present your event program in a single dynamic view. It can be connected with nodes of the Presentation and Event content types and is ideal for entries that constitute important parts of your event program. For every entry, a Start and End time, a category as well as a reference to an Event or Presentation is supported.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

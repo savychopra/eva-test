@@ -1,0 +1,10 @@
+uuid: 00fae69a-8ea9-4dd4-bd65-90c6465fcc25
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pI1pC9aHpWXj-s55yPTXAPuLNFuQd1lXsgqzeQR5H88
+name: 'Font Designer'
+vid: font_designer
+description: 'Font Designer'
+weight: 0

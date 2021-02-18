@@ -1,0 +1,53 @@
+uuid: 604c9fbe-ac65-4f98-a138-ac0eb9dd1db7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.events.field_memid
+    - taxonomy.vocabulary.events
+  module:
+    - path
+    - text
+id: taxonomy_term.events.default
+targetEntityType: taxonomy_term
+bundle: events
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_memid:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+hidden: {  }

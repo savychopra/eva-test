@@ -1,0 +1,23 @@
+uuid: 6573184d-fb8a-4b27-8794-df2823e33318
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_spk_body
+    - node.type.mt_speaker
+  module:
+    - text
+id: node.mt_speaker.field_mt_spk_body
+field_name: field_mt_spk_body
+entity_type: node
+bundle: mt_speaker
+label: Bio
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

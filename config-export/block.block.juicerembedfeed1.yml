@@ -1,0 +1,31 @@
+uuid: 8bef6587-3720-427b-ad76-ed7d5037416d
+langcode: en
+status: true
+dependencies:
+  module:
+    - juicerio
+    - system
+  theme:
+    - conferenceplus
+id: juicerembedfeed1
+theme: conferenceplus
+region: highlighted
+weight: -64
+provider: null
+plugin: 'juicerio:juicerio_1'
+settings:
+  id: 'juicerio:juicerio_1'
+  label: 'Social Feed'
+  provider: juicerio
+  label_display: visible
+  juicerio_1_post_number: '20'
+  juicerio_1_infinite_pages: '1'
+  juicerio_1_gutter_amt: '30'
+  juicerio_1_column_number: '9'
+  juicerio_1_filter: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: '*'
+    negate: true
+    context_mapping: {  }

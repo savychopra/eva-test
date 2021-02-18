@@ -1,0 +1,34 @@
+uuid: bf4000d7-7547-4093-9e9f-ba47300665ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_assigned_to
+    - node.type.mt_speaker
+id: node.mt_speaker.field_assigned_to
+field_name: field_assigned_to
+entity_type: node
+bundle: mt_speaker
+label: 'Assigned user'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: role
+      role:
+        speaker: speaker
+        administrator: '0'
+        eva_user: '0'
+        attendees: '0'
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

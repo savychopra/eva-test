@@ -1,0 +1,34 @@
+uuid: c9c775d4-52d7-4947-8832-d928c4a49bb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_fltt_block
+    - field.field.block_content.mt_fltt_block.field_mt_fltt
+  module:
+    - paragraphs
+id: block_content.mt_fltt_block.default
+targetEntityType: block_content
+bundle: mt_fltt_block
+mode: default
+content:
+  field_mt_fltt:
+    type: entity_reference_paragraphs
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

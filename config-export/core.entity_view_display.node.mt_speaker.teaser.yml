@@ -1,0 +1,60 @@
+uuid: f391486b-464c-4a66-8129-735ceb4742f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_speaker.field_assigned_to
+    - field.field.node.mt_speaker.field_designation
+    - field.field.node.mt_speaker.field_metatags
+    - field.field.node.mt_speaker.field_mt_spk_affiliations
+    - field.field.node.mt_speaker.field_mt_spk_body
+    - field.field.node.mt_speaker.field_mt_spk_facebook_account
+    - field.field.node.mt_speaker.field_mt_spk_linkedin_account
+    - field.field.node.mt_speaker.field_mt_spk_speaker_photo
+    - field.field.node.mt_speaker.field_mt_spk_subtitle
+    - field.field.node.mt_speaker.field_mt_spk_twitter_account
+    - field.field.node.mt_speaker.field_mt_spk_youtube_account
+    - image.style.mt_member_photo
+    - node.type.mt_speaker
+  module:
+    - image
+    - text
+    - user
+id: node.mt_speaker.teaser
+targetEntityType: node
+bundle: mt_speaker
+mode: teaser
+content:
+  field_mt_spk_body:
+    type: text_summary_or_trimmed
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_mt_spk_speaker_photo:
+    type: image
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      image_style: mt_member_photo
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_assigned_to: true
+  field_designation: true
+  field_metatags: true
+  field_mt_spk_affiliations: true
+  field_mt_spk_facebook_account: true
+  field_mt_spk_linkedin_account: true
+  field_mt_spk_subtitle: true
+  field_mt_spk_twitter_account: true
+  field_mt_spk_youtube_account: true

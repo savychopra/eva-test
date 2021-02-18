@@ -1,0 +1,28 @@
+uuid: f36f0bac-92b1-4cd3-bfd8-0a70d56c54e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_featured_linked_text_tile.field_mt_fltt_body
+    - field.field.paragraph.mt_featured_linked_text_tile.field_mt_fltt_link
+    - field.field.paragraph.mt_featured_linked_text_tile.field_mt_fltt_title
+    - paragraphs.paragraphs_type.mt_featured_linked_text_tile
+  module:
+    - text
+id: paragraph.mt_featured_linked_text_tile.default
+targetEntityType: paragraph
+bundle: mt_featured_linked_text_tile
+mode: default
+content:
+  field_mt_fltt_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  created: true
+  field_mt_fltt_link: true
+  field_mt_fltt_title: true
+  uid: true

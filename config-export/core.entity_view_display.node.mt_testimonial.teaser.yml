@@ -1,0 +1,53 @@
+uuid: 76e93c0c-e8dd-4e00-9bb5-85240cb6e5d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_testimonial.field_mt_tst_body
+    - field.field.node.mt_testimonial.field_mt_tst_subtitle
+    - field.field.node.mt_testimonial.field_mt_tst_testimonial_image
+    - field.field.node.mt_testimonial.field_mt_tst_testimonial_link
+    - image.style.mt_testimonial_image
+    - node.type.mt_testimonial
+  module:
+    - image
+    - text
+    - user
+id: node.mt_testimonial.teaser
+targetEntityType: node
+bundle: mt_testimonial
+mode: teaser
+content:
+  field_mt_tst_body:
+    type: text_summary_or_trimmed
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_mt_tst_subtitle:
+    type: string
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_mt_tst_testimonial_image:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: mt_testimonial_image
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_mt_tst_testimonial_link: true

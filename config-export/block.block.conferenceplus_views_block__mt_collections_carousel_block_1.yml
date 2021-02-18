@@ -1,0 +1,30 @@
+uuid: 0efc1f50-254a-46c5-aa3c-836705892d93
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_collections_carousel
+  module:
+    - system
+    - views
+  theme:
+    - conferenceplus
+id: conferenceplus_views_block__mt_collections_carousel_block_1
+theme: conferenceplus
+region: featured_top
+weight: -61
+provider: null
+plugin: 'views_block:mt_collections_carousel-block_1'
+settings:
+  id: 'views_block:mt_collections_carousel-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }

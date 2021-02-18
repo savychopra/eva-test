@@ -1,0 +1,21 @@
+uuid: fc1e1f4c-9407-4081-a83f-d5495fd9fe3e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Y3ulY5L0sIXrhCBqNupeKUeU8KHema1jxx_y_9QdBnw
+id: node.field_join_url
+field_name: field_join_url
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: 7f3b993c-e18f-4f24-83ec-6f21229c4eab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_of_employees
+    - node.type.zoom_registrant
+  module:
+    - options
+_core:
+  default_config_hash: bEt0C45vw5NGuewfBlCCUqtkxk63OGhW5Fo9d5v1ZHA
+id: node.zoom_registrant.field_number_of_employees
+field_name: field_number_of_employees
+entity_type: node
+bundle: zoom_registrant
+label: 'Number of Employees'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

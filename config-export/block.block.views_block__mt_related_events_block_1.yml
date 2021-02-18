@@ -1,0 +1,39 @@
+uuid: 551f49ae-6e25-46ba-94fd-97857339fa33
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_related_events
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - conferenceplus
+id: views_block__mt_related_events_block_1
+theme: conferenceplus
+region: content
+weight: -50
+provider: null
+plugin: 'views_block:mt_related_events-block_1'
+settings:
+  id: 'views_block:mt_related_events-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      mt_speaker: mt_speaker
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '/speaker/*'
+    negate: true
+    context_mapping: {  }

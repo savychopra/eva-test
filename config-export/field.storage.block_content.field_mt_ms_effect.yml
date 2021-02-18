@@ -1,0 +1,168 @@
+uuid: 0c16129a-2c39-4904-bb98-a28c620ed30a
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_mt_ms_effect
+field_name: field_mt_ms_effect
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: fade
+      label: Fade
+    -
+      value: slideup
+      label: 'Slide To Top'
+    -
+      value: slidedown
+      label: 'Slide To Bottom'
+    -
+      value: slideright
+      label: 'Slide To Right'
+    -
+      value: slideleft
+      label: 'Slide To Left'
+    -
+      value: slidehorizontal
+      label: 'Slide Horizontal'
+    -
+      value: slidevertical
+      label: 'Slide Vertical'
+    -
+      value: boxslide
+      label: 'Slide Boxes'
+    -
+      value: slotslide-horizontal
+      label: 'Slide Slots Horizontal'
+    -
+      value: slotslide-vertical
+      label: 'Slide Slots Vertical'
+    -
+      value: boxfade
+      label: 'Fade Boxes'
+    -
+      value: slotfade-horizontal
+      label: 'Fade Slots Horizontal'
+    -
+      value: slotfade-vertical
+      label: 'Fade Slots Vertical'
+    -
+      value: fadefromright
+      label: 'Fade and Slide from Right'
+    -
+      value: fadefromleft
+      label: 'Fade and Slide from Left'
+    -
+      value: fadefromtop
+      label: 'Fade and Slide from Top'
+    -
+      value: fadefrombottom
+      label: 'Fade and Slide from Bottom'
+    -
+      value: fadetoleftfadefromright
+      label: 'Fade To Left and Fade From Right'
+    -
+      value: fadetorightfadefromleft
+      label: 'Fade To Right and Fade From Left'
+    -
+      value: fadetotopfadefrombottom
+      label: 'Fade To Top and Fade From Bottom'
+    -
+      value: fadetobottomfadefromtop
+      label: 'Fade To Bottom and Fade From Top'
+    -
+      value: parallaxtoright
+      label: 'Parallax to Right'
+    -
+      value: parallaxtoleft
+      label: 'Parallax to Left'
+    -
+      value: parallaxtotop
+      label: 'Parallax to Top'
+    -
+      value: parallaxtobottom
+      label: 'Parallax to Bottom'
+    -
+      value: scaledownfromright
+      label: 'Zoom Out and Fade From Right'
+    -
+      value: scaledownfromleft
+      label: 'Zoom Out and Fade From Left'
+    -
+      value: scaledownfromtop
+      label: 'Zoom Out and Fade From Top'
+    -
+      value: scaledownfrombottom
+      label: 'Zoom Out and Fade From Bottom'
+    -
+      value: zoomout
+      label: ZoomOut
+    -
+      value: zoomin
+      label: ZoomIn
+    -
+      value: slotzoom-horizontal
+      label: 'Zoom Slots Horizontal'
+    -
+      value: slotzoom-vertical
+      label: 'Zoom Slots Vertical'
+    -
+      value: curtain-1
+      label: 'Curtain from Left'
+    -
+      value: curtain-2
+      label: 'Curtain from Right'
+    -
+      value: curtain-3
+      label: 'Curtain from Middle'
+    -
+      value: 3dcurtain-horizontal
+      label: '3D Curtain Horizontal'
+    -
+      value: 3dcurtain-vertical
+      label: '3D Curtain Vertical'
+    -
+      value: cube
+      label: 'Cube Vertical'
+    -
+      value: cube-horizontal
+      label: 'Cube Horizontal'
+    -
+      value: incube
+      label: 'In Cube Vertical'
+    -
+      value: incube-horizontal
+      label: 'In Cube Horizontal'
+    -
+      value: turnoff
+      label: 'TurnOff Horizontal'
+    -
+      value: turnoff-vertical
+      label: 'TurnOff Vertical'
+    -
+      value: papercut
+      label: 'Paper Cut'
+    -
+      value: flyin
+      label: 'Fly In'
+    -
+      value: random-static
+      label: 'Random Flat'
+    -
+      value: random-premium
+      label: 'Random Premium'
+    -
+      value: random
+      label: 'Random Flat and Premium/Default'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

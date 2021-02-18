@@ -1,0 +1,25 @@
+uuid: 017937c5-2c7f-4119-a4a4-ae80e1022e0c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:21239a24-9067-424a-a412-2bc4c38d3b07'
+  module:
+    - block_content
+  theme:
+    - conferenceplus
+id: stillhavequestions
+theme: conferenceplus
+region: footer_top_first
+weight: -64
+provider: null
+plugin: 'block_content:21239a24-9067-424a-a412-2bc4c38d3b07'
+settings:
+  id: 'block_content:21239a24-9067-424a-a412-2bc4c38d3b07'
+  label: 'Still have questions?'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

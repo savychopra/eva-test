@@ -1,0 +1,15 @@
+uuid: 7636825c-f524-4a44-90cc-cc6bbe878619
+langcode: en
+status: true
+dependencies: {  }
+name: mt_fli_image
+label: 'Fancy Linked Image (750x750)'
+effects:
+  500de457-2e1c-4372-a979-a4c6c219ebb8:
+    uuid: 500de457-2e1c-4372-a979-a4c6c219ebb8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 750
+      height: 750
+      anchor: center-center

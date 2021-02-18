@@ -1,0 +1,31 @@
+uuid: 5149169e-91a8-4f9f-88d0-916ded6b7d78
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0839439a-2bae-48e4-872e-6ff169998482'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: subscribe_2
+theme: conferenceplus
+region: footer_top_first
+weight: 0
+provider: null
+plugin: 'block_content:0839439a-2bae-48e4-872e-6ff169998482'
+settings:
+  id: 'block_content:0839439a-2bae-48e4-872e-6ff169998482'
+  label: Subscribe
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/node/63\r\n/node/82"
+    negate: false
+    context_mapping: {  }

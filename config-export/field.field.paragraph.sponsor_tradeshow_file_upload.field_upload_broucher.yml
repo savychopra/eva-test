@@ -1,0 +1,27 @@
+uuid: aacc7016-8c95-4f5d-866d-7490e90c7ee3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_upload_broucher
+    - paragraphs.paragraphs_type.sponsor_tradeshow_file_upload
+  module:
+    - file
+id: paragraph.sponsor_tradeshow_file_upload.field_upload_broucher
+field_name: field_upload_broucher
+entity_type: paragraph
+bundle: sponsor_tradeshow_file_upload
+label: 'Upload Broucher'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,34 @@
+uuid: d8e6a67d-156e-458b-a248-969111195826
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_background_video_block
+    - field.field.block_content.mt_background_video_block.field_mt_block_reference
+    - field.field.block_content.mt_background_video_block.field_mt_bv_layout_mode
+    - field.field.block_content.mt_background_video_block.field_mt_bv_overlay_color
+    - field.field.block_content.mt_background_video_block.field_mt_bv_overlay_opacity
+    - field.field.block_content.mt_background_video_block.field_mt_bv_poster
+    - field.field.block_content.mt_background_video_block.field_mt_bv_video_mp4
+    - field.field.block_content.mt_background_video_block.field_mt_bv_video_webm
+id: block_content.mt_background_video_block.default
+targetEntityType: block_content
+bundle: mt_background_video_block
+mode: default
+content:
+  field_mt_block_reference:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  field_mt_bv_layout_mode: true
+  field_mt_bv_overlay_color: true
+  field_mt_bv_overlay_opacity: true
+  field_mt_bv_poster: true
+  field_mt_bv_video_mp4: true
+  field_mt_bv_video_webm: true

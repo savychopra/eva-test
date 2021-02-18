@@ -1,0 +1,37 @@
+uuid: bb776f1b-aa4e-4aff-bbf3-df12ac520e01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_assigned_to
+    - node.type.mt_sponsor
+id: node.mt_sponsor.field_assigned_to
+field_name: field_assigned_to
+entity_type: node
+bundle: mt_sponsor
+label: 'Assigned user'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: role
+      role:
+        sponsor: sponsor
+        administrator: '0'
+        eva_user: '0'
+        speaker: '0'
+        attendees: '0'
+        exhibitor: '0'
+        cache_clear: '0'
+    target_bundles: null
+    sort:
+      field: field_mt_full_name
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

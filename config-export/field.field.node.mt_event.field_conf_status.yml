@@ -1,0 +1,21 @@
+uuid: 049a9843-badd-434f-812e-2be1c223963d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_conf_status
+    - node.type.mt_event
+  module:
+    - options
+id: node.mt_event.field_conf_status
+field_name: field_conf_status
+entity_type: node
+bundle: mt_event
+label: 'Conf status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

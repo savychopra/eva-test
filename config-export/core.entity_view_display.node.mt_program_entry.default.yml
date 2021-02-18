@@ -1,0 +1,52 @@
+uuid: 571a2255-4b9d-47fd-b63e-bf8fe9a8a691
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mt_program_entry.field_mt_prg_category
+    - field.field.node.mt_program_entry.field_mt_prg_end_date
+    - field.field.node.mt_program_entry.field_mt_prg_event
+    - field.field.node.mt_program_entry.field_mt_prg_start_date
+    - node.type.mt_program_entry
+  module:
+    - datetime
+    - user
+id: node.mt_program_entry.default
+targetEntityType: node
+bundle: mt_program_entry
+mode: default
+content:
+  field_mt_prg_end_date:
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: mt_time
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_mt_prg_event:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_mt_prg_start_date:
+    weight: 0
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: mt_time
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_mt_prg_category: true

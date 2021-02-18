@@ -1,0 +1,23 @@
+uuid: 01604ab2-6b80-4d72-a7fd-d1b91b54d6fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_tml_timeline_link
+    - paragraphs.paragraphs_type.mt_timeline_item
+  module:
+    - link
+id: paragraph.mt_timeline_item.field_mt_tml_timeline_link
+field_name: field_mt_tml_timeline_link
+entity_type: paragraph
+bundle: mt_timeline_item
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

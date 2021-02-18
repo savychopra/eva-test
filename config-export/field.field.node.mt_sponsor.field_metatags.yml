@@ -1,0 +1,21 @@
+uuid: fffb2a53-8684-4006-b65c-499b992fedc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.mt_sponsor
+  module:
+    - metatag
+id: node.mt_sponsor.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: mt_sponsor
+label: Metatags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

@@ -1,0 +1,19 @@
+uuid: f061a972-8b30-4868-987f-925de9d42e55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_ml_latitude
+    - paragraphs.paragraphs_type.mt_map_location
+id: paragraph.mt_map_location.field_mt_ml_latitude
+field_name: field_mt_ml_latitude
+entity_type: paragraph
+bundle: mt_map_location
+label: Latitude
+description: 'Enter the Latitude of the marker. e.g. 40.726576'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

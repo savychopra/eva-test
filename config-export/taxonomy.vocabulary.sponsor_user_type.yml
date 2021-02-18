@@ -1,0 +1,8 @@
+uuid: 7f5b741f-70ed-42e8-993a-253e37789469
+langcode: en
+status: true
+dependencies: {  }
+name: 'Sponsor User Type'
+vid: sponsor_user_type
+description: ''
+weight: 0

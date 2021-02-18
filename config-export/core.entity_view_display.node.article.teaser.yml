@@ -1,0 +1,52 @@
+uuid: f58e136a-3bf6-455e-b04d-85bb5a366486
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_image
+    - field.field.node.article.field_mt_slideshow
+    - field.field.node.article.field_mt_slideshow_image
+    - field.field.node.article.field_mt_slideshow_text
+    - field.field.node.article.field_mt_video
+    - field.field.node.article.field_tags
+    - image.style.large
+    - node.type.article
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: U8ghxJXn8JE2p6Q2wLpPWAxpz4r_8crL1LxtapSrHAE
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 250
+    third_party_settings: {  }
+    label: hidden
+    region: content
+  field_image:
+    type: image
+    weight: 0
+    settings:
+      image_style: large
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+    region: content
+hidden:
+  comment: true
+  field_mt_slideshow: true
+  field_mt_slideshow_image: true
+  field_mt_slideshow_text: true
+  field_mt_video: true
+  field_tags: true
+  links: true

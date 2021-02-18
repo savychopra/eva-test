@@ -1,0 +1,8 @@
+uuid: 94c23198-8cbc-4d89-8955-5ba8eea9548c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Sponsors Category Type'
+vid: sponsors_category_type
+description: ''
+weight: 0

@@ -1,0 +1,176 @@
+uuid: caac6962-9909-4237-b0ba-6ea80dc671e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mt_event.field_assigned_to
+    - field.field.node.mt_event.field_ceu_details
+    - field.field.node.mt_event.field_conf_status
+    - field.field.node.mt_event.field_end_date
+    - field.field.node.mt_event.field_events
+    - field.field.node.mt_event.field_metatags
+    - field.field.node.mt_event.field_mt_evn_body
+    - field.field.node.mt_event.field_mt_evn_date
+    - field.field.node.mt_event.field_mt_evn_event_category
+    - field.field.node.mt_event.field_mt_evn_files
+    - field.field.node.mt_event.field_mt_evn_image
+    - field.field.node.mt_event.field_mt_evn_location
+    - field.field.node.mt_event.field_mt_evn_map_zoom
+    - field.field.node.mt_event.field_mt_evn_place
+    - field.field.node.mt_event.field_mt_evn_speaker
+    - field.field.node.mt_event.field_mt_evn_sponsor
+    - field.field.node.mt_event.field_mt_evn_video
+    - field.field.node.mt_event.field_session_timezone
+    - field.field.node.mt_event.field_session_track
+    - field.field.node.mt_event.field_session_type
+    - field.field.node.mt_event.field_upload_
+    - image.style.large
+    - node.type.mt_event
+  module:
+    - datetime
+    - entity_reference_revisions
+    - file
+    - image
+    - metatag
+    - options
+    - text
+    - user
+    - video_embed_field
+id: node.mt_event.default
+targetEntityType: node
+bundle: mt_event
+mode: default
+content:
+  field_assigned_to:
+    weight: 12
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_ceu_details:
+    weight: 11
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_end_date:
+    weight: 1
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_metatags:
+    weight: 13
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_mt_evn_body:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_evn_date:
+    weight: 0
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: mt_time
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_mt_evn_event_category:
+    weight: 8
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mt_evn_files:
+    weight: 7
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_mt_evn_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: large
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_evn_speaker:
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_mt_evn_sponsor:
+    weight: 6
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_mt_evn_video:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: large
+      link_image_to: provider
+    third_party_settings: {  }
+    type: video_embed_field_thumbnail
+    region: content
+  field_session_track:
+    weight: 14
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_upload_:
+    weight: 15
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  flag_add_to_schedule_events:
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_conf_status: true
+  field_events: true
+  field_mt_evn_location: true
+  field_mt_evn_map_zoom: true
+  field_mt_evn_place: true
+  field_session_timezone: true
+  field_session_type: true

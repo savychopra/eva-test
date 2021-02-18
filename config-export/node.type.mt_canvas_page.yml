@@ -1,0 +1,18 @@
+uuid: bc1fcc49-6c25-44a1-87c7-c1a852ca949c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Layouting Canvas'
+type: mt_canvas_page
+description: 'Ideal for laying out custom pages using HTML and the short codes provided with the product. It is based on the Basic Page content type and features a full-width 12-column grid.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

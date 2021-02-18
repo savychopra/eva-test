@@ -1,0 +1,19 @@
+uuid: 0b2254ef-bdc8-46e5-ae41-dddc76714cef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_state
+    - node.type.mt_sponsor
+id: node.mt_sponsor.field_state
+field_name: field_state
+entity_type: node
+bundle: mt_sponsor
+label: State
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

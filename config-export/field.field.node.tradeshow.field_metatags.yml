@@ -1,0 +1,21 @@
+uuid: 1ed2aff1-0405-44b3-acc9-0b1feceb6ad2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.tradeshow
+  module:
+    - metatag
+id: node.tradeshow.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: tradeshow
+label: Metatags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

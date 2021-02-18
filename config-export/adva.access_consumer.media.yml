@@ -1,0 +1,10 @@
+uuid: 69b7dfa0-1924-43d9-80b6-62e2fffd079f
+langcode: en
+status: true
+dependencies: {  }
+id: media
+settings: {  }
+providers: {  }
+provider_config:
+  anonymous: {  }
+  rac_typed: {  }

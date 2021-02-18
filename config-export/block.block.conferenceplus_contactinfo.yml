@@ -1,0 +1,31 @@
+uuid: 8c4cac00-3310-4e42-8bf0-4f4d753ada6e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5c386222-a853-46e7-b120-1d96242be928'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: conferenceplus_contactinfo
+theme: conferenceplus
+region: sidebar_second
+weight: -65
+provider: null
+plugin: 'block_content:5c386222-a853-46e7-b120-1d96242be928'
+settings:
+  id: 'block_content:5c386222-a853-46e7-b120-1d96242be928'
+  label: 'Contact Info'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact/alternative
+    negate: false
+    context_mapping: {  }

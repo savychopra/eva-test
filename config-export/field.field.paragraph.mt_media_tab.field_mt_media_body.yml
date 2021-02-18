@@ -1,0 +1,21 @@
+uuid: 38140e70-b567-4556-bb3e-abee9a438310
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_media_body
+    - paragraphs.paragraphs_type.mt_media_tab
+  module:
+    - text
+id: paragraph.mt_media_tab.field_mt_media_body
+field_name: field_mt_media_body
+entity_type: paragraph
+bundle: mt_media_tab
+label: 'Media Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

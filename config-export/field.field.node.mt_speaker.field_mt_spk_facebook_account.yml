@@ -1,0 +1,19 @@
+uuid: c304a903-454a-48c8-9ba8-836679a6b551
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_spk_facebook_account
+    - node.type.mt_speaker
+id: node.mt_speaker.field_mt_spk_facebook_account
+field_name: field_mt_spk_facebook_account
+entity_type: node
+bundle: mt_speaker
+label: Facebook
+description: 'Enter the URL of your Facebook profile, e.g.: https://www.facebook.com/your-account'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

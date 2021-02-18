@@ -1,0 +1,6 @@
+uuid: ab5747eb-d1d2-4437-bb7c-e4ea7db801c9
+langcode: en
+status: true
+dependencies: {  }
+id: mt_collapse
+label: Collapse

@@ -1,0 +1,21 @@
+uuid: 1bbe30ce-fdec-40ba-98c4-6d5a4af26599
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zoom_meeting_cloud_data
+    - node.type.zoom_meeting
+_core:
+  default_config_hash: UmPyWBf7dLegD0brtHu0ZLJVmkpjoKEGK4q67tQzgfY
+id: node.zoom_meeting.field_zoom_meeting_cloud_data
+field_name: field_zoom_meeting_cloud_data
+entity_type: node
+bundle: zoom_meeting
+label: 'Cloud Data'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

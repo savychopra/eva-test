@@ -1,0 +1,23 @@
+uuid: 342f745a-3ef3-42eb-b2f6-43eecc424666
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_main_slideshow_block
+    - field.storage.block_content.field_mt_ms_ignore_header_height
+id: block_content.mt_main_slideshow_block.field_mt_ms_ignore_header_height
+field_name: field_mt_ms_ignore_header_height
+entity_type: block_content
+bundle: mt_main_slideshow_block
+label: 'Ignore Header Height'
+description: 'Ignore the Header Height when using the Full Screen Layout option'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'on'
+  off_label: 'off'
+field_type: boolean

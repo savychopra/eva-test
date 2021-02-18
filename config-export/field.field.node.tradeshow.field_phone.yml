@@ -1,0 +1,21 @@
+uuid: fcfe0955-94e5-4278-9edc-dd5574565739
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone
+    - node.type.tradeshow
+  module:
+    - telephone
+id: node.tradeshow.field_phone
+field_name: field_phone
+entity_type: node
+bundle: tradeshow
+label: Phone
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,0 +1,22 @@
+uuid: be81189f-4b55-4cbb-99bb-0631e2cb09b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+_core:
+  default_config_hash: W_UzdTDtCcqZiDs-4F_xN3BrJ0B7DOWTOvhEStAbr_A
+id: node.field_meeting_start_date
+field_name: field_meeting_start_date
+entity_type: node
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

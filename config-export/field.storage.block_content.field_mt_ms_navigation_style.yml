@@ -1,0 +1,27 @@
+uuid: fe621dec-b9dc-4f5b-b407-9c808562435a
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_mt_ms_navigation_style
+field_name: field_mt_ms_navigation_style
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: bullets
+      label: Bullets
+    -
+      value: titles_carousel
+      label: 'Titles Carousel'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,29 @@
+uuid: a4d573d8-b1ab-4b93-90b5-232d471a3cbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_spk_affiliations
+    - node.type.mt_speaker
+    - taxonomy.vocabulary.mt_affiliations
+id: node.mt_speaker.field_mt_spk_affiliations
+field_name: field_mt_spk_affiliations
+entity_type: node
+bundle: mt_speaker
+label: Affiliations
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      mt_affiliations: mt_affiliations
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

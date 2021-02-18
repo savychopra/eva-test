@@ -1,0 +1,25 @@
+uuid: d1c071cc-0984-40da-84a4-43532908db72
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_main_slideshow_block
+    - field.storage.block_content.field_mt_ms_effect_duration
+id: block_content.mt_main_slideshow_block.field_mt_ms_effect_duration
+field_name: field_mt_ms_effect_duration
+entity_type: block_content
+bundle: mt_main_slideshow_block
+label: 'Slideshow Effect duration (sec)'
+description: 'Set the speed of animations, in seconds.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 9
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

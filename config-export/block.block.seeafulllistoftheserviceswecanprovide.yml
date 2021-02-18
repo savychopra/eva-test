@@ -1,0 +1,31 @@
+uuid: b1b7de06-62c9-4e40-86e1-9e254ad980be
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_nodes_slideshow_block:2ee07bbe-2afe-47d2-b802-21a37c39ea92'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: seeafulllistoftheserviceswecanprovide
+theme: conferenceplus
+region: content_top
+weight: -63
+provider: null
+plugin: 'block_content:2ee07bbe-2afe-47d2-b802-21a37c39ea92'
+settings:
+  id: 'block_content:2ee07bbe-2afe-47d2-b802-21a37c39ea92'
+  label: 'See a full list of the services we can provide'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }

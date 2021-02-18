@@ -1,0 +1,33 @@
+uuid: b094942e-ecc7-44d3-a48e-6b645cfbcee0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.mt_affiliations.field_mt_affiliation_image
+    - image.style.medium
+    - taxonomy.vocabulary.mt_affiliations
+  module:
+    - image
+    - text
+id: taxonomy_term.mt_affiliations.default
+targetEntityType: taxonomy_term
+bundle: mt_affiliations
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_mt_affiliation_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

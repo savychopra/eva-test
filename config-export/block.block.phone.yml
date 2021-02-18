@@ -1,0 +1,31 @@
+uuid: b602253b-5f9f-4b88-8b81-047a8e95b56f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:33c8086b-30a4-4b72-b741-df3e1ce3594d'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: phone
+theme: conferenceplus
+region: sidebar_second
+weight: -57
+provider: null
+plugin: 'block_content:33c8086b-30a4-4b72-b741-df3e1ce3594d'
+settings:
+  id: 'block_content:33c8086b-30a4-4b72-b741-df3e1ce3594d'
+  label: 'Contact the conference secretariat'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact
+    negate: false
+    context_mapping: {  }

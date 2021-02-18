@@ -1,0 +1,21 @@
+uuid: c1edb6d5-9cc4-4d15-bf36-3351f537ef56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bottom
+    - node.type.keynotes
+  module:
+    - text
+id: node.keynotes.field_bottom
+field_name: field_bottom
+entity_type: node
+bundle: keynotes
+label: 'Bottom content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

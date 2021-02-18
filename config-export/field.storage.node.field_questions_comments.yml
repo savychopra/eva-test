@@ -1,0 +1,21 @@
+uuid: ce4a5bbb-b23b-4a43-bf84-5a39a2ee62ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Du3Fe5LyscHkMKmx1LzLg18eZhchbbFGSK7Xf4k8bKA
+id: node.field_questions_comments
+field_name: field_questions_comments
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

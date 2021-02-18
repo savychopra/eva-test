@@ -1,0 +1,8 @@
+uuid: 430a0a69-faf8-4d49-91bb-847224e28e54
+langcode: en
+status: true
+dependencies: {  }
+name: 'Merchandise Categories'
+vid: mt_collections
+description: ''
+weight: 0

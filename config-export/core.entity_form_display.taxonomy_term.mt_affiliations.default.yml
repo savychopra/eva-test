@@ -1,0 +1,48 @@
+uuid: 0c8f9c68-92e4-46ab-960c-0590e1517862
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.mt_affiliations.field_mt_affiliation_image
+    - image.style.thumbnail
+    - taxonomy.vocabulary.mt_affiliations
+  module:
+    - image
+    - path
+    - text
+id: taxonomy_term.mt_affiliations.default
+targetEntityType: taxonomy_term
+bundle: mt_affiliations
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_mt_affiliation_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

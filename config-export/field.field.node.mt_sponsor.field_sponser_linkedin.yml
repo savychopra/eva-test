@@ -1,0 +1,19 @@
+uuid: f07ca414-77ce-45c1-bfdf-e9e8e6918636
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponser_linkedin
+    - node.type.mt_sponsor
+id: node.mt_sponsor.field_sponser_linkedin
+field_name: field_sponser_linkedin
+entity_type: node
+bundle: mt_sponsor
+label: 'Sponsors LinkedIn'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

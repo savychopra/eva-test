@@ -1,0 +1,14 @@
+uuid: 0e9963bf-3a86-41f4-b02d-2d19270e4ed3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.sponsor
+  module:
+    - user
+id: user_add_role_action.sponsor
+label: 'Add the Sponsor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: sponsor

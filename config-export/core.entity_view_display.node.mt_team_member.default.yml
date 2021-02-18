@@ -1,0 +1,85 @@
+uuid: ee529fc4-ebc5-4f06-8deb-359001ebc3fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mt_team_member.field_mt_tmm_body
+    - field.field.node.mt_team_member.field_mt_tmm_facebook_account
+    - field.field.node.mt_team_member.field_mt_tmm_linkedin_account
+    - field.field.node.mt_team_member.field_mt_tmm_member_photo
+    - field.field.node.mt_team_member.field_mt_tmm_subtitle
+    - field.field.node.mt_team_member.field_mt_tmm_twitter_account
+    - field.field.node.mt_team_member.field_mt_tmm_youtube_account
+    - image.style.mt_member_photo
+    - node.type.mt_team_member
+  module:
+    - image
+    - text
+    - user
+id: node.mt_team_member.default
+targetEntityType: node
+bundle: mt_team_member
+mode: default
+content:
+  field_mt_tmm_body:
+    weight: 13
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_tmm_facebook_account:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_tmm_linkedin_account:
+    weight: 9
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_tmm_member_photo:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: mt_member_photo
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_tmm_subtitle:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_tmm_twitter_account:
+    weight: 7
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_tmm_youtube_account:
+    weight: 11
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

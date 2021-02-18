@@ -1,0 +1,96 @@
+uuid: 2f4c3b21-c151-4111-978c-b2d4edfdce2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_caption
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_caption_color
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_caption_opac
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_image
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_link
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_title
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_vimeo_id
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_volume
+    - field.field.paragraph.mt_main_slideshow_slide.field_mt_ms_slide_youtube_id
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.mt_main_slideshow_slide
+  module:
+    - image
+    - link
+id: paragraph.mt_main_slideshow_slide.default
+targetEntityType: paragraph
+bundle: mt_main_slideshow_slide
+mode: default
+content:
+  field_mt_ms_slide_caption:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_mt_ms_slide_caption_color:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mt_ms_slide_caption_opac:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_mt_ms_slide_image:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_mt_ms_slide_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_mt_ms_slide_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_ms_slide_vimeo_id:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_ms_slide_volume:
+    weight: 8
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_mt_ms_slide_youtube_id:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,29 @@
+uuid: 36ac5121-0d74-42d0-838c-6db43f49526e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prd_categories
+    - node.type.mt_product
+    - taxonomy.vocabulary.mt_collections
+id: node.mt_product.field_mt_prd_categories
+field_name: field_mt_prd_categories
+entity_type: node
+bundle: mt_product
+label: Categories
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      mt_collections: mt_collections
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

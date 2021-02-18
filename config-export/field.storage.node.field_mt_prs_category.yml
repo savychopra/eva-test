@@ -1,0 +1,20 @@
+uuid: 66d47275-e96c-443a-a558-a20c72c27032
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_mt_prs_category
+field_name: field_mt_prs_category
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

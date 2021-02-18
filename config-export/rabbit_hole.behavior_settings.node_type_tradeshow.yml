@@ -1,0 +1,14 @@
+uuid: d815a559-2512-43b3-861d-b3db43b6e92b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tradeshow
+id: node_type_tradeshow
+entity_type_id: node_type
+entity_id: tradeshow
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

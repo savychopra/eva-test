@@ -1,0 +1,26 @@
+uuid: 9036c624-5d6b-4b75-bc43-bc0169cc312d
+langcode: en
+status: true
+dependencies:
+  module:
+    - quicktabs
+    - system
+  theme:
+    - conferenceplus
+id: quicktabssessionsbytrack
+theme: conferenceplus
+region: content
+weight: 0
+provider: null
+plugin: 'quicktabs_block:sessions_by_track'
+settings:
+  id: 'quicktabs_block:sessions_by_track'
+  label: 'QuickTabs - Sessions by track'
+  provider: quicktabs
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /session-by-track
+    negate: false
+    context_mapping: {  }

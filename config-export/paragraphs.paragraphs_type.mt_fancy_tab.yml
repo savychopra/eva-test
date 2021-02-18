@@ -1,0 +1,6 @@
+uuid: d96140d6-6079-42e0-a79e-44e7a4e67686
+langcode: en
+status: true
+dependencies: {  }
+id: mt_fancy_tab
+label: 'Fancy Tab'

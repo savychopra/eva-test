@@ -1,0 +1,23 @@
+uuid: 5318b600-edba-4743-866d-f9493fc04259
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.poster
+  module:
+    - text
+id: node.poster.body
+field_name: body
+entity_type: node
+bundle: poster
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

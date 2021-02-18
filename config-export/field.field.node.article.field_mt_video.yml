@@ -1,0 +1,25 @@
+uuid: 92ac7626-1e4e-4f27-9583-5f957279d016
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_video
+    - node.type.article
+  module:
+    - video_embed_field
+id: node.article.field_mt_video
+field_name: field_mt_video
+entity_type: node
+bundle: article
+label: 'Video URL'
+description: 'Provide the URL of the Video you''d like to embed from a supported provider (i.e. Vimeo or Youtube)'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    youtube_playlist: '0'
+field_type: video_embed_field

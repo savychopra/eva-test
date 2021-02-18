@@ -1,0 +1,31 @@
+uuid: 142a8db9-15bc-4622-a6bb-a44f90231838
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_nodes_slideshow_block
+    - field.field.block_content.mt_nodes_slideshow_block.field_mt_ns_slide
+id: block_content.mt_nodes_slideshow_block.default
+targetEntityType: block_content
+bundle: mt_nodes_slideshow_block
+mode: default
+content:
+  field_mt_ns_slide:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

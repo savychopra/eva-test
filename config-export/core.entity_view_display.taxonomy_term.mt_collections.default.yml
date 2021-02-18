@@ -1,0 +1,25 @@
+uuid: fc3ceec8-f563-49b0-aef8-be55538c51a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.mt_collections.field_mt_collection_image
+    - field.field.taxonomy_term.mt_collections.field_mt_wide_collection_image
+    - taxonomy.vocabulary.mt_collections
+  module:
+    - text
+id: taxonomy_term.mt_collections.default
+targetEntityType: taxonomy_term
+bundle: mt_collections
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_mt_collection_image: true
+  field_mt_wide_collection_image: true

@@ -1,0 +1,19 @@
+uuid: ec07141b-78cf-436e-b19e-24b806149761
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_ms_slide_vimeo_id
+    - paragraphs.paragraphs_type.mt_main_slideshow_slide
+id: paragraph.mt_main_slideshow_slide.field_mt_ms_slide_vimeo_id
+field_name: field_mt_ms_slide_vimeo_id
+entity_type: paragraph
+bundle: mt_main_slideshow_slide
+label: 'Slide Vimeo id'
+description: 'Provide the ID of the Video you''d like to use from Vimeo (e.g 82642494).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

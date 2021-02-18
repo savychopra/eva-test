@@ -1,0 +1,23 @@
+uuid: 401f70f1-7f83-46d3-a195-3c85f8c072b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_typing_animation_block
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.mt_typing_animation_block.body
+field_name: body
+entity_type: block_content
+bundle: mt_typing_animation_block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

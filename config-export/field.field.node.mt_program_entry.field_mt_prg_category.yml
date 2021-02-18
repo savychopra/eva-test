@@ -1,0 +1,29 @@
+uuid: 86e1ea52-9089-4a78-b695-43327a7aaf34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prg_category
+    - node.type.mt_program_entry
+    - taxonomy.vocabulary.mt_program_entry_categories
+id: node.mt_program_entry.field_mt_prg_category
+field_name: field_mt_prg_category
+entity_type: node
+bundle: mt_program_entry
+label: Category
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      mt_program_entry_categories: mt_program_entry_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

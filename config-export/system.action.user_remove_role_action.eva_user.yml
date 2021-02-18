@@ -1,0 +1,14 @@
+uuid: f4bce3bc-f71e-43cc-b737-42a6d68ebebf
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.eva_user
+  module:
+    - user
+id: user_remove_role_action.eva_user
+label: 'Remove the EVA user role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: eva_user

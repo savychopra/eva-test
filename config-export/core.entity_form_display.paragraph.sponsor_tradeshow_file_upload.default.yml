@@ -1,0 +1,33 @@
+uuid: 64e17a31-51ba-4846-a6f2-021850e6b4fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sponsor_tradeshow_file_upload.field_title
+    - field.field.paragraph.sponsor_tradeshow_file_upload.field_upload_broucher
+    - paragraphs.paragraphs_type.sponsor_tradeshow_file_upload
+  module:
+    - file
+id: paragraph.sponsor_tradeshow_file_upload.default
+targetEntityType: paragraph
+bundle: sponsor_tradeshow_file_upload
+mode: default
+content:
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_upload_broucher:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+hidden:
+  created: true
+  status: true

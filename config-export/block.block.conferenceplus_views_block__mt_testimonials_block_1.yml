@@ -1,0 +1,30 @@
+uuid: 4c25018e-f5da-41d8-8b07-df33e1b73b14
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_testimonials
+  module:
+    - system
+    - views
+  theme:
+    - conferenceplus
+id: conferenceplus_views_block__mt_testimonials_block_1
+theme: conferenceplus
+region: featured_top
+weight: -59
+provider: null
+plugin: 'views_block:mt_testimonials-block_1'
+settings:
+  id: 'views_block:mt_testimonials-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /blocks
+    negate: false
+    context_mapping: {  }
