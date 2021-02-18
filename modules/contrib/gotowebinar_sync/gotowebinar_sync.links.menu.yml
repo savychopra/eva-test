@@ -1,0 +1,6 @@
+gotowebinar_sync.gotowebinar_sync_admin_form:
+  title: 'GotoWebinar Sync Settings'
+  route_name: gotowebinar_sync.gotowebinar_sync_admin_form
+  description: 'Manage GotoWebinar Sync settings.'
+  parent: system.admin_config_services
+  weight: 99

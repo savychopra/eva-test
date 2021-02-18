@@ -1,0 +1,18 @@
+zoomapi.settings:
+  path: '/admin/config/zoomapi'
+  defaults:
+    _form: '\Drupal\zoomapi\Form\ConfigForm'
+    _title: 'Zoom API Settings'
+  requirements:
+    _permission: 'administer zoom api'
+
+zoomapi.webhooks:
+  path: '/zoomapi-webhooks'
+  defaults:
+    _controller: '\Drupal\zoomapi\Controller\ZoomApiWebhooksController::capture'
+    _title: 'Zoom API Webhooks Controller'
+  methods: [POST]
+  requirements:
+    _custom_access: '\Drupal\zoomapi\Controller\ZoomApiWebhooksController::authorize'
+  options:
+    no_cache: 'TRUE'

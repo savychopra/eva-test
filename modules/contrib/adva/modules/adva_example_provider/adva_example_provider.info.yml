@@ -1,0 +1,14 @@
+name: Advanced Access Example Provider
+description: "Implements an example access provider."
+package: Access
+core_version_requirement: ^8.8 || ^9
+type: module
+configure: adva.settings
+dependencies:
+  - adva:adva
+hidden: TRUE
+
+# Information added by Drupal.org packaging script on 2020-07-28
+version: '8.x-1.0-rc9'
+project: 'adva'
+datestamp: 1595949027

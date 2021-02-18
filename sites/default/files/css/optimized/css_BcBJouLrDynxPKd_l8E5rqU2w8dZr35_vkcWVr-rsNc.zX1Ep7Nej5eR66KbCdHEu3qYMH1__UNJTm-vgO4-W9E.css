@@ -1,0 +1,33 @@
+/**
+ * @file
+ * Visual styles for Conference+'s fullcalendar implementations.
+ */
+
+/* Table element resets */
+.fc table table {
+  margin: 0;
+}
+.fc table tr td {
+  font-size: 18px;
+}
+.fc table thead + tbody tr td {
+  border-width: 1px;
+}
+.fc table tr:last-child td:first-child,
+.fc table tr:first-child th:first-child,
+.fc table tr:first-child th:last-child,
+.fc table tr:first-child td:last-child {
+  border-radius: 0;
+}
+
+/* Toolbar center region title styling*/
+.fc-toolbar .fc-center h2 {
+  font-size: 34px;
+  line-height: 38px;
+  margin-top: 25px;
+}
+@media (min-width: 768px) {
+  .fc-toolbar .fc-center h2 {
+    margin-top: 0;
+  }
+}

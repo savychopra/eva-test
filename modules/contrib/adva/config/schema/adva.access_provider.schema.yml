@@ -1,0 +1,76 @@
+adva.access_provider.*:
+  type: mapping
+  label: 'Access Provider'
+
+adva.access_provider.anonymous:
+  type: mapping
+  label: 'Anonymous Access Provider'
+  mapping:
+    default:
+      type: mapping
+      label: 'Default'
+      mapping:
+        enabled:
+          type: string
+          label: 'Enabled'
+        operations:
+          type: mapping
+          label: 'Operations'
+          mapping:
+            view:
+              type: sequence
+              label: 'View'
+              sequence:
+                type: string
+                label: 'Grant'
+            update:
+              type: sequence
+              label: 'Update'
+              sequence:
+                type: string
+                label: 'Grant'
+            delete:
+              type: sequence
+              label: 'Delete'
+              sequence:
+                type: string
+                label: 'Grant'
+    bundles:
+      type: mapping
+      label: 'Bundles'
+      mapping:
+        enabled:
+          type: sequence
+          label: 'Enabled'
+          sequence:
+            type: string
+            label: 'Bundle'
+        override:
+          type: sequence
+          label: 'Override'
+          sequence:
+            type: mapping
+            label: 'Bundle'
+            mapping:
+              operations:
+                type: mapping
+                label: 'Operations'
+                mapping:
+                  view:
+                    type: sequence
+                    label: 'View'
+                    sequence:
+                      type: string
+                      label: 'Grant'
+                  update:
+                    type: sequence
+                    label: 'Update'
+                    sequence:
+                      type: string
+                      label: 'Grant'
+                  delete:
+                    type: sequence
+                    label: 'Delete'
+                    sequence:
+                      type: string
+                      label: 'Grant'

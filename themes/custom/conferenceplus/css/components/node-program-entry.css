@@ -1,0 +1,52 @@
+/**
+ * @file
+ * Visual styles for Conference+'s program entry content type.
+ */
+.page-node-type-mt-program-entry h1.page-title {
+  margin-bottom: 0;
+}
+.node--type-mt-program-entry .field--entity-reference-target-type-taxonomy-term {
+  margin-top: 0;
+  padding-top: 0;
+}
+.node--type-mt-program-entry .field--entity-reference-target-type-taxonomy-term.field--label-hidden:before {
+  top: 2px;
+}
+.node--type-mt-program-entry .program-entry__info-item {
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.node--type-mt-program-entry .program-entry__info-item .date-month {
+  font-size: 24px;
+  text-transform: uppercase;
+  top: 11px;
+  line-height: 1;
+  display: block;
+  font-weight: 700;
+}
+.node--type-mt-program-entry .program-entry__info-item .date-day {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+}
+.node--type-mt-program-entry .program-entry__info-item .date-time {
+  font-size: 14px;
+}
+.node--type-mt-program-entry .node--type-mt-presentation .node__title {
+  text-align: center;
+  margin-top: 20px;
+}
+.node--type-mt-program-entry .node--type-mt-presentation .field--name-field-mt-prs-image {
+  margin-bottom: 20px;
+}
+.node--type-mt-program-entry .node--type-mt-presentation .field--name-field-mt-prs-body {
+  margin-bottom: 20px;
+}
+.node--type-mt-program-entry .node--type-mt-presentation.node--view-mode-teaser {
+  padding-bottom: 0;
+}
+.node--type-mt-program-entry .node__links {
+  margin-top: 20px;
+}

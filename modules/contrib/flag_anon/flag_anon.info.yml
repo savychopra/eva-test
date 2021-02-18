@@ -1,0 +1,14 @@
+name: Flag anonymous
+description: "Provide a flag display for anonymous users as 'login/register first' link."
+type: module
+package: Flags
+dependencies:
+  - flag:flag
+
+# core: '8.x'
+
+# Information added by Drupal.org packaging script on 2019-01-10
+version: '8.x-1.0-beta3'
+core: '8.x'
+project: 'flag_anon'
+datestamp: 1547124189

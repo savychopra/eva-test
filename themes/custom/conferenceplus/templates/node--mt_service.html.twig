@@ -1,0 +1,12 @@
+{#
+/**
+ * @file
+ * Conference+s's theme implementation to display a Service node.
+ */
+#}
+
+{% extends "node.html.twig" %}
+{% block content %}
+  {{ attach_library('conferenceplus/node-service') }}
+  {{ content|without('field_mt_srv_banner_image') }}
+{% endblock %}

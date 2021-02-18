@@ -1,0 +1,71 @@
+{#% extends "node.html.twig" %#}
+{#
+/**
+ * @file
+ * Conference+'s theme implementation to display a Speaker node.
+ */
+#}
+
+{% block content %}
+ 
+  <div class="content">
+ 
+    <div class="
+      {% if (content.field_mt_spk_speaker_photo|render and page) %}
+        col-md-6 order-md-1
+      {% elseif (content.field_mt_spk_speaker_photo|render and not page) %}
+         shadow  speaker-card
+      {% else %}
+        col-sm-12
+      {% endif %}
+    ">
+      {#{ content|without('field_mt_spk_speaker_photo','field_mt_spk_facebook_account','field_mt_spk_twitter_account','field_mt_spk_linkedin_account','field_mt_spk_youtube_account') }#}
+        <div class="photo-container">
+          {{ content.field_mt_spk_speaker_photo }}
+        </div>
+
+		<p>SPEAKER</p>
+        <h6{{ title_attributes.addClass('node__title') }}>
+      {% if logged_in %}
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      {% else %}
+      {{ label }}
+      {% endif %}
+      
+    </h6>
+
+      {% if (content.field_mt_spk_facebook_account|render or content.field_mt_spk_twitter_account|render or content.field_mt_spk_linkedin_account|render or content.field_mt_spk_youtube_account|render) %}
+        <ul class="icons-list icons-list--small icons-list--bordered icons-list--no-margin">
+          {% if content.field_mt_spk_facebook_account|render %}
+            <li>
+              <a class="background-color-facebook" target="_blank" href="{{ node.field_mt_spk_facebook_account.value }}">
+                <i class="fab fa-facebook"><span class="sr-only">facebook</span></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.field_mt_spk_twitter_account|render %}
+            <li>
+              <a class="background-color-twitter" target="_blank" href="{{ node.field_mt_spk_twitter_account.value }}">
+                <i class="fab fa-twitter"><span class="sr-only">twitter</span></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.field_mt_spk_linkedin_account|render %}
+            <li>
+              <a class="background-color-linkedin" target="_blank" href="{{ node.field_mt_spk_linkedin_account.value }}">
+                <i class="fab fa-linkedin"><span class="sr-only">linkedin</span></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.field_mt_spk_youtube_account|render %}
+            <li>
+              <a class="background-color-youtube" target="_blank" href="{{ node.field_mt_spk_youtube_account.value }}">
+                <i class="fab fa-youtube"><span class="sr-only">youtube</span></i>
+              </a>
+            </li>
+          {% endif %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}

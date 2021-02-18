@@ -1,0 +1,36 @@
+/**
+ * @file
+ * Visual styles for Conference+'s view presentations grid filers views.
+ */
+/* exposed filters */
+.view-presentations-grid .js-form-item {
+  width: 100%;
+  display: block;
+  margin: 0 0 10px 0;
+}
+@media (min-width: 576px) {
+  .view-presentations-grid .form--inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .view-presentations-grid .js-form-item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0;
+  }
+  .view-presentations-grid .form-actions {
+    margin: 0 auto;
+  }
+}

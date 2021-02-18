@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * Conference+s's theme implementation to display a Event node.
+ */
+#}
+
+{#% extends "node.html.twig" %#}
+
+<div class="row">
+<div class="col-lg-2 col-md-2">{{content.field_mt_evn_speaker}}</div>
+<div class="col-lg-10 col-md-10 confrence-program-details">    <h3{{ title_attributes.addClass('node__title') }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+     </h3>
+
+  <div class="conf-date"><i class="fas fa-calendar-alt"></i> {{ node.field_mt_evn_date.value|date('l jS F Y') }}</div>
+  <div class="conf-time"><i class="fas fa-clock"></i> {{content.field_mt_evn_date }}  - ET {{content.field_event_end_date }} </div>
+  <!--<div class="conf-address"><i class="fas fa-map-marker-alt"></i> {#{content.field_mt_evn_place}#}</div> -->
+
+  <div class="d-inline"> {{content.body}}</div>
+  {#{content.field_mt_evn_image}#}
+  <div class="mt-2 mb-2 keynotes-video">{{content.field_keynotes_video}}</div>
+  {#{content.field_mt_evn_sponsor}#}
+  {{content.field_bottom}}
+  
+  
+ 
+
+  </div>
+
+</div>
+
+
+
+

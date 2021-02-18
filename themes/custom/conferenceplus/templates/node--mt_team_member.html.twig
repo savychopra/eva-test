@@ -1,0 +1,60 @@
+{% extends "node.html.twig" %}
+{#
+/**
+ * @file
+ * Conference+'s theme implementation to display a Team Member node.
+ */
+#}
+
+{% block content %}
+  {{ attach_library('conferenceplus/node-team-member') }}
+  <div class="row content">
+    {% if content.field_mt_tmm_member_photo|render %}
+      {% if page %}
+        {{ attach_library('conferenceplus/magnific-popup-field-mt-tmm-member-photo-init') }}
+      {% endif %}
+      <div class="{{ (page) ? 'col-lg-6 col-xl-5' : 'col-lg-6' }}">
+        <div class="photo-container">
+          {{ content.field_mt_tmm_member_photo }}
+        </div>
+      </div>
+    {% endif %}
+    <div class="{{ (content.field_mt_tmm_member_photo|render) ? 'col-lg-6 ml-xl-auto' : 'col-sm-12' }}">
+      {{ content.field_mt_tmm_subtitle }}
+      {% if (content.field_mt_tmm_facebook_account|render or content.field_mt_tmm_twitter_account|render or content.field_mt_tmm_linkedin_account|render or content.field_mt_tmm_youtube_account|render) %}
+        <ul class="icons-list icons-list--small icons-list--bordered icons-list--no-margin">
+          {% if content.field_mt_tmm_facebook_account|render %}
+            <li>
+              <a class="background-color-facebook" target="_blank" href="{{ node.field_mt_tmm_facebook_account.value }}">
+                <i class="fab fa-facebook"><span class="sr-only">facebook</span></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.field_mt_tmm_twitter_account|render %}
+            <li>
+              <a class="background-color-twitter" target="_blank" href="{{ node.field_mt_tmm_twitter_account.value }}">
+                <i class="fab fa-twitter"><span class="sr-only">twitter</span></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.field_mt_tmm_linkedin_account|render %}
+            <li>
+              <a class="background-color-linkedin" target="_blank" href="{{ node.field_mt_tmm_linkedin_account.value }}">
+                <i class="fab fa-linkedin"><span class="sr-only">linkedin</span></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.field_mt_tmm_youtube_account|render %}
+            <li>
+              <a class="background-color-youtube" target="_blank" href="{{ node.field_mt_tmm_youtube_account.value }}">
+                <i class="fab fa-youtube"><span class="sr-only">youtube</span></i>
+              </a>
+            </li>
+          {% endif %}
+        </ul>
+      {% endif %}
+      {{ content.field_mt_tmm_body }}
+    </div>
+  </div>
+  {{ content|without('field_mt_tmm_member_photo','field_mt_tmm_subtitle','field_mt_tmm_facebook_account','field_mt_tmm_twitter_account','field_mt_tmm_linkedin_account','field_mt_tmm_youtube_account','field_mt_tmm_body') }}
+{% endblock %}

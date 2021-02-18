@@ -1,0 +1,14 @@
+name: Juicer social feed
+description: Integration with the Juicer (juicer.io) social feed platform.
+# core: 8.x
+type: module
+configure: juicerio.admin
+
+dependencies:
+  - drupal:block
+
+# Information added by Drupal.org packaging script on 2018-02-22
+version: '8.x-1.0-alpha5'
+core: '8.x'
+project: 'juicerio'
+datestamp: 1519270088

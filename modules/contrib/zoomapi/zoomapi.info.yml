@@ -1,0 +1,14 @@
+name: Zoom API
+type: module
+description: 'Provides functionality interacting with the Zoom.us API. This is mainly meant to be a developer module. See the README.'
+package: Web Services
+core: 8.x
+core_version_requirement: ^8 || ^9
+configure: zoomapi.settings
+dependencies:
+  - key:key
+
+# Information added by Drupal.org packaging script on 2020-06-24
+version: '2.0.1'
+project: 'zoomapi'
+datestamp: 1593027848

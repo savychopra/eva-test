@@ -1,0 +1,43 @@
+{#
+/**
+ * @file
+ * Conference+'s theme implementation to display a Service node.
+ */
+#}
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    'clearfix',
+  ]
+%}
+
+{{ attach_library('classy/node') }}
+<article{{ attributes.addClass(classes) }}>
+  <div{{ content_attributes.addClass('node__main-content', 'clearfix') }}>
+
+    {% if content.field_mt_video|render %}
+      {{ content.field_mt_video }}
+    {% endif %}
+
+    {{ title_prefix }}
+    {% if not page %}
+      <h4{{ title_attributes.addClass('node__title') }}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h4>
+    {% else %}
+      <h1{{ title_attributes.addClass('node__title') }}>{{ label }}</h1>
+    {% endif %}
+    {{ title_suffix }}
+
+    <div{{ content_attributes.addClass('node__main-content', 'clearfix') }}>
+      {{ content|without('field_mt_video', 'links') }}
+      <a class="button button--hover-style-2" href="{{ url }}">{% trans %}Read More{% endtrans %}</a>
+    </div>
+
+  </div>
+</article>

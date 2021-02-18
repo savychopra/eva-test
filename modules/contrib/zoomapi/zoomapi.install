@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the Zoom API module.
+ */
+
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_requirements().
+ */
+function zoomapi_requirements($phase) {
+  $requirements = [];
+
+  if ($phase == 'runtime') {
+    $client = \Drupal::service('zoomapi.client');
+
+    $credentials_are_valid = $client->validateConfiguration();
+
+    if (!$credentials_are_valid) {
+      $link_to_settings = Url::fromRoute('zoomapi.settings')->toString();
+      $message = t('Missing valid configuration for Zoom API. Please go <a href=":link_to_settings">here</a> to set.', [':link_to_settings' => $link_to_settings]);
+
+      $requirements['zoomapi'] = [
+        'title' => t('Zoom API - Configuration'),
+        'severity' => REQUIREMENT_ERROR,
+        'description' => $message,
+      ];
+    }
+  }
+  return $requirements;
+}
+
+/**
+ * Removing unnecessary config keys.
+ */
+function zoomapi_update_8201(&$sandbox) {
+  $config_factory = \Drupal::configFactory();
+  $config = $config_factory->getEditable('zoomapi.settings');
+  $config->clear('submit');
+  $config->clear('form_build_id');
+  $config->clear('form_token');
+  $config->clear('form_id');
+  $config->clear('op');
+  $config->save();
+}

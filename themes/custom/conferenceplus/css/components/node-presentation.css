@@ -1,0 +1,164 @@
+/**
+ * @file
+ * Visual styles for Conference+'s presentation content type.
+ */
+.page-node-type-mt-presentation h1.page-title {
+  margin-bottom: 10px;
+}
+.node--type-mt-presentation h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.node--type-mt-presentation .node__header {
+  padding: 0;
+}
+.node--type-mt-presentation .presentation__info {
+  font-size: 16px;
+  color: #878787;
+  padding-bottom: 30px;
+}
+.node--type-mt-presentation .presentation__info-item {
+  display: inline-block;
+  padding-right: 20px;
+}
+.node--type-mt-presentation .presentation__info-item .field--name-field-mt-prs-date {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.node--type-mt-presentation .presentation__info-item:last-child {
+  padding-right: 0;
+}
+
+/*fields*/
+.node--type-mt-presentation .field {
+  margin-bottom: 40px;
+}
+.node--type-mt-presentation .field--label-above .field__label {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 6px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #e5e5e5;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+}
+
+/*page title*/
+.layout-no-sidebars.page-node-type-mt-presentation .page-title {
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .layout-no-sidebars.page-node-type-mt-presentation .page-title {
+    font-size: 70px;
+  }
+}
+
+/*image field*/
+.path-node .node--type-mt-presentation .field--name-field-mt-prs-image {
+  margin-bottom: 60px;
+}
+.node--type-mt-presentation.node--view-mode-teaser .images-container {
+  margin-bottom: 15px;
+}
+
+/*affiliations field*/
+.field--name-field-mt-prs-affiliations .field__item {
+  display: inline-block;
+  padding-right: 5px;
+}
+.field--name-field-mt-prs-affiliations .field__item:after {
+  content: ",";
+}
+.field--name-field-mt-prs-affiliations .field__item:last-child:after {
+  content: "";
+}
+
+/*speaker field*/
+.field--name-field-mt-prs-body + .field--name-field-mt-prs-speaker {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.field--name-field-mt-prs-speaker .field__item {
+  display: inline-block;
+  padding-right: 5px;
+}
+.field--name-field-mt-prs-speaker .field__item a:after {
+  content: ",";
+}
+.field--name-field-mt-prs-speaker .field__item:last-child a:after {
+  content: "";
+}
+
+/*author field*/
+.field--name-field-mt-prs-body + .field--name-field-mt-prs-authors {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.field--name-field-mt-prs-authors .field__item {
+  display: inline-block;
+  padding-right: 5px;
+}
+.field--name-field-mt-prs-authors .field__item:after {
+  content: ",";
+}
+.field--name-field-mt-prs-authors .field__item:last-child:after {
+  content: "";
+}
+
+/*sponsor field*/
+.field__item + .field__item .node--type-mt-sponsor.node--view-mode-teaser {
+  margin-top: 20px;
+}
+.node--type-mt-presentation .field--name-field-mt-prs-sponsor > .field__label {
+  font-size: 30px;
+}
+.node--type-mt-presentation .field--name-field-mt-spn-body {
+  margin-bottom: 0;
+}
+.node--type-mt-sponsor.node--view-mode-teaser {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.node--type-mt-presentation .node__links {
+  margin-top: 0;
+}
+.node--type-mt-presentation .field--name-field-mt-spn-logo {
+  margin-bottom: 20px;
+}
+.node--type-mt-presentation .node--view-mode-mt-listing-item {
+  margin-bottom: 20px;
+}
+.node--type-mt-presentation .field--name-field-mt-prs-sponsor {
+  margin-bottom: 20px;
+}
+
+/*files field*/
+.field--name-field-mt-prs-files .file {
+  background-image: none;
+  padding-left: 0;
+}
+.field--name-field-mt-prs-files .file:before {
+  content: "\f0ed";
+  font-family: 'fontello';
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* taxonomy */
+.node--type-mt-presentation .field--name-field-mt-prs-category,
+.node--type-mt-presentation .field--name-field-mt-prs-session,
+.node--type-mt-presentation .field--name-field-mt-prs-topics {
+  margin: 0px 0 25px;
+  padding: 0;
+}
+.node--type-mt-presentation .field--name-field-mt-prs-session .field__label:before {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  content: "\f073";
+}
+.node--type-mt-presentation .field--name-field-mt-prs-category .field__label:before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f292";
+}

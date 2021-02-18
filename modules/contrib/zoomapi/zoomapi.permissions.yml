@@ -1,0 +1,4 @@
+administer zoom api:
+  title: 'Administer Zoom API'
+  description: 'Can configure Zoom API settings'
+  restrict access: true

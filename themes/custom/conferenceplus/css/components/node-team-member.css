@@ -1,0 +1,17 @@
+/**
+ * @file
+ * Visual styles for Conference+'s team member content type.
+ */
+.page-node-type-mt-team-member h1.page-title {
+  margin-bottom: 10px;
+}
+.page-node-type-mt-team-member .field--name-field-mt-tmm-member-photo {
+  margin-bottom: 20px;
+}
+.page-node-type-mt-team-member .field--name-field-mt-tmm-subtitle {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.page-node-type-mt-team-member .icons-list {
+  padding-bottom: 30px;
+}

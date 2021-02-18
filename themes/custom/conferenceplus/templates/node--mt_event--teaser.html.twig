@@ -1,0 +1,51 @@
+{#
+/**
+ * @file
+ * Conference+s's theme implementation to display a Event node.
+ */
+#}
+
+{% extends "node.html.twig" %}
+{% block node_side %}
+{% endblock %}
+{% block meta_area %}
+  {% if content.field_mt_evn_date|render or content.field_mt_evn_image|render %}
+    <div class="teaser-image-container">
+      {{ content.field_mt_evn_image }}
+      <span class="node__meta-date">
+        <span class="node__meta-date-item day">{{ node.field_mt_evn_date.value|date('d') }}</span>
+        <span class="node__meta-date-item month-year">{{ node.field_mt_evn_date.value|date('M') }}, {{ node.field_mt_evn_date.value|date('Y') }}</span>
+      </span>
+    </div>
+  {% endif %}
+  {{ title_prefix }}
+  {% if not page %}
+    <h2{{ title_attributes.addClass('node__title') }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% if display_submitted %}
+    <div class="node__meta">
+      {{ author_picture }}
+      <span{{ author_attributes.addClass('node__submitted-info') }}>
+        {% trans %}
+          <span class="node__submitted-info-text">By</span> {{ author_name }} on 
+          <span class="node__submitted-date">
+            {{ date }}
+          </span>
+        {% endtrans %}
+      </span>
+      {{ metadata }}
+    </div>
+  {% endif %}
+  {% if content.field_mt_evn_place|render %}
+    <div class="event__info">
+      <span class="event__info-item"><i class="fas fa-map-marker pr-1"></i> {{ node.field_mt_evn_place.value }}</span>
+    </div>
+  {% endif %}
+{% endblock %}
+{% block content %}
+  {{ attach_library('conferenceplus/node-event') }}
+  {{ content|without('field_mt_evn_image', 'field_mt_evn_date', 'field_mt_evn_place') }}
+{% endblock %}

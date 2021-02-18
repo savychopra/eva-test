@@ -1,0 +1,77 @@
+/**
+ * @file
+ * Visual styles for Conference+'s testimonial content type.
+ */
+.node--type-mt-testimonial .field--name-field-mt-tst-testimonial-image {
+  text-align: center;
+}
+.node--type-mt-testimonial .field--name-field-mt-tst-testimonial-image .overlay-container {
+  display: inline-block;
+  max-width: 70px;
+}
+.node--type-mt-testimonial .field--name-field-mt-tst-testimonial-image img {
+  border-radius: 100%;
+}
+.node--type-mt-testimonial .field--name-field-mt-tst-body {
+  font-size: 18px;
+  line-height: 1.65;
+  color: #656565;
+}
+.node--type-mt-testimonial .field--name-field-mt-tst-body p:first-child:before {
+  content: "“";
+}
+.node--type-mt-testimonial .field--name-field-mt-tst-body p:last-child:after {
+  content: "”";
+}
+.node--type-mt-testimonial .field--name-field-mt-tst-body p {
+  padding: 0;
+  position: relative;
+  margin-bottom: 10px;
+}
+.node--type-mt-testimonial .field--name-field-mt-tst-subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #656565;
+  padding-bottom: 0;
+}
+@media (min-width: 768px) {
+  .field--name-field-mt-tst-testimonial-image {
+    margin-right: 30px;
+    float: left;
+    max-width: 70px;
+    max-height: 70px;
+  }
+  .node--type-mt-testimonial .field--name-field-mt-tst-testimonial-image ~ .field--name-field-mt-tst-testimonial-link,
+  .node--type-mt-testimonial .field--name-field-mt-tst-testimonial-image ~ .field--name-field-mt-tst-subtitle,
+  .node--type-mt-testimonial .field--name-field-mt-tst-testimonial-image ~ .field--name-field-mt-tst-body {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .node--type-mt-testimonial .field--name-field-mt-tst-testimonial-image {
+    margin-bottom: 10px;
+  }
+}
+.field--name-field-mt-tst-testimonial-link a {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 16px 30px 15px;
+  color: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  margin: 10px 0;
+  text-align: center;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.field--name-field-mt-tst-testimonial-link a:hover,
+.field--name-field-mt-tst-testimonial-link a:focus {
+  background-color: transparent;
+}

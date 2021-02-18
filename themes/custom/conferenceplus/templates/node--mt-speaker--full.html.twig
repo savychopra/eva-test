@@ -1,0 +1,61 @@
+{#% extends "node.html.twig" %#}
+{#
+/**
+ * @file
+ * Conference+'s theme implementation to display a Speaker node.
+ */
+#}
+
+{% block content %}
+
+<div class="content">
+<div class="row">
+<div class="col-lg-3 col-md-3 mb-3">{{ content.field_mt_spk_speaker_photo }}</div>
+<div class="col-lg-9 col-md-9 speaker-details">    
+     <h3{{ title_attributes.addClass('node__title') }}>
+      {{ label }} 
+     </h3>
+	 <h6>{{content.field_designation}}, {{content.field_mt_spk_subtitle}}</h6>
+   <hr/>
+  <div class="d-inline"> {{content.field_mt_spk_body}}</div>
+ {% if (content.field_mt_spk_facebook_account|render or content.field_mt_spk_twitter_account|render or content.field_mt_spk_linkedin_account|render or content.field_mt_spk_youtube_account|render) %}
+        <ul class="icons-list icons-list--small icons-list--bordered icons-list--no-margin">
+          {% if content.field_mt_spk_linkedin_account|render %}
+            <li>
+              <a class="background-color-linkedin" target="_blank" href="{{ node.field_mt_spk_linkedin_account.value }}">
+                <i class="fab fa-linkedin"><span class="sr-only">linkedin</span></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.field_mt_spk_twitter_account|render %}
+            <li>
+              <a class="background-color-twitter" target="_blank" href="{{ node.field_mt_spk_twitter_account.value }}">
+                <i class="fab fa-twitter"><span class="sr-only">Twitter</span></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.field_mt_spk_facebook_account|render %}
+            <li>
+              <a class="background-color-facebook" target="_blank" href="{{ node.field_mt_spk_facebook_account.value }}">
+                <i class="fab fa-facebook-f"><span class="sr-only">Facebook</span></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.field_mt_spk_youtube_account|render %}
+            <li>
+              <a class="background-color-youtube" target="_blank" href="{{ node.field_mt_spk_youtube_account.value }}">
+                <i class="fab fa-youtube"><span class="sr-only">Youtube</span></i>
+              </a>
+            </li>
+          {% endif %}          
+
+         
+        </ul>
+      {% endif %}
+
+  </div>
+
+</div>
+
+ </div>
+{% endblock %}

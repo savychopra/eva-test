@@ -1,0 +1,10 @@
+/**
+ * @file
+ * Visual styles for Conference+'s testimonials carousel.
+ */
+.mt-carousel-testimonials {
+  padding: 0 0 25px;
+}
+.mt-carousel-testimonials .mt-carousel-item {
+  margin: 0 15px;
+}

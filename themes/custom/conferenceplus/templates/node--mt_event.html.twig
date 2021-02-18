@@ -1,0 +1,51 @@
+{#
+/**
+ * @file
+ * Conference+s's theme implementation to display a Event node.
+ */
+#}
+
+{#% extends "node.html.twig" %#}
+
+<div class="row">
+<div class="col-lg-2 col-md-3">{{content.field_mt_evn_speaker}}</div>
+<div class="col-lg-10 col-md-9 confrence-program-details">    
+     <h3{{ title_attributes.addClass('node__title') }}>
+      {{ label }}
+     </h3>
+  <div class="conf-date"><i class="fas fa-calendar-alt"></i>{{ node.field_mt_evn_date.value|date('l jS F Y') }}</div>
+  <div class="conf-time"><i class="fas fa-clock"></i> {{content.field_mt_evn_date }} ET</div>
+{% if content.field_upload_|render %}
+<div class="s-address"><i class="fas fa-cloud-download-alt"></i>{{content.field_upload_}}</div>
+{% endif %}
+  
+
+
+
+  <div class="add-schedule"> {{ content|without('field_mt_evn_date', 'field_mt_evn_place','field_mt_evn_body','field_mt_evn_event_category','field_mt_evn_files','field_mt_evn_image','field_mt_evn_location','field_mt_evn_map_zoom','field_mt_evn_place','field_mt_evn_speaker','field_mt_evn_sponsor','field_mt_evn_video','field_ceu_details','field_assigned_to','field_mt_evn_sponsor','field_end_date','field_upload_','field_session_track') }}
+
+     {% if logged_in %}
+      <!--a title="CEU Details" href="#ceu">CEU Details</a-->
+      {% endif %}
+        {% if node.field_session_type.value == 'Live' %}
+            <a title="Live" href="#" class="watch-live">Join live session</a>
+          {% endif %} 
+  </div>
+  <div class="d-inline"> {{content.field_mt_evn_body}}</div>
+          {% if node.field_session_type.value == 'Recorded' %}
+            {{ content.field_mt_evn_video}}
+          {% endif %} 
+  {#{content.field_mt_evn_image}#}
+  {#{content.field_mt_evn_sponsor}#}
+  {#% if logged_in %#}
+  <div class="ceu-details" id='ceu'>{{content.field_ceu_details}}</div>
+  {#% endif %#}
+ 
+
+  </div>
+
+</div>
+
+
+
+

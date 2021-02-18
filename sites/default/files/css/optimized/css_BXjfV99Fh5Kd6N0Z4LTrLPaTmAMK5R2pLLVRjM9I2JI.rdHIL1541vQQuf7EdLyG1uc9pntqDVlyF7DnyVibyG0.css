@@ -1,0 +1,267 @@
+/**
+ * @file
+ * Visual styles for Conference+'s mt-count-down module.
+ */
+.mt-count-down-theme.mt-count-down-inject {
+  color: #ffffff;
+}
+.mt-count-down-theme.mt-count-down-inject .mt-count-down__notes,
+.mt-count-down-theme.mt-count-down-inject .mt-count-down__message,
+.mt-count-down-theme.mt-count-down-inject .mt-count-down__title,
+.mt-count-down-theme.mt-count-down-inject .mt-count-down__daysto,
+.mt-count-down-theme.mt-count-down-inject .mt-label {
+  color: #ffffff;
+}
+.mt-count-down-theme.mt-count-down-inject .mt-count-down__button {
+  border-color: #ffffff;
+  text-decoration: none;
+  background-color: #ffffff;
+}
+.mt-count-down-theme.mt-count-down-inject .mt-count-down__button:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: transparent;
+}
+.mt-count-down {
+  padding: 20px 0;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+}
+.mt-count-down__title {
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.2;
+}
+.mt-count-down__message {
+  font-size: 16px;
+  padding-bottom: 0;
+}
+.mt-count-down__button {
+  margin-top: 15px;
+  font-size: 14px;
+  padding: 10px 20px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  border-width: 2px;
+  border-style: solid;
+   -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 10px 0;
+  text-align: center;
+}
+.mt-count-down__button:hover {
+  text-decoration: none;
+}
+@media (max-width: 575px) {
+  .mt-count-down__title,
+  .mt-count-down__message {
+    text-align: center;
+  }
+}
+.mt-count-down__daysto {
+  text-align: right;
+}
+.mt-count-down__hint {
+  font-size: 14px;
+}
+.mt-count-down__daysto .mt-time {
+  display: inline-block;
+  text-align: center;
+  margin: 0 10px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .mt-count-down__daysto .mt-time {
+    margin: 0 3px;
+  }
+}
+@media (max-width: 767px) {
+  .mt-count-down__daysto > span {
+    margin-top: 20px;
+    display: block;
+  }
+}
+.mt-count-down__daysto .mt-count,
+.mt-count-down__daysto .mt-label {
+  display: block;
+}
+.mt-count-down__daysto .mt-count {
+  font-size: 20px;
+  line-height: 1.2;
+}
+.mt-count-down__daysto .mt-label {
+  font-size: 10px;
+  text-transform: capitalize;
+}
+.mt-count-down.alert button.close {
+  top: 10px;
+  right: 20px;
+}
+
+/*count down block*/
+.mt-count-down.mt-count-down-block,
+.mt-count-down.mt-count-down-block .mt-count-down__daysto {
+  text-align: left;
+}
+.col-12 .mt-count-down.mt-count-down-block,
+.col-12 .mt-count-down.mt-count-down-block .mt-count-down__daysto {
+  text-align: center;
+}
+.mt-count-down-theme.mt-count-down-block {
+  background-color: transparent;
+}
+.region--dark-typography .mt-count-down-theme.mt-count-down-block .mt-count-down__title,
+.region--dark-typography .mt-count-down-theme.mt-count-down-block .mt-count-down__notes,
+.region--dark-typography .mt-count-down-theme.mt-count-down-block .mt-count-down__message,
+.region--dark-typography .mt-count-down-theme.mt-count-down-block .mt-count-down__daysto {
+  color: #656565;
+}
+.region--light-typography .mt-count-down-theme.mt-count-down-block .mt-count-down__title,
+.region--light-typography .mt-count-down-theme.mt-count-down-block .mt-count-down__notes,
+.region--light-typography .mt-count-down-theme.mt-count-down-block .mt-count-down__message,
+.region--light-typography .mt-count-down-theme.mt-count-down-block .mt-count-down__daysto {
+  color: #ffffff;
+}
+.region--light-typography .mt-count-down-block.mt-count-down-theme .mt-count-down__button {
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+.region--light-typography .mt-count-down-block.mt-count-down-theme .mt-count-down__button:hover,
+.region--light-typography .mt-count-down-block.mt-count-down-theme .mt-count-down__button:focus {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.region--dark-typography .mt-count-down-block.mt-count-down-theme .mt-count-down__button {
+  color: #ffffff;
+}
+.region--dark-typography .mt-count-down-block.mt-count-down-theme .mt-count-down__button:hover,
+.region--dark-typography .mt-count-down-block.mt-count-down-theme .mt-count-down__button:focus {
+  background-color: transparent;
+}
+.mt-count-down-block .mt-count-down__button {
+  margin-top: 15px;
+  font-size: 15px;
+  padding: 17px 40px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  border-width: 2px;
+  border-style: solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.mt-count-down-block .mt-count-down__title {
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 600;
+}
+.mt-count-down-block .mt-count-down__message {
+  margin-bottom: 20px;
+  font-size: 20px;
+  position: relative;
+}
+.mt-count-down-block .mt-count-down__message:after {
+  background-color: #ddd;
+  content: "";
+  width: 230px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  top: auto;
+  margin-left: -115px;
+  bottom: -20px;
+}
+.region--light-typography .col-12 .mt-count-down-block .mt-count-down__message:after {
+  background-color: #ffffff;
+}
+.mt-count-down-block .mt-count-down__daysto {
+  margin: 0 0 20px 0;
+}
+.mt-count-down-block .mt-count-down__title + .mt-count-down__daysto,
+.mt-count-down-block .mt-count-down__message + .mt-count-down__daysto {
+  margin-top: 20px;
+}
+.col-12 .mt-count-down-block {
+  padding: 140px 0;
+}
+.col-12 .block .mt-count-down-block {
+  padding: 10px 0 80px;
+}
+.col-12 .mt-count-down-block .mt-count-down__title {
+  font-size: 44px;
+}
+.col-12 .mt-count-down-block .mt-count-down__daysto {
+  padding: 10px 0 0;
+}
+.col-12 .mt-count-down-block .mt-count-down__notes {
+  font-size: 18px;
+  margin-bottom: 15px;
+  display: block;
+}
+.col-12 .mt-count-down-block .mt-count {
+  font-size: 44px;
+  font-weight: 300;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px 5px;
+  width: 90px;
+  text-align: center;
+}
+.col-12 .mt-count-down-block .mt-label {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .col-12 .mt-count-down-block .mt-count-down__title {
+    font-size: 60px;
+  }
+  .mt-count-down-block .mt-count-down__message {
+    font-size: 24px;
+  }
+  .col-12 .mt-count-down-block .mt-count {
+    font-size: 60px;
+    width: 120px;
+  }
+  .col-12 .mt-count-down-block .mt-count {
+    position: relative;
+  }
+  .col-12 .mt-count-down-block .mt-count:after {
+    content: ":";
+    position: absolute;
+    right: -14px;
+    height: 30px;
+    line-height: 30px;
+    top: 50%;
+    margin-top: -15px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .col-12 .mt-count-down-block .mt-time:last-child .mt-count:after {
+    content: "";
+  }
+}
+@media (max-width: 575px) {
+  .col-12 .mt-count-down-block .mt-time:last-child {
+    display: none;
+  }
+}

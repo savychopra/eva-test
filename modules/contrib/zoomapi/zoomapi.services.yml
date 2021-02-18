@@ -1,0 +1,7 @@
+services:
+  logger.channel.zoomapi:
+    parent: logger.channel_base
+    arguments: ['zoomapi']
+  zoomapi.client:
+    class: '\Drupal\zoomapi\Client\ZoomApiClient'
+    arguments: ['@http_client', '@key.repository', '@config.factory', '@logger.channel.zoomapi', '@datetime.time']

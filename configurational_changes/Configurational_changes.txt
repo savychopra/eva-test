@@ -1,0 +1,20 @@
+Date: 10-feb-2021
+1. Made a view for poster 
+2. PDF implementaton and other field changes in content type
+3. Template creation for poster detail page.
+4. Chnages in tradeshow view in all tabs.
+
+Date: 11-feb-2021
+1. Made field in speaker - Assigned to
+2. Permission changes
+3. New user made and other user changes
+4. Better_exposed_filters and dependencies added
+5. Chnages  in view of posters listing page
+6. New view page made for speakers-assigned
+
+Date: 12-feb-2021
+1. 2 new view made for exhibitor and sponsors-assigned
+2. Permission changes
+3. New users made for sponsors and exhibitors
+4. New role made for exhibitors
+ 

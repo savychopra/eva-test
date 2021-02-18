@@ -1,0 +1,14 @@
+{
+  "name": "drupal/gotowebinar_sync",
+  "type": "drupal-module",
+  "description": "Sync webinar data from GoToWebinar.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/gotowebinar_sync",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/gotowebinar_sync",
+    "source": "http://cgit.drupalcode.org/gotowebinar_sync"
+  },
+  "require": { }
+}

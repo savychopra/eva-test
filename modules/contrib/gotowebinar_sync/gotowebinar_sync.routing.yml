@@ -1,0 +1,36 @@
+
+gotowebinar_sync.gotowebinar_sync_admin_form:
+  path: '/admin/config/gotowebinar_sync/settings'
+  defaults:
+    _form: '\Drupal\gotowebinar_sync\Form\GotoWebinarSyncAdminForm'
+    _title: 'GotoWebinarSyncAdminForm'
+  requirements:
+    _permission: 'administer gotowebinar sync'
+  options:
+    _admin_route: TRUE
+
+gotowebinar_sync.post_sync:
+  path: '/___gotowebinar_sync'
+  defaults:
+    _controller: '\Drupal\gotowebinar_sync\Controller\WebinarSyncController::sync'
+    _title: 'GotoWebinar Sync'
+  methods: [POST]
+  requirements:
+    _gotowebinar_validate_sync: 'TRUE'
+
+gotowebinar_sync.get_sync:
+  path: '/___gotowebinar_sync'
+  defaults:
+    _controller: '\Drupal\gotowebinar_sync\Controller\WebinarSyncController::get'
+    _title: 'GotoWebinar Sync'
+  methods: [GET]
+  requirements:
+    _permission: 'access content'
+
+gotowebinar_sync.oauth:
+  path: '/___gotowebinar_oauth'
+  defaults:
+    _controller: '\Drupal\gotowebinar_sync\Controller\WebinarApiSetupController::oauth'
+    _title: 'GotoWebinar Oauth return'
+  requirements:
+    _permission: 'administer gotowebinar sync'

@@ -1,0 +1,12 @@
+services:
+  gotowebinar_sync.webinar_sync:
+    class: Drupal\gotowebinar_sync\WebinarSync
+    arguments: ['@config.factory', '@entity_type.manager', '@logger.factory', '@lock']
+  gotowebinar_sync.webinar_setup:
+    class: Drupal\gotowebinar_sync\WebinarApiSetup
+    arguments: ['@http_client', '@config.factory', '@logger.factory']
+  gotowebinar.validate_sync:
+    class: Drupal\gotowebinar_sync\Access\ValidateSync
+    arguments: ['@config.factory']
+    tags:
+      - { name: access_check, applies_to: _gotowebinar_validate_sync }

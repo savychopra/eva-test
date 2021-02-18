@@ -1,0 +1,21 @@
+/**
+ * @file
+ * Visual styles for Conference+'s view sponsors grid views.
+ */
+.view-sponsors-grid .views-row {
+  margin: 30px 0;
+}
+.view-sponsors-grid .views-field-field-mt-spn-logo {
+  margin: 0 auto 25px;
+}
+.headings-wide-spacing-enabled .view-sponsors-grid .views-field-title h5 {
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.view-sponsors-grid .views-field-title h5 a:hover {
+  text-decoration: none;
+}
+.region--light-typography .view-sponsors-grid .views-field-title h5 a,
+.region--light-typography .view-sponsors-grid .views-field-title h5 a:hover {
+  color: #ffffff;
+}

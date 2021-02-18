@@ -1,0 +1,46 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+
+<div class="group-event col-lg-12 col-md-12 views-row">
+<div class=" view-grouping">
+	<div class="view-grouping-container">
+		<div class="view-grouping-header">
+			<h5 class="group-event-title-wrap">
+				<span class="group-event-title">{{ title }}</span>
+				<!--<span class="group-event-date">/ {#{ field_mt_evn_date }#} </span>  -->
+			</h5>
+		</div>
+		<div class="view-grouping-content">
+			<div class="event-session-wrap">
+
+{% for row in rows %}
+  {%
+    set row_classes = [
+      default_row_class ? 'views-row',
+    ]
+%}
+  <div{{ row.attributes.addClass(row_classes) }}>
+    {{- row.content -}}
+  </div>
+{% endfor %}
+</div>
+</div>
+</div>
+			</div>
+		</div>
+		

@@ -1,0 +1,25 @@
+adva.access_consumer.*:
+  type: config_entity
+  label: 'Access Consumer config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    settings:
+      type: sequence
+      label: 'Settings'
+    providers:
+      type: sequence
+      label: 'Providers'
+      sequence:
+        type: string
+        label: 'Provider'
+    provider_config:
+      type: sequence
+      label: 'Provider Configs'
+      sequence:
+        type: adva.access_provider.[%key]
+        label: 'Provider Config'

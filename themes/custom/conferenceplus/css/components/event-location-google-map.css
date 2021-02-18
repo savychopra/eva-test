@@ -1,0 +1,20 @@
+/**
+ * @file
+ * Visual styles for Conference+'s google maps.
+ */
+.event-location-google-map-canvas {
+  height: 300px;
+}
+.container-fluid .event-location-google-map-canvas {
+  margin: 0 -15px;
+}
+.page-container-border-enabled .container-fluid .event-location-google-map-canvas,
+.container-fluid .field--mt-collapsible-block .event-location-google-map-canvas {
+  margin: 0;
+}
+.event-location-google-map-canvas img {
+  max-width: inherit;
+}
+.event-location-google-map-canvas .gm-style-iw {
+  color: #3b3b3b;
+}

@@ -1,0 +1,73 @@
+/**
+ * @file
+ * Visual styles for Conference+'s speaker content type.
+ */
+.node--type-mt-speaker {
+  padding-bottom: 30px;
+}
+.page-node-type-mt-speaker h1.page-title {
+  margin-bottom: 10px;
+}
+.field--name-field-mt-spk-speaker-photo {
+  margin-bottom: 20px;
+}
+.field--name-field-mt-spk-subtitle {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.page-node-type-mt-speaker .icons-list {
+  padding-top: 20px;
+}
+.paragraph-responsive-typography-enabled .node--view-mode-mt-listing-item  .node__main-content p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* blocks */
+.page-node-type-mt-speaker .col-12 .main-content__section .block {
+  padding-bottom: 25px;
+}
+.page-node-type-mt-speaker .col-12 .main-content__section h2.title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.page-node-type-mt-speaker .col-12 .main-content__section h2.title:after {
+  left: 50%;
+  margin-left: -85px;
+}
+
+/* affialiation field */
+.page-node-type-mt-speaker .field--name-field-mt-spk-affiliations {
+  margin: 0 0 10px;
+}
+
+/* node links */
+.page-node-type-mt-speaker .node__links {
+  margin-top: 10px;
+}
+
+/* Listing item view mode */
+.node--view-mode-mt-listing-item {
+  margin-bottom: 40px;
+}
+.node--type-mt-speaker.node--view-mode-mt-listing-item .speaker__info {
+  font-size: 16px;
+}
+.node--type-mt-speaker.node--view-mode-mt-listing-item .speaker__info-item {
+  display: inline-block;
+  padding-right: 20px;
+}
+.node--type-mt-speaker.node--view-mode-mt-listing-item .field--name-field-mt-spk-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+}
+.node--type-mt-speaker.node--view-mode-mt-listing-item .speaker__info-item .field {
+  margin: 0;
+}
+.node--type-mt-speaker.node--view-mode-mt-listing-item .speaker__info-item .field--entity-reference-target-type-taxonomy-term {
+  padding-left: 25px;
+}
+.node--type-mt-speaker.node--view-mode-mt-listing-item .speaker__info-item:last-child {
+  padding-right: 0;
+}

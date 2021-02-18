@@ -1,0 +1,4 @@
+base_uri: 'https://api.zoom.us/v2'
+api_key: ''
+api_secret: ''
+webhook_verification_token: ''

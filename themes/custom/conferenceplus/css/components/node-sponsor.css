@@ -1,0 +1,11 @@
+/**
+ * @file
+ * Visual styles for Conference+'s sponsor content type.
+ */
+.node--type-mt-sponsor .field--name-field-mt-spn-logo {
+  margin-bottom: 20px;
+}
+.node--type-mt-sponsor .field--name-field-mt-spn-logo .overlay-container {
+  display: inline-block;
+  vertical-align: text-top;
+}

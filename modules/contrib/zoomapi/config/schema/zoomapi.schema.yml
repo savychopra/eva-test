@@ -1,0 +1,16 @@
+zoomapi.settings:
+  type: config_object
+  label: 'Zoom API Settings'
+  mapping:
+    api_key:
+      type: string
+      label: 'Zoom API Key'
+    api_secret:
+      type: string
+      label: 'Zoom API Secret'
+    webhook_verification_token:
+      type: string
+      label: 'Webhook Verification Token'
+    base_uri:
+       type: string
+       label: 'Zoom API Base URI'

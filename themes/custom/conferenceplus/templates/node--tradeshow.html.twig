@@ -1,0 +1,107 @@
+{% extends "node.html.twig" %}
+{#
+/**
+ * @file
+ * Conference+'s theme implementation to display a Speaker node.
+ */
+#}
+{% block content %}
+  {{ attach_library('conferenceplus/node-speaker') }}
+  <div class="row content">
+  {% if content.field_keynotes_video|render %}
+	<div class="col-lg-12 tradeshow-video">{{content.field_keynotes_video}}</div>
+  {% endif %}
+
+	{% if content.field_booth_image|render %}
+      <div class="col-lg-6 mb-2 mb-lg-0">
+        <div class="photo-container tradeshow-boothimg">
+          {{ content.field_booth_image }}
+        </div>
+      </div>
+    {% endif %}
+    <div class="{{ (content.field_booth_image|render) ? 'col-lg-6' : 'col-12' }}
+    ">
+	  <!-- <div class="gold-partner"> <a href=""> {#{ content.field_sponser_category }#}</a></div> -->
+	  <div class="tradeshow-content mb-3">
+		<div class="tradeshow_title"><h4>{{label}}</h4></div>
+		<div class="row">
+		  <div class="col-md-8"> 
+			<div class="nestle_main">
+				{% if content.field_website|render %}
+				<div class="s-address"><i class="fas fa-globe"></i><a href="{{ content.field_website|raw }}">{{ content.field_website|raw }}</a> </div>
+				{% endif %}
+				{% if content.field_street_1|render or content.field_street_2|render or content.field_city|render or content.field_state|render or content.field_country|render or content.field_zip|render %} 
+				<div class="s-address"><i class="fas fa-map-marker-alt"></i>{% if content.field_street_1|render %}{{content.field_street_1}},{% endif %}{% if content.field_street_2|render %}{{content.field_street_2}},{% endif %}{% if content.field_city|render %}{{content.field_city}},{% endif %} {% if content.field_state|render %}
+				{{content.field_state}},{% endif %}{% if content.field_country|render %}
+{{content.field_country}},{% endif %}{% if content.field_zip|render %}{{content.field_zip}}{% endif %}</div>
+				{% endif %}
+				{% if content.field_phone|render %}
+
+				<div class="s-phone"><i class="fas fa-phone"></i> {{ content.field_phone | raw }}</div>
+				{% endif %}
+			</div>
+		  </div>
+		  <div class="col-md-4 text-right"> 
+		  <ul class="icons-list icons-list--small icons-list--bordered icons-list--no-margin">
+		  	{% if content.field_sponser_facebook|render %}
+			<li><a class="background-color-facebook" href="{{ content.field_sponser_facebook | raw }}">
+				<i class="fab fa-facebook"><span class="sr-only">facebook</span></i></a>
+			</li>
+			{% endif %}
+			{% if content.field_sponser_twitter|render %}
+			<li><a class="background-color-twitter" href="{{ content.field_sponser_twitter }}"><i class="fab fa-twitter"><span class="sr-only">twitter</span></i></a></li>
+			{% endif %}
+			{% if content.field_sponser_linkedin|render %}
+			<li><a class="background-color-linkedin" href="{{ content.field_sponser_linkedin }}"><i class="fab fa-linkedin"><span class="sr-only">linkedin</span></i></a></li>
+			{% endif %}
+			</ul>
+		 </div>
+		 </div>
+		 </div>
+		 <div class="tradeshow_container_exhibitor mb-3">
+			<div class="tradeshow_title"><h4>{{content.field_user}}</h4></div>
+			<div class="row">
+				{% if content.field_phone|render %}
+			    <div class="col-md-6">
+					<div class="s-phone"><i class="fas fa-phone"></i> {{ content.field_phone | raw }}</div> 
+				</div>
+				{% endif %}
+				{% if content.field_sponser_email|render %}
+				<div class="col-md-6">
+					<div class="s-email"><i class="far fa-envelope"><span class="sr-only">envelope</span></i> {{ content.field_sponser_email|raw }}</div> 
+				</div>
+				{% endif %}
+				
+			</div>
+		 </div>
+		 
+		 <div class="tradeshow_description">
+	     <div class="row">
+		  <div class="col-md-8 text-justify"> {{ content.body }}</div>
+		  <div class="col-md-4 text-right">
+		  	{% if content.field_upload_|render %}
+			<div class="s-address text-left"><i class="fas fa-cloud-download-alt"></i>{{content.field_upload_}}</div>
+			{% endif %}
+			{% if content.field_sponsor_category_type|render %}
+			<div class="s-address text-right"><i class="fas fa-th-large"></i> {{ content.field_sponsor_category_type|raw }}</div>
+			{% endif %}
+			
+			<div class="s-address text-right"><i class="fas fa-clipboard"></i>Notes</div>
+			
+			
+			<div class="s-address text-left"><i class="fas fa-save"></i>Save exhibitor into My contact list</div>
+			
+			
+			<div class="s-address text-left"><i class="fas fa-share-alt"></i>Share my contact information with Exhibitor</div>
+
+		 
+		  </div>
+		</div>
+		</div>
+	  {#{ content|without('field_mt_spn_logo','field_mt_spn_body') }#}
+	</div>
+	</div>
+  </div>
+</i>
+
+{% endblock %}

@@ -1,0 +1,81 @@
+/**
+ * @file
+ * Visual styles for Conference+'s sponsors carousel.
+ */
+.view-mt-carousel--sponsors {
+  padding: 10px 0;
+  position: relative;
+}
+
+.mt-carousel-sponsors .owl-item {
+  text-align: center;
+}
+.mt-carousel-sponsors .mt-carousel-item {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 35px;
+  max-width: 100%;
+}
+@media (max-width: 575px) {
+  .mt-carousel-sponsors .mt-carousel-item {
+    padding: 0 15px;
+  }
+}
+
+/*brans carousel's overlay*/
+.mt-carousel-sponsors .overlay-target-link a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: block;
+  font-size: 0;
+}
+
+/*navigation*/
+.mt-carousel-sponsors .owl-nav {
+  top: 50%;
+  height: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  margin-top: -50px;
+}
+.mt-carousel-sponsors .owl-nav div {
+  border-width: 0;
+  width: 30px;
+  color: #575757;
+}
+.mt-carousel-sponsors .owl-nav div:hover {
+  background-color: transparent;
+}
+.mt-carousel-sponsors .owl-nav div:after {
+  width: 30px;
+  font-size: 30px;
+}
+.mt-carousel-sponsors .owl-nav .owl-prev {
+  left: 0px;
+  margin-left: 0;
+}
+.mt-carousel-sponsors .owl-nav .owl-next {
+  right: 0;
+  margin-right: 0;
+}
+.region--light-typography .mt-carousel-sponsors .owl-nav div {
+  color: #ffffff;
+}
+.region--light-typography .mt-carousel-sponsors .owl-nav div:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+@media (max-width: 575px) {
+  .mt-carousel-sponsors .owl-nav .owl-prev {
+    left: -15px;
+  }
+  .mt-carousel-sponsors .owl-nav .owl-next {
+    right: -15px;
+  }
+}

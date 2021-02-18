@@ -1,0 +1,17 @@
+{
+    "name": "drupal/zoomapi",
+    "type": "drupal-module",
+    "description": "Provides functionality interacting with the Zoom.us API. This is mainly meant to be a developer module.",
+    "homepage": "https://drupal.org/project/zoomapi",
+    "license": "GPL-2.0+",
+    "require": {
+        "drupal/key": "^1.0",
+        "firebase/php-jwt": "^5.0"
+    },
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    }
+}

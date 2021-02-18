@@ -1,0 +1,253 @@
+<?php
+
+/**
+ * @file
+ * Defines an extensive api for Entity Access Plugins.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\adva\Plugin\adva\OverridingAccessConsumerInterface;
+use Drupal\Core\Database\Query\AlterableInterface;
+
+/**
+ * Implements hook_entity_type_build().
+ *
+ * Alter the access handlers for any entity types with an Overriding Access
+ * Consumer plugin.
+ */
+function adva_entity_type_build(array &$entity_types) {
+  $consumerManager = \Drupal::service("plugin.manager.adva.consumer");
+  $overridingConsumers = $consumerManager->getOverrideConsumers();
+
+  foreach ($overridingConsumers as $consumer) {
+    $entityTypeId = $consumer->getEntityTypeId();
+    if (isset($entity_types[$entityTypeId])) {
+      $consumer->overrideAccessControlHandler($entity_types[$entityTypeId]);
+    }
+  }
+}
+
+/**
+ * Rebuild Entity Permssions from the Advanced Access plugins.
+ *
+ * Rebuilds node access permissions in a batch operation to effectively update
+ * all items. During initialization, existing records are all droped, and then
+ * rebuilt completely.
+ *
+ * @param string $entityTypeId
+ *   Entity Type having permissions rebuilt.
+ * @param array $context
+ *   An array of contextual key/value information for rebuild batch process.
+ *
+ * @see \Drupal\adva\AccessStorage::reloadRecords()
+ */
+function _adva_rebuild_access_batch_operation($entityTypeId, array &$context) {
+  $consumer = \Drupal::service("plugin.manager.adva.consumer")->getConsumerForEntityTypeId($entityTypeId);
+  $storage = \Drupal::entityTypeManager()->getStorage($entityTypeId);
+
+  // @var \Drupal\adva\AccessStorage $accessStorage.
+  $accessStorage = \Drupal::service('adva.access_storage');
+
+  if (empty($context['sandbox'])) {
+    $accessStorage->clearRecords($entityTypeId);
+    // Initiate multistep processing.
+    $context['sandbox']['progress'] = 0;
+    $context['sandbox']['page'] = 0;
+    $context['sandbox']['max'] = $storage->getQuery()->count()->execute();
+  }
+
+  // Process the next 20 nodes.
+  $limit = 20;
+  $page = $context['sandbox']['page'];
+  $ids = $storage->getQuery()
+    ->range($page * $limit, $limit)
+    ->execute();
+  $storage->resetCache($ids);
+  $entities = $storage->loadMultiple($ids);
+  foreach ($entities as $entity) {
+    $accessStorage->updateRecordsFor($consumer, $entity);
+    $context['sandbox']['progress']++;
+  }
+  $context['sandbox']['page']++;
+
+  // Multistep processing : report progress.
+  if ($context['sandbox']['progress'] != $context['sandbox']['max']) {
+    $context['finished'] = $context['sandbox']['progress'] / $context['sandbox']['max'];
+  }
+  else {
+    $consumer->rebuildRequired(FALSE);
+  }
+
+}
+
+/**
+ * Batch operation callback to rebuild access data for a consumer.
+ */
+function _adva_rebuild_access_batch_finished($success, $results, $operations) {
+  if ($success) {
+    $message = t('%type Permissions Rebuild Complete.', []);
+  }
+  else {
+    $message = t('Finished with an error.');
+  }
+  \Drupal::messenger()->addMessage($message);
+}
+
+/**
+ * Implements hook_entity_insert().
+ *
+ * When an entity is updated, update the access records.
+ */
+function adva_entity_insert(EntityInterface $entity) {
+  $consumerManager = \Drupal::service('plugin.manager.adva.consumer');
+  $consumer = $consumerManager->getConsumerForEntityTypeId($entity->getEntityTypeId());
+  if ($consumer && $consumer instanceof OverridingAccessConsumerInterface) {
+    \Drupal::service('adva.access_storage')->updateRecordsFor($consumer, $entity);
+  }
+}
+
+/**
+ * Implements hook_entity_update().
+ *
+ * When an entity is updated, update the access records.
+ */
+function adva_entity_update(EntityInterface $entity) {
+  $consumerManager = \Drupal::service('plugin.manager.adva.consumer');
+  $consumer = $consumerManager->getConsumerForEntityTypeId($entity->getEntityTypeId());
+  if ($consumer && $consumer instanceof OverridingAccessConsumerInterface) {
+    \Drupal::service('adva.access_storage')->updateRecordsFor($consumer, $entity);
+  }
+}
+
+/**
+ * Implements hook_entity_delete().
+ *
+ * When an entity is updated, update the access records.
+ */
+function adva_entity_delete(EntityInterface $entity) {
+  $consumerManager = \Drupal::service('plugin.manager.adva.consumer');
+  $consumer = $consumerManager->getConsumerForEntityTypeId($entity->getEntityTypeId());
+  if ($consumer && $consumer instanceof OverridingAccessConsumerInterface) {
+    \Drupal::service('adva.access_storage')->deleteRecordsFor($entity);
+  }
+}
+
+/**
+ * Implements hook_query_alter().
+ *
+ * This adds Advanced Access checks for the user account given by the 'account'
+ * meta-data (or current user if not provided), for an operation given by the
+ * 'op' meta-data (or 'view' if not provided; other possible values are 'update'
+ * and 'delete').
+ *
+ * Queries with the ENTITY_TYPE_access tag that are not against an entity's base
+ * table must add the entity's base table as metadata. For example:
+ * @code
+ *   $query
+ *     ->addTag('ENTITY_TYPE_access')
+ *     ->addMetaData('base_table', 'taxonomy_index');
+ * @endcode
+ */
+function adva_query_alter(AlterableInterface $query) {
+  $op = $query->getMetaData('op');
+  if (!$op) {
+    $op = 'view';
+  }
+
+  // Only the view, update and delete operations are supported.
+  if (!in_array($op, ['view', 'update', 'delete'])) {
+    return;
+  }
+
+  $should_alter_query = FALSE;
+  $view = $query->getMetaData('view');
+  if ($view) {
+    // If the view doesn't have a base entity type, exit.
+    $base_entity_type = $view->getBaseEntityType();
+    if (!$base_entity_type) {
+      return;
+    }
+
+    //$entity_type_id = $base_entity_type->id();
+   // If the view doesn't have a base entity type, exit.
+    $base_entity_type = $view->getBaseEntityType();
+    if (!$base_entity_type) {
+      return;
+    }
+
+    $entity_type_id = $base_entity_type->id();
+    $consumer = \Drupal::service('plugin.manager.adva.consumer')->getConsumerForEntityTypeId($entity_type_id);
+    if ($consumer instanceof OverridingAccessConsumerInterface) {
+      $should_alter_query = TRUE;
+    }
+  }
+
+  if (!$should_alter_query) {
+    // Get all Advanced Access Consumers.
+    $consumers = \Drupal::service('plugin.manager.adva.consumer')
+      ->getOverrideConsumers();
+    if (!count($consumers)) {
+      return;
+    }
+
+    /** @var \Drupal\adva\Entity\AccessConsumerInterface $consumer */
+    foreach ($consumers as $consumer) {
+      $entity_type_id = $consumer->getEntityTypeId();
+      if ($query->hasTag($entity_type_id . '_access')) {
+        $should_alter_query = TRUE;
+        break;
+      }
+    }
+  }
+
+  if (!$should_alter_query) {
+    return;
+  }
+
+  // Read meta-data from query, if provided.
+  $account = $query->getMetaData('account');
+  if (!$account) {
+    $account = \Drupal::currentUser();
+  }
+
+  // If $account can bypass Advanced Access, we don't need to alter the query.
+  if ($account->hasPermission('bypass adva access') || $account->hasPermission("bypass adva $entity_type_id access")) {
+    return;
+  }
+
+  $tables = $query->getTables();
+  $base_table = $query->getMetaData('base_table');
+  // If the base table is not given, default to the entity's base table.
+  if (!$base_table) {
+    $entity_storage = \Drupal::entityTypeManager()->getStorage($entity_type_id);
+
+    /** @var \Drupal\Core\Entity\Sql\DefaultTableMapping $table_mapping */
+    $table_mapping = $entity_storage->getTableMapping();
+    $entity_base_tables = $table_mapping->getTableNames();
+
+    foreach ($tables as $table_info) {
+      if (!($table_info instanceof SelectInterface)) {
+        $table = $table_info['table'];
+        // Ensure that base and data tables are always preferred over the
+        // revision tables.
+        if ($table == $entity_storage->getBaseTable() || $table == $entity_storage->getDataTable()) {
+          $base_table = $table;
+          break;
+        }
+        // If one of the base tables is in the query, add it to the list of
+        // possible base tables to join against.
+        elseif (in_array($table, $entity_base_tables)) {
+          $base_table = $table;
+        }
+      }
+    }
+  }
+
+  // Bail out if the base table is missing.
+  if (!$base_table) {
+    throw new Exception(t("Query tagged for entity access but there is no base table, specify the base_table using meta data."));
+  }
+
+  // Update the query for the given storage method.
+  \Drupal::service('adva.access_storage')->alterQuery($query, $tables, $op, $account, $base_table, $entity_type_id);
+}

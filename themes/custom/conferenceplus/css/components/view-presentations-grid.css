@@ -1,0 +1,25 @@
+/**
+ * @file
+ * Visual styles for Conference+'s view presentations grid views.
+ */
+.view-presentations-grid .views-row {
+  margin: 30px 0;
+}
+.view-presentations-grid .views-field-field-mt-evn-image {
+  margin: 0 auto 25px;
+}
+.headings-wide-spacing-enabled .view-presentations-grid .views-field-title h5 {
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.view-presentations-grid .views-field-title h5 a:hover {
+  text-decoration: none;
+}
+.region--light-typography .view-presentations-grid .views-field-title h5 a,
+.region--light-typography .view-presentations-grid .views-field-title h5 a:hover {
+  color: #ffffff;
+}
+.view-presentations-grid .link--bordered {
+  margin-top: 10px;
+  display: inline-block;
+}

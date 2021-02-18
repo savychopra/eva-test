@@ -1,0 +1,53 @@
+/**
+ * @file
+ * Visual styles for Conference+'s speakers views.
+ */
+.view-speakers .view-content > h3 {
+  width: 55px;
+  height: 55px;
+  background-color: #575757;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  line-height: 53px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: block;
+}
+.view-speakers .view-content > h3 {
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+@media (min-width: 768px) {
+  .view-speakers .views-row.listing-item {
+    margin-left: 100px;
+    position: relative;
+  }
+  .view-mt-faculty-staff h3 + .views-row.listing-item {
+    margin-top: -59px;
+  }
+  .view-speakers h3 + .views-row.listing-item {
+    margin-top: -59px;
+  }
+  .view-speakers .views-row.listing-item:before {
+    content: "";
+    height: 200%;
+    width: 1px;
+    background-color: #eaeaea;
+    left: -25px;
+    top: 4px;
+    display: block;
+    position: absolute;
+  }
+  .view-speakers .views-row.listing-item:before {
+    top: 5px;
+  }
+  .view-speakers .views-row.listing-item:last-child:before {
+    height: 100%;
+  }
+  .view-speakers .view-content>h3 {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+}

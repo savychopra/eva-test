@@ -1,0 +1,61 @@
+{% extends "node.html.twig" %}
+{#
+/**
+ * @file
+ * Conference+'s theme implementation to display a Speaker node.
+ */
+#}
+{% block content %}
+  {{ attach_library('conferenceplus/node-speaker') }}
+  <div class="row content">
+  	
+    {% if content.field_mt_spn_logo|render %}
+      <div class="col-lg-2 mb-2 mb-lg-0">
+        <div class="photo-container sponsor-full">
+          {{ content.field_mt_spn_logo }}
+        </div>
+      </div>
+    {% endif %}
+    <div class="{{ (content.field_mt_spn_logo|render) ? 'col-lg-10' : 'col-12' }}
+    ">
+	  <div class="gold-partner"> {{ content.field_sponser_category }}</div>
+      {{ content.field_mt_spn_body }}
+	 	{% if content.field_phone|render %}
+		<div class="s-phone"><i class="fas fa-phone"></i> {{ content.field_phone | raw }}</div>
+		{% endif %}
+		{% if content.field_sponser_email|render %}
+		<div class="s-email"><i class="far fa-envelope"><span class="sr-only">envelope</span></i> {{ content.field_sponser_email|raw }}</div>
+		{% endif %}
+		{% if content.field_website|render %}
+		<div class="s-address"><i class="fas fa-globe"></i><a href="{{ content.field_website|raw }}">{{ content.field_website|raw }}</a> </div>
+		{% endif %}
+		<div class="s-address"><i class="fas fa-map-marker-alt"></i>{% if content.field_street_1|render %} {{ content.field_street_1}},{% endif %} {% if content.field_street_2|render %}{{content.field_street_2}},{% endif %} {% if content.field_city|render %}{{content.field_city}}, {% endif %} {% if content.field_state|render %}
+				{{ content.field_state}},{% endif %} {% if content.field_country|render %}
+{{content.field_country}},{% endif %}{% if content.field_zip|render %} {{content.field_zip}}{% endif %}</div>
+		{% if content.field_uplo|render %}
+		<div class="s-address"><i class="fas fa-cloud-download-alt"></i>{{content.field_uplo}}</div>
+		{% endif %}
+		{% if content.field_sponsor_category_type|render %}
+		<div class="s-address"><i class="fas fa-th-large"></i> {{ content.field_sponsor_category_type|raw }}</div>
+	    <ul class="icons-list icons-list--small icons-list--bordered icons-list--no-margin">
+	    {% endif %}
+	    {% if content.field_sponser_facebook|render %}
+		<li><a class="background-color-facebook" href="{{ content.field_sponser_facebook | raw }}">
+			<i class="fab fa-facebook"><span class="sr-only">facebook</span></i></a>
+		</li>
+		{% endif %}
+		{% if content.field_sponser_twitter|render %}
+		<li><a class="background-color-twitter" href="{{ content.field_sponser_twitter }}"><i class="fab fa-twitter"><span class="sr-only">twitter</span></i></a></li>
+		{% endif %}
+		{% if content.field_sponser_linkedin|render %}
+		<li><a class="background-color-linkedin" href="{{ content.field_sponser_linkedin }}"><i class="fab fa-linkedin"><span class="sr-only">linkedin</span></i></a></li>
+		{% endif %}
+
+
+		
+	</ul>
+    </div>
+  </div>
+</i>
+
+{% endblock %}

@@ -1,0 +1,4 @@
+administer gotowebinar sync:
+  title: 'Administer GotoWebinar Sync'
+  description: 'Change administration settings for GotoWebinar Sync.'
+  restrict access: TRUE

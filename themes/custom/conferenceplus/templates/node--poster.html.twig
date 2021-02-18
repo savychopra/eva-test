@@ -1,0 +1,58 @@
+{% extends "node.html.twig" %}
+{#
+/**
+ * @file
+ * Conference+'s theme implementation to display a Speaker node.
+ */
+#}
+{% block content %}
+  <div class="row content">
+  {% if content.field_poster_image|render %}
+	<div class="col-lg-12 tradeshow-video poster-image">{{content.field_poster_image}}</div>
+  {% endif %}
+
+	{% if content.field_pdf|render %}
+      <div class="col-lg-6 mb-2 mb-lg-0">
+        <div class="photo-container tradeshow-boothimg">
+          {{ content.field_pdf }}
+        </div>
+      </div>
+    {% endif %}
+    <div class="{{ (content.field_pdf|render) ? 'col-lg-6' : 'col-12' }}
+    ">
+	  <!-- <div class="gold-partner"> <a href=""> {#{ content.field_sponser_category }#}</a></div> -->
+	  <div class="tradeshow-content mb-3">
+		<div class="tradeshow_title"><h4>{{label}}</h4></div>
+		 </div>
+		 
+		 <div class="tradeshow_description">
+	     <div class="row">
+		  <div class="col-md-8 text-justify">{{ content.body }}</div>
+		  <div class="col-md-4 text-right">
+		  	{% if content.field_upload_|render %}
+			<div class="s-address text-right"><i class="fas fa-cloud-download-alt"></i>{{content.field_upload_}}</div>
+			{% endif %}
+			{% if content.field_sponsor_category_type|render %}
+			<div class="s-address text-right"><i class="fas fa-th-large"></i> {{ content.field_sponsor_category_type|raw }}</div>
+			{% endif %}
+			
+			{% if content.field_author|render %}
+			<div class="s-address text-left"><i class="fas fa-users"></i>{{ content.field_author }}</div>
+			{% endif %}
+
+			<div class="s-address text-left"><i class="fas fa-save"></i>Social Media</div>
+			
+			
+			<div class="s-address text-left"><i class="fas fa-share-alt"></i>Share my contact information with Author</div>
+
+		 
+		  </div>
+		</div>
+		</div>
+	  {#{ content|without('field_mt_spn_logo','field_mt_spn_body') }#}
+	</div>
+	</div>
+  </div>
+</i>
+
+{% endblock %}

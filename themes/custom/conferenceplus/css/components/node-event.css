@@ -1,0 +1,162 @@
+/**
+ * @file
+ * Visual styles for Conference+'s event content type.
+ */
+.page-node-type-mt-event h1.page-title {
+  margin-bottom: 20px;
+}
+.node--type-mt-event .node__header {
+  padding: 0;
+}
+
+/*page title*/
+.layout-no-sidebars.page-node-type-mt-event .page-title {
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .layout-no-sidebars.page-node-type-mt-event .page-title {
+    font-size: 70px;
+  }
+}
+
+/*fields*/
+.node--type-mt-event .field {
+  margin-bottom: 40px;
+}
+.node--type-mt-event .field--label-above .field__label {
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 6px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #e5e5e5;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+}
+.node--type-mt-event .node--view-mode-teaser.node--type-mt-sponsor .field {
+  margin-bottom: 20px;
+}
+.node--type-mt-event .node--view-mode-teaser.node--type-mt-sponsor .node__links {
+  margin-top: 0;
+}
+.node--type-mt-event .node--view-mode-teaser.node--type-mt-speaker .field {
+  margin-bottom: 20px;
+}
+.node--type-mt-event .node--view-mode-teaser.node--type-mt-speaker .node__links {
+  margin-top: 0;
+}
+
+/*image field*/
+.node--type-mt-event .field--name-field-mt-evn-image {
+  margin-bottom: 40px;
+}
+
+/*location field*/
+.field--name-field-mt-evn-location {
+  margin-bottom: 20px;
+}
+
+/*speaker field*/
+.field--name-field-mt-evn-body + .field--name-field-mt-evn-speaker {
+  margin-top: 40px;
+}
+
+/*sponsor field*/
+.field--name-field-mt-evn-body + .field--name-field-mt-evn-sponsor {
+  margin-top: 40px;
+}
+
+/* event layout */
+.node--type-mt-event .node__side {
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  max-width: 100px;
+  text-align: right;
+}
+.node--type-mt-event .node__side + .node__main-content {
+  overflow: hidden;
+  margin-left: 130px;
+}
+
+/* event side */
+.node--type-mt-event .node__side .event__info-item {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.node--type-mt-event .node__side .event__info-item .field--name-field-mt-evn-date {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.node--type-mt-event .node__side .date-container {
+  position: relative;
+  width: 100%;
+  height: 75px;
+  display: block;
+}
+.node--type-mt-event .node__side .date-container .date {
+  width: 75px;
+  height: 75px;
+  color: #575757;
+  font-weight: 900;
+  position: absolute;
+  right: 0;
+}
+.node--type-mt-event .node__side .date-container .date-month {
+  font-size: 24px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 11px;
+  right: -2px;
+  line-height: 1;
+}
+.node--type-mt-event .node__side .date-container .date-day {
+  font-size: 48px;
+  position: absolute;
+  bottom: -6px;
+  right: -3px;
+  line-height: 1;
+}
+.node--type-mt-event .node__side .event__info-item .svg-inline--fa {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0px 5px auto;
+}
+
+/* event teaser */
+.node--type-mt-event.node--view-mode-teaser .event__info {
+  font-size: 16px;
+  color: #878787;
+  padding-bottom: 20px;
+}
+.node--view-mode-teaser .field--name-field-mt-evn-image {
+  margin-bottom: 20px;
+}
+.node--type-mt-event .teaser-image-container {
+  position: relative;
+}
+.node--type-mt-event .teaser-image-container .node__meta-date {
+  position: absolute;
+  background-color: #ffffff;
+  left: 15px;
+  bottom: 15px;
+  border-radius: 5px;
+  padding: 10px;
+  color: #575757;
+  text-align: center;
+  border-width: 0px;
+  border-style: solid;
+  border-color: transparent;
+}
+.node--type-mt-event .teaser-image-container .day {
+  font-size: 35px;
+  font-weight: 600;
+  display: block;
+  line-height: 1;
+}
+.node--type-mt-event .teaser-image-container .month-year {
+  font-size: 14px;
+  font-weight: 500;
+}

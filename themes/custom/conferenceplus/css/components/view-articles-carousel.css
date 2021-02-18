@@ -1,0 +1,7 @@
+/**
+ * @file
+ * Visual styles for Conference+'s articles carousel.
+ */
+.mt-carousel-articles .mt-carousel-item {
+  margin: 0 15px 15px;
+}

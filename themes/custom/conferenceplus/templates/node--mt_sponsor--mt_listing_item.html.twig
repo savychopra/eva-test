@@ -1,0 +1,13 @@
+{% extends "node.html.twig" %}
+{#
+/**
+ * @file
+ * Conference+'s theme implementation to display a Speaker node.
+ */
+#}
+{% block meta_area %}
+{% endblock %}
+{% block content %}
+  {{ attach_library('conferenceplus/node-speaker') }}
+  {{ content }}
+{% endblock %}

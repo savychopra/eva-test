@@ -1,0 +1,39 @@
+{% extends "node.html.twig" %}
+{#
+/**
+ * @file
+ * Conference+'s theme implementation to display a Speaker node.
+ */
+#}
+
+{% block content %}
+  {{ attach_library('conferenceplus/node-speaker') }}
+  <div class="row content">
+    {% if content.field_mt_spn_logo|render %}
+      <div class="col-lg-2 mb-2 mb-lg-0">
+        <div class="photo-container">
+          {{ content.field_mt_spn_logo }}
+        </div>
+      </div>
+    {% endif %}
+    <div class="{{ (content.field_mt_spn_logo|render) ? 'col-lg-10' : 'col-12' }}">
+	  <div class="gold-partner"> <a href=""><i class="fas fa-globe"></i> {{ content.field_sponser_category }}</a></div>
+      {{ content.field_mt_spn_body }}
+	  {#{ content|without('field_mt_spn_logo','field_mt_spn_body') }#}
+	  <div class="s-phone"><i class="fas fa-phone"></i> {{ content.field_phone | raw }}</div>
+	  <div class="s-email"><i class="far fa-envelope"><span class="sr-only">envelope</span></i> {{ content.field_sponser_email }}</div>
+	  <div class="s-website"><i class="fas fa-globe"><span class="sr-only">globe</span></i> {{ content.field_website }}</div>
+	  <div class="s-address"><i class="fas fa-map-marker-alt"><span class="sr-only">map-marker-alt</span></i>{{ content.field_sponser_address}}</div>
+	 
+	  <ul class="icons-list icons-list--small icons-list--bordered icons-list--no-margin">
+	  <li><a class="background-color-facebook" href="{{ content.field_sponser_facebook }}">
+	   <i class="fab fa-facebook"><span class="sr-only">facebook</span></i></a>
+	  </li>
+	<li><a class="background-color-twitter" href="{{ content.field_sponser_twitter }}"><i class="fab fa-twitter"><span class="sr-only">twitter</span></i></a></li>
+	<li><a class="background-color-linkedin" href="{{ content.field_sponser_linkedin }}"><i class="fab fa-linkedin"><span class="sr-only">linkedin</span></i></a></li>
+     </ul>
+    </div>
+  </div>
+</i>
+
+{% endblock %}

@@ -1,0 +1,87 @@
+{% extends "node.html.twig" %}
+{#
+/**
+ * @file
+ * Conference+'s theme implementation to display a Speaker node.
+ */
+#}
+{% block meta_area %}
+{% endblock %}
+{% block content %}
+  {{ attach_library('conferenceplus/node-speaker') }}
+  <div class="row content">
+    {% if content.field_mt_spk_speaker_photo|render %}
+      {% if page %}
+        {{ attach_library('conferenceplus/magnific-popup-field-mt-spk-speaker-photo-init') }}
+      {% endif %}
+      <div class="col-sm-2 mb-4 mb-lg-0">
+        <div class="photo-container">
+          {{ content.field_mt_spk_speaker_photo }}
+        </div>
+      </div>
+    {% endif %}
+    <div class="
+      {% if (content.field_mt_spk_speaker_photo|render) %}
+        col-sm-10 ml-xl-auto
+      {% else %}
+        col-sm-12
+      {% endif %}
+    ">
+      {{ title_prefix }}
+      {% if not page %}
+        <h2{{ title_attributes.addClass('node__title') }}>
+          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </h2>
+      {% endif %}
+      {{ title_suffix }}
+      {% if content.field_mt_spk_subtitle|render or content.field_mt_spk_affiliations|render %}
+        <div class="speaker__info">
+          {% if content.field_mt_spk_subtitle|render %}
+            <div class="speaker__info-item">
+              {{ content.field_mt_spk_subtitle }}
+            </div>
+          {% endif %}
+          {% if content.field_mt_spk_affiliations|render %}
+            <div class="speaker__info-item">
+              {{ content.field_mt_spk_affiliations }}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+      {% if (content.field_mt_spk_facebook_account|render or content.field_mt_spk_twitter_account|render or content.field_mt_spk_linkedin_account|render or content.field_mt_spk_youtube_account|render) %}
+        <ul class="icons-list icons-list--small icons-list--bordered icons-list--no-margin my-2">
+          {% if content.field_mt_spk_facebook_account|render %}
+            <li>
+              <a class="background-color-facebook" target="_blank" href="{{ node.field_mt_spk_facebook_account.value }}">
+                <i class="fab fa-facebook"><span class="sr-only">facebook</span></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.field_mt_spk_twitter_account|render %}
+            <li>
+              <a class="background-color-twitter" target="_blank" href="{{ node.field_mt_spk_twitter_account.value }}">
+                <i class="fab fa-twitter"><span class="sr-only">twitter</span></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.field_mt_spk_linkedin_account|render %}
+            <li>
+              <a class="background-color-linkedin" target="_blank" href="{{ node.field_mt_spk_linkedin_account.value }}">
+                <i class="fab fa-linkedin"><span class="sr-only">linkedin</span></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.field_mt_spk_youtube_account|render %}
+            <li>
+              <a class="background-color-youtube" target="_blank" href="{{ node.field_mt_spk_youtube_account.value }}">
+                <i class="fab fa-youtube"><span class="sr-only">youtube</span></i>
+              </a>
+            </li>
+          {% endif %}
+        </ul>
+      {% endif %}
+      {{ content.field_mt_spk_body }}
+    </div>
+  </div>
+  {{ content|without('field_mt_spk_speaker_photo','field_mt_spk_subtitle','field_mt_spk_facebook_account','field_mt_spk_twitter_account','field_mt_spk_linkedin_account','field_mt_spk_youtube_account','field_mt_spk_body','field_mt_spk_affiliations') }}
+{% endblock %}

@@ -1,0 +1,53 @@
+/**
+ * @file
+ * Visual styles for Conference+'s albums carousel.
+ */
+.mt-carousel-albums {
+  padding: 0 70px;
+  margin-bottom: 100px;
+}
+.mt-carousel-albums .mt-carousel-item {
+  margin: 10px;
+}
+.mt-carousel-albums .owl-nav {
+  position: static;
+  height: 0;
+}
+.mt-carousel-albums .owl-nav div {
+  width: 125px;
+  height: 125px;
+  z-index: -1;
+  background-color: #575757;
+  border-color: #575757;
+  color: #a6a6a6;
+}
+.mt-carousel-albums .owl-nav div:hover {
+  color: #ffffff;
+  background-color: #575757;
+  border-color: #575757;
+}
+.region--light-typography .mt-carousel-albums .owl-nav div:hover {
+  color: #ffffff;
+}
+.mt-carousel-albums .owl-nav div:after {
+  line-height: 120px;
+}
+.mt-carousel-albums .owl-nav .owl-prev {
+  margin-left: 0;
+  left: 10px;
+  top: 50%;
+  margin-top: -62px;
+}
+.mt-carousel-albums .owl-nav .owl-prev:after {
+  margin-left: -30px;
+}
+.mt-carousel-albums .owl-nav .owl-next {
+  top: 50%;
+  right: 10px;
+  left: auto;
+  margin-right: 0px;
+  margin-top: -62px;
+}
+.mt-carousel-albums .owl-nav .owl-next:after {
+  margin-right: -30px;
+}

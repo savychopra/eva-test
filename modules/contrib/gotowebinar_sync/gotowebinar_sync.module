@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains gotowebinar_sync.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function gotowebinar_sync_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the gotowebinar_sync module.
+    case 'help.page.gotowebinar_sync':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Sync webinar data from GoToWebinar.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
